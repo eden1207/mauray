@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
+@import "../../../Mixins/Mixin";
+@import "../../../Parameters/Parameters";
+
+.home{
+    &_dimensions{
+        @include dimensions(100%, auto);
+        min-height: $FrameHeight;
+    }
+    &_aspect{
+        background-color: #141929;
+    }
+}
+
+.main {
+    @include position-package(relative, none, none, none, none);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    @include dimensions(100%, $NumberOfFrames*$FrameHeight);
+    /*border: 1px red solid;*/
+}

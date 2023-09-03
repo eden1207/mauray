@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Bellefair&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bellefair&display=swap");
+.skills-title-box {
+  position: absolute;
+  top: 2950px !important;
+  bottom: none !important;
+  left: 5% !important;
+  right: none !important;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 30%;
+  height: 100px !important;
+}
+
+.skills-title {
+  z-index: 1;
+  color: white;
+  font-family: "Bellefair", serif;
+  font-size: 38px;
+  font-weight: normal;
+}
+
+.skills {
+  position: absolute;
+  top: 3030px !important;
+  bottom: none !important;
+  left: none !important;
+  right: 5% !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.6);
+  width: 60%;
+  height: 520px !important;
+  padding-top: none !important;
+  padding-bottom: none !important;
+  padding-left: 3%;
+  padding-right: 3%;
+}
+
+.skills-lists-group {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 95%;
+  height: 260px !important;
+  /*border: 1px blue solid;*/
+}
+
+.skills-list-title {
+  font-family: "Bellefair", serif;
+  font-size: 24px;
+  font-weight: normal;
+  color: black;
+  text-align: left;
+  /*border: 1px red solid;*/
+}
+
+.skills-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  /*border: 1px yellow solid;*/
+  width: 50%;
+  height: 260px !important;
+}
+
+.skills-list-element {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-family: "Bellefair", serif;
+  font-size: 18px;
+  font-weight: normal;
+  color: black;
+  /*border: 1px green solid;*/
+  gap: 20px;
+}
+
+.skills-list-element-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  width: 35px;
+  height: 35px !important;
+  border: 5px;
+}
+
+.logo-html {
+  width: 33px;
+  height: auto !important;
+}
+
+.logo-css {
+  width: 23px;
+  height: auto !important;
+}
+
+.logo-sass {
+  width: 28px;
+  height: auto !important;
+}
+
+.logo-javascript {
+  width: 25px;
+  height: auto !important;
+}
+
+.logo-matlab {
+  width: 25px;
+  height: auto !important;
+}
+
+.logo-react {
+  width: 25px;
+  height: auto !important;
+}
+
+.logo-jest {
+  width: 25px;
+  height: auto !important;
+}
+
+.logo-redux {
+  width: 25px;
+  height: auto !important;
+}
+
+.logo-latex {
+  width: 35px;
+  height: auto !important;
+}
+
+.logo-photoshop {
+  width: 25px;
+  height: auto !important;
+}
+
+.logo-figma {
+  width: 25px;
+  height: auto !important;
+}
+
+.logo-git {
+  width: 25px;
+  height: auto !important;
+}
+
+.logo-francais {
+  width: 30px;
+  height: auto !important;
+}
+
+.logo-anglais {
+  width: 30px;
+  height: auto !important;
+}
+
+.logo-espagnol {
+  width: 30px;
+  height: auto !important;
+}/*# sourceMappingURL=Skills.css.map */

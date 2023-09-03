@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
+@import "../../../Mixins/Mixin";
+@import "../../../Parameters/Parameters";
+
+.softSkills {
+    @include dimensions(100%, $FrameHeight);
+    /*border: 1px green solid;*/
+}
+
+.introduction {
+    @include position-package(fixed, 0px, none, none, none);
+}
+
+.softSkillsDisplayed {
+    @include position-package(absolute, 3*$FrameHeight, none, none, none);
+}
+
+.softSkills-photo-border {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+/*animation photo*/
+
+@keyframes photoProfileAppearence{
+    0%{
+        transform: translateY(700px);
+        opacity: 0;
+    }
+
+    50%{
+        transform: translateY(350px);
+        opacity: 1;
+    }
+
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+.photo-profile-appearence {
+    animation: photoProfileAppearence 1300ms linear;
+    animation-delay: 0ms;
+    animation-fill-mode: backwards;
+}
+
+/*animation card title*/
+
+@keyframes cardTitleAppearence{
+    from{
+        transform: translateX(1000px);
+    }
+
+    to{
+        transform: translateX(0px);
+    }
+}
+
+.card-title-appearence {
+    animation: cardTitleAppearence 1300ms linear;
+    animation-delay: 0ms;
+    animation-fill-mode: backwards;
+}
+
+/*title intro animation*/
+
+@keyframes letterAppearence{
+    from{
+        opacity: 0;
+    }
+
+    to{
+        opacity: 1;
+    }
+}
+
+$numberOfLetters: 43;
+$letterDelay: 40ms;
+
+@for $i from 1 through $numberOfLetters{
+  .letter-appearence#{$i}{
+      animation: letterAppearence 600ms linear;
+      animation-delay: 1300ms + $i*$letterDelay;
+      animation-fill-mode: backwards;
+  }
+}
+
+/* Profil photo */
+
+.photo-border-introduction {
+    @include position-package(absolute, 0px, none, 0px, none);
+    transition: all 400ms;
+    @include dimensions(50%, $FrameHeight);
+}
+
+.photo-border-softskills {
+    @include position-package(absolute, 120px, none, 150px, none);
+    transition: all 400ms;
+    border-radius: 5px;
+    @include dimensions(30%, 550px);
+}
+
+.photo-introduction {
+    @include dimensions(770px, none);
+}
+
+.photo-softskills {
+    @include dimensions(570px, none);
+}
+
+/* Text soft skills */
+
+.softSkills-text-introduction {
+    @include position-package(fixed, 350px, none, none, 5%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 400ms;
+    background-color: rgb(0, 0, 0, 0.6);
+    @include dimensions(50%, 250px);
+}
+
+.softSkills-text-displayed {
+    @include position-package(absolute, 150px, none, none, 8%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 400ms;
+    background-color: rgb(0, 0, 0, 0.6);
+    @include dimensions(45%, 500px);
+}
+
+.page-title{
+    gap: 7px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    @include dimensions(70%, 200px);
+    color: white;
+    @include syntaxe-bellefair(44px, normal);
+    line-height: 70px;
+    animation: titleAppearence 400ms linear;
+    animation-delay: 0ms;
+    animation-fill-mode: backwards;
+}
+
+@keyframes titleAppearence{
+    from{
+        opacity: 0;
+    }
+
+    to{
+        opacity: 1;
+    }
+}
+
+.softSkills-text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    @include position-package(absolute, 50px, none, none, none);
+    @include dimensions(90%, 400px);
+    /*border: 1px red solid;*/
+    overflow: hidden;
+}
+
+.softSkills-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    @include dimensions(100%, 800px);
+    color: white;
+    @include syntaxe-bellefair(18px, normal);
+    text-align: justify;
+    /*border: 1px green solid;*/
+}

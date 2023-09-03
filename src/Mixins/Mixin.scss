@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
+
+@mixin position-package($position, $top, $bottom, $left, $right) {
+    position: $position;
+    top: $top !important;
+    bottom: $bottom !important;
+    left: $left !important;
+    right: $right !important;
+}
+
+@mixin padding-package($top, $bottom, $left, $right) {
+    padding-top: $top !important;
+    padding-bottom: $bottom !important;
+    padding-left: $left;
+    padding-right: $right;
+}
+
+@mixin margin-package($top, $bottom, $left, $right) {
+    margin-top: $top !important;
+    margin-bottom: $bottom !important;
+    margin-left: $left;
+    margin-right: $right;
+}
+
+@mixin syntaxe-bellefair($size, $type) {
+    font-family: 'Bellefair', serif;
+    font-size: $size;
+    font-weight: $type;
+}
+
+@mixin dimensions($width, $height) {
+    width: $width; 
+    height: $height !important;
+}

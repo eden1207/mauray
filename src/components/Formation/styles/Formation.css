@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Bellefair&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bellefair&display=swap");
+.formation-title-box {
+  position: absolute;
+  top: 3664px !important;
+  bottom: none !important;
+  left: 5% !important;
+  right: none !important;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 30%;
+  height: 100px !important;
+}
+
+.formation-title {
+  color: white;
+  font-family: "Bellefair", serif;
+  font-size: 38px;
+  font-weight: normal;
+}
+
+.formation {
+  position: absolute;
+  top: 3744px !important;
+  bottom: none !important;
+  left: none !important;
+  right: 5% !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.6);
+  width: 60%;
+  height: 520px !important;
+  padding-top: none !important;
+  padding-bottom: none !important;
+  padding-left: 3%;
+  padding-right: 3%;
+}
+
+.formation-line {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 95%;
+  height: 60px !important;
+  /*border: 1px red solid;*/
+}
+
+.formation-date {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: left;
+  font-family: "Bellefair", serif;
+  font-size: 18px;
+  font-weight: bold;
+  color: black;
+  width: 25%;
+  height: 60px !important;
+  /*border: 1px green solid;*/
+}
+
+.formation-content {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: left;
+  font-family: "Bellefair", serif;
+  font-size: 18px;
+  font-weight: normal;
+  color: black;
+  width: 75%;
+  height: 60px !important;
+  /*border: 1px blue solid;*/
+}/*# sourceMappingURL=Formation.css.map */

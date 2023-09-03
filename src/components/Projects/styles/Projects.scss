@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
+@import "../../../Mixins/Mixin";
+@import "../../../Parameters/Parameters";
+
+.projects-title-box {
+    @include position-package(absolute, 104px+9*$FrameHeight, none, 5%, none);
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 0, 0, 0.7);
+    @include dimensions(30%, 100px);
+}
+
+.projects-title {
+    color: white;
+    @include syntaxe-bellefair(38px, normal);
+}
+
+.projects {
+    @include position-package(absolute, 184px+9*$FrameHeight, none, none, 5%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255, 0.6);
+    @include dimensions(60%, 490px);
+    @include padding-package(none, none, 3%, 3%);
+}
+
+.projects-list1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    @include margin-package(none, none, 5%, none);
+    color: black;
+    @include syntaxe-bellefair(24px, normal);
+}
+
+.projects-list2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    @include dimensions(100%, none);
+}
+
+.projects-list1-title{
+    color: black;
+    @include syntaxe-bellefair(24px, normal);
+}
+
+.projects-list2-title{
+    color: black;
+    @include syntaxe-bellefair(24px, normal);
+}
+
+.subnavigation1{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    column-gap: 1%;
+    row-gap: 10px;
+}
+
+.subnavigation2{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    @include margin-package(none, none, 10%, none);
+    column-gap: 5%;
+    @include dimensions(100%, none);
+}
+
+.submenu-link1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include dimensions(150px, 80px);
+    text-decoration: none;
+}
+
+.submenu-link2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include dimensions(150px, 150px);
+    text-decoration: none;
+}
+
+.submenu-link2-logo-website{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @include dimensions(150px, 150pxpx);
+    text-decoration: none;
+    line-height: 2px;
+}
+
+.logo-booki{
+    @include dimensions(80px, none);
+}
+
+.logo-ohmyfood{
+    @include dimensions(130px, none);
+}
+
+.logo-gameon{
+    @include dimensions(120px, none);
+}
+
+.logo-fisheye{
+    @include dimensions(110px, none);
+}
+
+.logo-les-petits-plats{
+    @include dimensions(130px, none);
+}
+
+.logo-kasa{
+    @include dimensions(90px, none);
+}
+
+.logo-sportsee{
+    @include dimensions(130px, none);
+}
+
+.logo-argentbank{
+    @include dimensions(130px, none);
+}
+
+.logo-hrnet{
+    @include dimensions(70px, none);
+}
+
+.border-logo-website{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    overflow: hidden;
+    @include dimensions(90px, 90px);
+}
+
+.logo-page-web-title{
+    color: #141929;
+    @include syntaxe-bellefair(18px, normal);
+}
+
+.logo-page-web{
+    @include dimensions(150px, none);
+}
+
+.logo-ghibli{
+    @include dimensions(150px, none);
+}
+
+.logo-leo-paul-berthaut{
+    @include dimensions(80px, none);
+}

@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
+@import "../../../Mixins/Mixin";
+@import "../../../Parameters/Parameters";
+
+.footer{
+    @include position-package(absolute, none, 0px, none, none);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    @include dimensions(100%, 150px);
+    background-color: black;
+}
+
+.footer-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include dimensions(220px, none);
+    gap: 10px;
+    text-decoration: none;
+}
+
+.logo-linkedIn{
+    @include dimensions(50px, none);
+}
+
+.logo-github{
+    @include dimensions(50px, none);
+    filter: invert(100%);
+}
+
+.footer-text{
+    color: white;
+    @include syntaxe-bellefair(22px, normal);
+}

@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
+@import "../../../Mixins/Mixin";
+@import "../../../Parameters/Parameters";
+
+.formation-title-box {
+    @include position-package(absolute, 94px+5*$FrameHeight, none, 5%, none);
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 0, 0, 0.7);
+    @include dimensions(30%, 100px);
+}
+
+.formation-title {
+    color: white;
+    @include syntaxe-bellefair(38px, normal);
+}
+
+.formation {
+    @include position-package(absolute, 174px+5*$FrameHeight, none, none, 5%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(255, 255, 255, 0.6);
+    @include dimensions(60%, 520px);
+    @include padding-package(none, none, 3%, 3%);
+}
+
+.formation-line {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    @include dimensions(95%, 60px);
+    /*border: 1px red solid;*/
+}
+
+.formation-date {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: left;
+    @include syntaxe-bellefair(18px, bold);
+    color: black;
+    @include dimensions(25%, 60px);
+    /*border: 1px green solid;*/
+}
+
+.formation-content {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: left;
+    @include syntaxe-bellefair(18px, normal);
+    color: black;
+    @include dimensions(75%, 60px);
+    /*border: 1px blue solid;*/
+}

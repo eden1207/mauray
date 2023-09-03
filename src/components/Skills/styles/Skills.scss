@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
+@import "../../../Mixins/Mixin";
+@import "../../../Parameters/Parameters";
+
+.skills-title-box {
+    @include position-package(absolute, 94px+4*$FrameHeight, none, 5%, none);
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 0, 0, 0.7);
+    @include dimensions(30%, 100px);
+}
+
+.skills-title {
+    z-index: 1;
+    color: white;
+    @include syntaxe-bellefair(38px, normal);
+}
+
+.skills {
+    @include position-package(absolute, 174px+4*$FrameHeight, none, none, 5%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(255, 255, 255, 0.6);
+    @include dimensions(60%, 520px);
+    @include padding-package(none, none, 3%, 3%);
+}
+
+.skills-lists-group {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    @include dimensions(95%, 260px);
+    /*border: 1px blue solid;*/
+}
+
+.skills-list-title {
+    @include syntaxe-bellefair(24px, normal);
+    color: black;
+    text-align: left;
+    /*border: 1px red solid;*/
+}
+
+.skills-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    /*border: 1px yellow solid;*/
+    @include dimensions(50%, 260px);
+}
+
+.skills-list-element {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    @include syntaxe-bellefair(18px, normal);
+    color: black;
+    /*border: 1px green solid;*/
+    gap: 20px;
+}
+
+.skills-list-element-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    @include dimensions(35px, 35px);
+    border: 5px;
+}
+
+.logo-html {
+    @include dimensions(33px, auto);
+}
+
+.logo-css {
+    @include dimensions(23px, auto);
+}
+
+.logo-sass {
+    @include dimensions(28px, auto);
+}
+
+.logo-javascript {
+    @include dimensions(25px, auto);
+}
+
+.logo-matlab {
+    @include dimensions(25px, auto);
+}
+
+.logo-react {
+    @include dimensions(25px, auto);
+}
+
+.logo-jest {
+    @include dimensions(25px, auto);
+}
+
+.logo-redux {
+    @include dimensions(25px, auto);
+}
+
+.logo-latex {
+    @include dimensions(35px, auto);
+}
+
+.logo-photoshop {
+    @include dimensions(25px, auto);
+}
+
+.logo-figma {
+    @include dimensions(25px, auto);
+}
+
+.logo-git {
+    @include dimensions(25px, auto);
+}
+
+.logo-francais {
+    @include dimensions(30px, auto);
+}
+
+.logo-anglais {
+    @include dimensions(30px, auto);
+}
+
+.logo-espagnol {
+    @include dimensions(30px, auto);
+}

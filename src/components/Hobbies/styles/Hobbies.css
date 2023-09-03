@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Bellefair&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bellefair&display=swap");
+.hobbies-title-box {
+  position: absolute;
+  top: 7274px !important;
+  bottom: none !important;
+  left: 5% !important;
+  right: none !important;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 30%;
+  height: 100px !important;
+}
+
+.hobbies-title {
+  color: white;
+  font-family: "Bellefair", serif;
+  font-size: 38px;
+  font-weight: normal;
+}
+
+.hobbies {
+  position: absolute;
+  top: 7354px !important;
+  bottom: none !important;
+  left: none !important;
+  right: 5% !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  height: 400px !important;
+  background-color: rgba(255, 255, 255, 0.6);
+  padding-top: none !important;
+  padding-bottom: none !important;
+  padding-left: 3%;
+  padding-right: 3%;
+}
+
+.subnavigation3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 60%;
+  height: none !important;
+}
+
+.submenu-link-logo-photo {
+  text-decoration: none;
+}
+
+.submenu-link-logo-paint {
+  text-decoration: none;
+}
+
+.border-logo-paint {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 200px !important;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.logo-page-paint {
+  margin-top: 180px !important;
+  margin-bottom: none !important;
+  margin-left: 105px;
+  margin-right: none;
+  width: 450px;
+  height: none !important;
+}
+
+.border-logo-photo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 200px !important;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.logo-page-photo {
+  width: 300px;
+  height: none !important;
+}
+
+.logo-paint-title {
+  color: #141929;
+  font-family: "Bellefair", serif;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.logo-photo-title {
+  color: #141929;
+  font-family: "Bellefair", serif;
+  font-size: 18px;
+  font-weight: normal;
+}/*# sourceMappingURL=Hobbies.css.map */

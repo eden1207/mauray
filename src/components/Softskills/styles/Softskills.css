@@ -1,0 +1,454 @@
+@import url("https://fonts.googleapis.com/css2?family=Bellefair&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bellefair&display=swap");
+.softSkills {
+  width: 100%;
+  height: 714px !important;
+  /*border: 1px green solid;*/
+}
+
+.introduction {
+  position: fixed;
+  top: 0px !important;
+  bottom: none !important;
+  left: none !important;
+  right: none !important;
+}
+
+.softSkillsDisplayed {
+  position: absolute;
+  top: 2142px !important;
+  bottom: none !important;
+  left: none !important;
+  right: none !important;
+}
+
+.softSkills-photo-border {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+/*animation photo*/
+@keyframes photoProfileAppearence {
+  0% {
+    transform: translateY(700px);
+    opacity: 0;
+  }
+  50% {
+    transform: translateY(350px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+.photo-profile-appearence {
+  animation: photoProfileAppearence 1300ms linear;
+  animation-delay: 0ms;
+  animation-fill-mode: backwards;
+}
+
+/*animation card title*/
+@keyframes cardTitleAppearence {
+  from {
+    transform: translateX(1000px);
+  }
+  to {
+    transform: translateX(0px);
+  }
+}
+.card-title-appearence {
+  animation: cardTitleAppearence 1300ms linear;
+  animation-delay: 0ms;
+  animation-fill-mode: backwards;
+}
+
+/*title intro animation*/
+@keyframes letterAppearence {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.letter-appearence1 {
+  animation: letterAppearence 600ms linear;
+  animation-delay: 1340ms;
+  animation-fill-mode: backwards;
+}
+
+.letter-appearence2 {
+  animation: letterAppearence 600ms linear;
+  animation-delay: 1380ms;
+  animation-fill-mode: backwards;
+}
+
+.letter-appearence3 {
+  animation: letterAppearence 600ms linear;
+  animation-delay: 1420ms;
+  animation-fill-mode: backwards;
+}
+
+.letter-appearence4 {
+  animation: letterAppearence 600ms linear;
+  animation-delay: 1460ms;
+  animation-fill-mode: backwards;
+}
+
+.letter-appearence5 {
+  animation: letterAppearence 600ms linear;
+  animation-delay: 1500ms;
+  animation-fill-mode: backwards;
+}
+
+.letter-appearence6 {
+  animation: letterAppearence 600ms linear;
+  animation-delay: 1540ms;
+  animation-fill-mode: backwards;
+}
+
+.letter-appearence7 {
+  animation: letterAppearence 600ms linear;
+  animation-delay: 1580ms;
+  animation-fill-mode: backwards;
+}
+
+.letter-appearence8 {
+  animation: letterAppearence 600ms linear;
+  animation-delay: 1620ms;
+  animation-fill-mode: backwards;
+}
+
+.letter-appearence9 {
+  animation: letterAppearence 600ms linear;
+  animation-delay: 1660ms;
+  animation-fill-mode: backwards;
+}
+
+.letter-appearence10 {
+  animation: letterAppearence 600ms linear;
+  animation-delay: 1700ms;
+  animation-fill-mode: backwards;
+}
+
+.letter-appearence11 {
+  animation: letterAppearence 600ms linear;
+  animation-delay: 1740ms;
+  animation-fill-mode: backwards;
+}
+
+.letter-appearence12 {
+  animation: letterAppearence 600ms linear;
+  animation-delay: 1780ms;
+  animation-fill-mode: backwards;
+}
+
+.letter-appearence13 {
+  animation: letterAppearence 600ms linear;
+  animation-delay: 1820ms;
+  animation-fill-mode: backwards;
+}
+
+.letter-appearence14 {
+  animation: letterAppearence 600ms linear;
+  animation-delay: 1860ms;
+  animation-fill-mode: backwards;
+}
+
+.letter-appearence15 {
+  animation: letterAppearence 600ms linear;
+  animation-delay: 1900ms;
+  animation-fill-mode: backwards;
+}
+
+.letter-appearence16 {
+  animation: letterAppearence 600ms linear;
+  animation-delay: 1940ms;
+  animation-fill-mode: backwards;
+}
+
+.letter-appearence17 {
+  animation: letterAppearence 600ms linear;
+  animation-delay: 1980ms;
+  animation-fill-mode: backwards;
+}
+
+.letter-appearence18 {
+  animation: letterAppearence 600ms linear;
+  animation-delay: 2020ms;
+  animation-fill-mode: backwards;
+}
+
+.letter-appearence19 {
+  animation: letterAppearence 600ms linear;
+  animation-delay: 2060ms;
+  animation-fill-mode: backwards;
+}
+
+.letter-appearence20 {
+  animation: letterAppearence 600ms linear;
+  animation-delay: 2100ms;
+  animation-fill-mode: backwards;
+}
+
+.letter-appearence21 {
+  animation: letterAppearence 600ms linear;
+  animation-delay: 2140ms;
+  animation-fill-mode: backwards;
+}
+
+.letter-appearence22 {
+  animation: letterAppearence 600ms linear;
+  animation-delay: 2180ms;
+  animation-fill-mode: backwards;
+}
+
+.letter-appearence23 {
+  animation: letterAppearence 600ms linear;
+  animation-delay: 2220ms;
+  animation-fill-mode: backwards;
+}
+
+.letter-appearence24 {
+  animation: letterAppearence 600ms linear;
+  animation-delay: 2260ms;
+  animation-fill-mode: backwards;
+}
+
+.letter-appearence25 {
+  animation: letterAppearence 600ms linear;
+  animation-delay: 2300ms;
+  animation-fill-mode: backwards;
+}
+
+.letter-appearence26 {
+  animation: letterAppearence 600ms linear;
+  animation-delay: 2340ms;
+  animation-fill-mode: backwards;
+}
+
+.letter-appearence27 {
+  animation: letterAppearence 600ms linear;
+  animation-delay: 2380ms;
+  animation-fill-mode: backwards;
+}
+
+.letter-appearence28 {
+  animation: letterAppearence 600ms linear;
+  animation-delay: 2420ms;
+  animation-fill-mode: backwards;
+}
+
+.letter-appearence29 {
+  animation: letterAppearence 600ms linear;
+  animation-delay: 2460ms;
+  animation-fill-mode: backwards;
+}
+
+.letter-appearence30 {
+  animation: letterAppearence 600ms linear;
+  animation-delay: 2500ms;
+  animation-fill-mode: backwards;
+}
+
+.letter-appearence31 {
+  animation: letterAppearence 600ms linear;
+  animation-delay: 2540ms;
+  animation-fill-mode: backwards;
+}
+
+.letter-appearence32 {
+  animation: letterAppearence 600ms linear;
+  animation-delay: 2580ms;
+  animation-fill-mode: backwards;
+}
+
+.letter-appearence33 {
+  animation: letterAppearence 600ms linear;
+  animation-delay: 2620ms;
+  animation-fill-mode: backwards;
+}
+
+.letter-appearence34 {
+  animation: letterAppearence 600ms linear;
+  animation-delay: 2660ms;
+  animation-fill-mode: backwards;
+}
+
+.letter-appearence35 {
+  animation: letterAppearence 600ms linear;
+  animation-delay: 2700ms;
+  animation-fill-mode: backwards;
+}
+
+.letter-appearence36 {
+  animation: letterAppearence 600ms linear;
+  animation-delay: 2740ms;
+  animation-fill-mode: backwards;
+}
+
+.letter-appearence37 {
+  animation: letterAppearence 600ms linear;
+  animation-delay: 2780ms;
+  animation-fill-mode: backwards;
+}
+
+.letter-appearence38 {
+  animation: letterAppearence 600ms linear;
+  animation-delay: 2820ms;
+  animation-fill-mode: backwards;
+}
+
+.letter-appearence39 {
+  animation: letterAppearence 600ms linear;
+  animation-delay: 2860ms;
+  animation-fill-mode: backwards;
+}
+
+.letter-appearence40 {
+  animation: letterAppearence 600ms linear;
+  animation-delay: 2900ms;
+  animation-fill-mode: backwards;
+}
+
+.letter-appearence41 {
+  animation: letterAppearence 600ms linear;
+  animation-delay: 2940ms;
+  animation-fill-mode: backwards;
+}
+
+.letter-appearence42 {
+  animation: letterAppearence 600ms linear;
+  animation-delay: 2980ms;
+  animation-fill-mode: backwards;
+}
+
+.letter-appearence43 {
+  animation: letterAppearence 600ms linear;
+  animation-delay: 3020ms;
+  animation-fill-mode: backwards;
+}
+
+/* Profil photo */
+.photo-border-introduction {
+  position: absolute;
+  top: 0px !important;
+  bottom: none !important;
+  left: 0px !important;
+  right: none !important;
+  transition: all 400ms;
+  width: 50%;
+  height: 714px !important;
+}
+
+.photo-border-softskills {
+  position: absolute;
+  top: 120px !important;
+  bottom: none !important;
+  left: 150px !important;
+  right: none !important;
+  transition: all 400ms;
+  border-radius: 5px;
+  width: 30%;
+  height: 550px !important;
+}
+
+.photo-introduction {
+  width: 770px;
+  height: none !important;
+}
+
+.photo-softskills {
+  width: 570px;
+  height: none !important;
+}
+
+/* Text soft skills */
+.softSkills-text-introduction {
+  position: fixed;
+  top: 350px !important;
+  bottom: none !important;
+  left: none !important;
+  right: 5% !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 400ms;
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 50%;
+  height: 250px !important;
+}
+
+.softSkills-text-displayed {
+  position: absolute;
+  top: 150px !important;
+  bottom: none !important;
+  left: none !important;
+  right: 8% !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 400ms;
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 45%;
+  height: 500px !important;
+}
+
+.page-title {
+  gap: 7px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 70%;
+  height: 200px !important;
+  color: white;
+  font-family: "Bellefair", serif;
+  font-size: 44px;
+  font-weight: normal;
+  line-height: 70px;
+  animation: titleAppearence 400ms linear;
+  animation-delay: 0ms;
+  animation-fill-mode: backwards;
+}
+
+@keyframes titleAppearence {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.softSkills-text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  position: absolute;
+  top: 50px !important;
+  bottom: none !important;
+  left: none !important;
+  right: none !important;
+  width: 90%;
+  height: 400px !important;
+  /*border: 1px red solid;*/
+  overflow: hidden;
+}
+
+.softSkills-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  height: 800px !important;
+  color: white;
+  font-family: "Bellefair", serif;
+  font-size: 18px;
+  font-weight: normal;
+  text-align: justify;
+  /*border: 1px green solid;*/
+}/*# sourceMappingURL=Softskills.css.map */

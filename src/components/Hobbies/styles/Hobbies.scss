@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
+@import "../../../Mixins/Mixin";
+@import "../../../Parameters/Parameters";
+
+.hobbies-title-box {
+    @include position-package(absolute, 134px+10*$FrameHeight, none, 5%, none);
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 0, 0, 0.7);
+    @include dimensions(30%, 100px);
+}
+
+.hobbies-title {
+    color: white;
+    @include syntaxe-bellefair(38px, normal);
+}
+
+.hobbies {
+    @include position-package(absolute, 214px+10*$FrameHeight, none, none, 5%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include dimensions(60%, 400px);
+    background-color: rgb(255, 255, 255, 0.6);
+    @include padding-package(none, none, 3%, 3%);
+}
+
+.subnavigation3{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include dimensions(60%, none);
+}
+
+.submenu-link-logo-photo{
+    text-decoration: none;
+}
+
+.submenu-link-logo-paint{
+    text-decoration: none;
+}
+
+.border-logo-paint{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include dimensions(200px, 200px);
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.logo-page-paint{
+    @include margin-package(180px, none, 105px, none);
+    @include dimensions(450px, none);
+}
+
+.border-logo-photo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include dimensions(200px, 200px);
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.logo-page-photo{
+    @include dimensions(300px, none);
+}
+
+.logo-paint-title{
+    color: #141929;
+    @include syntaxe-bellefair(18px, normal);
+}
+
+.logo-photo-title{
+    color: #141929;
+    @include syntaxe-bellefair(18px, normal);
+}

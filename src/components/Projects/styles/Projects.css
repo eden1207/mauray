@@ -1,0 +1,209 @@
+@import url("https://fonts.googleapis.com/css2?family=Bellefair&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bellefair&display=swap");
+.projects-title-box {
+  position: absolute;
+  top: 6530px !important;
+  bottom: none !important;
+  left: 5% !important;
+  right: none !important;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 30%;
+  height: 100px !important;
+}
+
+.projects-title {
+  color: white;
+  font-family: "Bellefair", serif;
+  font-size: 38px;
+  font-weight: normal;
+}
+
+.projects {
+  position: absolute;
+  top: 6610px !important;
+  bottom: none !important;
+  left: none !important;
+  right: 5% !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.6);
+  width: 60%;
+  height: 490px !important;
+  padding-top: none !important;
+  padding-bottom: none !important;
+  padding-left: 3%;
+  padding-right: 3%;
+}
+
+.projects-list1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: none !important;
+  margin-bottom: none !important;
+  margin-left: 5%;
+  margin-right: none;
+  color: black;
+  font-family: "Bellefair", serif;
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.projects-list2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: none !important;
+}
+
+.projects-list1-title {
+  color: black;
+  font-family: "Bellefair", serif;
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.projects-list2-title {
+  color: black;
+  font-family: "Bellefair", serif;
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.subnavigation1 {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  -moz-column-gap: 1%;
+       column-gap: 1%;
+  row-gap: 10px;
+}
+
+.subnavigation2 {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: none !important;
+  margin-bottom: none !important;
+  margin-left: 10%;
+  margin-right: none;
+  -moz-column-gap: 5%;
+       column-gap: 5%;
+  width: 100%;
+  height: none !important;
+}
+
+.submenu-link1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 80px !important;
+  text-decoration: none;
+}
+
+.submenu-link2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 150px !important;
+  text-decoration: none;
+}
+
+.submenu-link2-logo-website {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 150pxpx !important;
+  text-decoration: none;
+  line-height: 2px;
+}
+
+.logo-booki {
+  width: 80px;
+  height: none !important;
+}
+
+.logo-ohmyfood {
+  width: 130px;
+  height: none !important;
+}
+
+.logo-gameon {
+  width: 120px;
+  height: none !important;
+}
+
+.logo-fisheye {
+  width: 110px;
+  height: none !important;
+}
+
+.logo-les-petits-plats {
+  width: 130px;
+  height: none !important;
+}
+
+.logo-kasa {
+  width: 90px;
+  height: none !important;
+}
+
+.logo-sportsee {
+  width: 130px;
+  height: none !important;
+}
+
+.logo-argentbank {
+  width: 130px;
+  height: none !important;
+}
+
+.logo-hrnet {
+  width: 70px;
+  height: none !important;
+}
+
+.border-logo-website {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  overflow: hidden;
+  width: 90px;
+  height: 90px !important;
+}
+
+.logo-page-web-title {
+  color: #141929;
+  font-family: "Bellefair", serif;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.logo-page-web {
+  width: 150px;
+  height: none !important;
+}
+
+.logo-ghibli {
+  width: 150px;
+  height: none !important;
+}
+
+.logo-leo-paul-berthaut {
+  width: 80px;
+  height: none !important;
+}/*# sourceMappingURL=Projects.css.map */
