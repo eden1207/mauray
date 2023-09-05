@@ -5,7 +5,6 @@
 .formation-title-box {
     @include position-package(absolute, 94px+5*$FrameHeight, none, 5%, none);
     z-index: 1;
-    display: flex;
     justify-content: center;
     align-items: center;
     background-color: rgb(0, 0, 0, 0.7);
@@ -19,7 +18,6 @@
 
 .formation {
     @include position-package(absolute, 174px+5*$FrameHeight, none, none, 5%);
-    display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
@@ -56,4 +54,38 @@
     color: black;
     @include dimensions(75%, 60px);
     /*border: 1px blue solid;*/
+}
+
+/*animation*/
+
+@keyframes formationTitleAppearence{
+    from{
+        transform: translateX(-1000px);
+    }
+
+    to{
+        transform: translateX(0px);
+    }
+}
+
+.formation-title-appearence {
+    animation: formationTitleAppearence 1300ms linear;
+    animation-delay: 0ms;
+    animation-fill-mode: backwards;
+}
+
+@keyframes formationTextAppearence{
+    from{
+        opacity: 0;
+    }
+
+    to{
+        opacity: 1;
+    }
+}
+
+.formation-text-appearence {
+    animation: formationTextAppearence 1300ms linear;
+    animation-delay: 0ms;
+    animation-fill-mode: backwards;
 }

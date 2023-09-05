@@ -7,7 +7,6 @@
   left: 5% !important;
   right: none !important;
   z-index: 1;
-  display: flex;
   justify-content: center;
   align-items: center;
   background-color: rgba(0, 0, 0, 0.7);
@@ -29,7 +28,6 @@
   bottom: none !important;
   left: none !important;
   right: 5% !important;
-  display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
@@ -165,4 +163,33 @@
 .logo-espagnol {
   width: 30px;
   height: auto !important;
+}
+
+/*animation*/
+@keyframes skillsTitleAppearence {
+  from {
+    transform: translateX(-1000px);
+  }
+  to {
+    transform: translateX(0px);
+  }
+}
+.skills-title-appearence {
+  animation: skillsTitleAppearence 1300ms linear;
+  animation-delay: 0ms;
+  animation-fill-mode: backwards;
+}
+
+@keyframes skillsTextAppearence {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.skills-text-appearence {
+  animation: skillsTextAppearence 1300ms linear;
+  animation-delay: 0ms;
+  animation-fill-mode: backwards;
 }/*# sourceMappingURL=Skills.css.map */

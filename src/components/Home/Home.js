@@ -15,7 +15,7 @@ export default function Home() {
     return(
         <div className='home home_dimensions home_aspect'>
             <Header />
-            <div className='main'>
+            <main className='main'>
                 <Softskills />
                 <Skills />
                 <Formation />
@@ -24,8 +24,8 @@ export default function Home() {
                 <Animation />
                 <Projects />
                 <Hobbies />
-                <Footer />
-            </div>
+            </main>
+            <Footer />
         </div>
     )
 }

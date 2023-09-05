@@ -1,12 +1,42 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './styles/Footer.css';
 
 import linkedin from '../../assets/linkedin.png'
 import github from '../../assets/github.png'
 
 export default function Footer() {
+    const [displayFooter, setDisplayFooter] = useState('none');
+    const [footerHeight, setFooterHeight] = useState(75);
+    window.addEventListener('scroll', () => {
+        const { scrollTop } = document.documentElement;
+        console.log(scrollTop)
+
+        /** Transition cards appearence */
+        if(scrollTop > 7100) {
+            setDisplayFooter('flex');
+        }
+
+        if(scrollTop < 7100) {
+            setDisplayFooter('none');
+        }
+
+        /** Transition cards size */
+        if(scrollTop > 7200) {
+            setFooterHeight(150);
+        }
+
+        if(scrollTop < 7200) {
+            setFooterHeight(75);
+        }
+    });
     return(
-        <footer className='footer'>
+        <footer 
+            className='footer'
+            style = {{
+                display: displayFooter,
+                height: footerHeight,
+            }}
+        >
             <a 
                 target='_blank' 
                 rel="noreferrer" 

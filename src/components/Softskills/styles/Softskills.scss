@@ -177,5 +177,6 @@ $letterDelay: 40ms;
     color: white;
     @include syntaxe-bellefair(18px, normal);
     text-align: justify;
+    @include padding-package(none, none, 30px, 10px);
     /*border: 1px green solid;*/
 }

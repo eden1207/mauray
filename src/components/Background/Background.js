@@ -1,11 +1,37 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './styles/Background.css';
 
 export default function Background() {
+    const [displayBackgroundCardTitle, setDisplayBackgroundCardTitle] = useState('none');
+    const [displayBackgroundCard, setDisplayBackgroundCard] = useState('none');
+    window.addEventListener('scroll', () => {
+        const { scrollTop } = document.documentElement;
+
+        /** Transition cards appearence */
+        if(scrollTop > 3928) {
+            setDisplayBackgroundCardTitle('flex');
+        }
+
+        if(scrollTop > 3978) {
+            setDisplayBackgroundCard('flex');
+        }
+    });
     return(
         <React.Fragment>
-            <div className='background-title-box'><h2 className='background-title'>Expériences professionnelles</h2></div>
-            <div className='background'>
+            <div 
+                className='background-title-box background-title-appearence'
+                style = {{
+                    display: displayBackgroundCardTitle
+                }}
+            >
+                <h2 className='background-title'>Expériences professionnelles</h2>
+            </div>
+            <div 
+                className='background background-text-appearence'
+                style = {{
+                    display: displayBackgroundCard
+                }}
+            >
                 <div className='background-line'>
                     <p className='background-date'>2018-2021 <br/>Rennes</p>
                     <p className='background-content'>

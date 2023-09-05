@@ -19,6 +19,5 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    @include dimensions(100%, $NumberOfFrames*$FrameHeight);
-    /*border: 1px red solid;*/
+    @include dimensions(100%, $NumberOfFrames*$FrameHeight+150px);
 }

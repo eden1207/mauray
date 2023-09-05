@@ -5,7 +5,6 @@
 .projects-title-box {
     @include position-package(absolute, 104px+9*$FrameHeight, none, 5%, none);
     z-index: 1;
-    display: flex;
     justify-content: center;
     align-items: center;
     background-color: rgb(0, 0, 0, 0.7);
@@ -19,7 +18,6 @@
 
 .projects {
     @include position-package(absolute, 184px+9*$FrameHeight, none, none, 5%);
-    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -159,4 +157,38 @@
 
 .logo-leo-paul-berthaut{
     @include dimensions(80px, none);
+}
+
+/*animation*/
+
+@keyframes projectsTitleAppearence{
+    from{
+        transform: translateX(-1000px);
+    }
+
+    to{
+        transform: translateX(0px);
+    }
+}
+
+.projects-title-appearence {
+    animation: projectsTitleAppearence 1300ms linear;
+    animation-delay: 0ms;
+    animation-fill-mode: backwards;
+}
+
+@keyframes projectsTextAppearence{
+    from{
+        opacity: 0;
+    }
+
+    to{
+        opacity: 1;
+    }
+}
+
+.projects-text-appearence {
+    animation: projectsTextAppearence 1300ms linear;
+    animation-delay: 0ms;
+    animation-fill-mode: backwards;
 }

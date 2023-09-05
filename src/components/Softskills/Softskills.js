@@ -11,8 +11,6 @@ export default function Softskills() {
     const [isSoftSkillsTextOpen, setIsSoftSkillsTextOpen] = useState(false);
     const [textOpacity, setTextOpacity] = useState(0);
     const [softSkillsScrollBar, setSoftSkillsScrollBar] = useState('none');
-    const [softSkillsPaddingLeft, setSoftSkillsPaddingLeft] = useState(30);
-    const [softSkillsPaddingRight, setSoftSkillsPaddingRight] = useState(10);
     window.addEventListener('scroll', () => {
         const { scrollTop } = document.documentElement;
         const scrollOpacityMin = 100;
@@ -50,17 +48,13 @@ export default function Softskills() {
         /** Scroll Soft skills text */
         if(scrollTop < 1428) {
             setSoftSkillsScrollBar('none');
-            setSoftSkillsPaddingLeft(30);
-            setSoftSkillsPaddingRight(10);
         }
 
         if(1428 < scrollTop) {
             setSoftSkillsScrollBar('scroll');
-            setSoftSkillsPaddingLeft(30);
-            setSoftSkillsPaddingRight(10);
         }
 
-        /** Transition avoiding to scroll the first part of the website page */
+        /** Transition avoiding to scroll of the first part of the website page */
         if(scrollTop > 2142) {
             setSoftSkills('softSkillsDisplayed');
         }
@@ -93,8 +87,6 @@ export default function Softskills() {
                                     style = {{
                                         opacity: textOpacity,
                                         overflowY: softSkillsScrollBar,
-                                        paddingLeft: softSkillsPaddingLeft,
-                                        paddingRight: softSkillsPaddingRight,
                                     }}
                                 >
                                     <p>

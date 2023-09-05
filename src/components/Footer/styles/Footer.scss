@@ -3,11 +3,10 @@
 @import "../../../Parameters/Parameters";
 
 .footer{
-    @include position-package(absolute, none, 0px, none, none);
-    display: flex;
+    @include position-package(fixed, none, 0px, none, none);
     justify-content: space-around;
     align-items: center;
-    @include dimensions(100%, 150px);
+    @include dimensions(100%, none);
     background-color: black;
 }
 

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './styles/Skills.css';
 import logo_html from '../../assets/html.png';
 import logo_css from '../../assets/css.png';
@@ -17,10 +17,36 @@ import logo_anglais from '../../assets/anglais.png';
 import logo_espagnol from '../../assets/espagnol.png';
 
 export default function Skills() {
+    const [displaySkillsCardTitle, setDisplaySkillsCardTitle] = useState('none');
+    const [displaySkillsCard, setDisplaySkillsCard] = useState('none');
+    window.addEventListener('scroll', () => {
+        const { scrollTop } = document.documentElement;
+
+        /** Transition cards appearence */
+        if(scrollTop > 2500) {
+            setDisplaySkillsCardTitle('flex');
+        }
+
+        if(scrollTop > 2550) {
+            setDisplaySkillsCard('flex');
+        }
+    });
     return(
         <React.Fragment>
-            <div className='skills-title-box'><h2 className='skills-title'>Mes compétences</h2></div>
-            <div className='skills'>
+            <div 
+                className='skills-title-box skills-title-appearence'
+                style = {{
+                    display: displaySkillsCardTitle
+                }}
+            >
+                <h2 className='skills-title'>Mes compétences</h2>
+            </div>
+            <div 
+                className='skills skills-text-appearence'
+                style = {{
+                    display: displaySkillsCard
+                }}
+            >
                 <div className='skills-lists-group'>
                     <div className='skills-list'>
                         <h2 className='skills-list-title'>Langages de programmation</h2>

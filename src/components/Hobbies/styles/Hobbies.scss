@@ -5,7 +5,6 @@
 .hobbies-title-box {
     @include position-package(absolute, 134px+10*$FrameHeight, none, 5%, none);
     z-index: 1;
-    display: flex;
     justify-content: center;
     align-items: center;
     background-color: rgb(0, 0, 0, 0.7);
@@ -19,7 +18,6 @@
 
 .hobbies {
     @include position-package(absolute, 214px+10*$FrameHeight, none, none, 5%);
-    display: flex;
     justify-content: center;
     align-items: center;
     @include dimensions(60%, 400px);
@@ -77,4 +75,38 @@
 .logo-photo-title{
     color: #141929;
     @include syntaxe-bellefair(18px, normal);
+}
+
+/*animation*/
+
+@keyframes hobbiesTitleAppearence{
+    from{
+        transform: translateX(-1000px);
+    }
+
+    to{
+        transform: translateX(0px);
+    }
+}
+
+.hobbies-title-appearence {
+    animation: hobbiesTitleAppearence 1300ms linear;
+    animation-delay: 0ms;
+    animation-fill-mode: backwards;
+}
+
+@keyframes hobbiesTextAppearence{
+    from{
+        opacity: 0;
+    }
+
+    to{
+        opacity: 1;
+    }
+}
+
+.hobbies-text-appearence {
+    animation: hobbiesTextAppearence 1300ms linear;
+    animation-delay: 0ms;
+    animation-fill-mode: backwards;
 }

@@ -450,5 +450,9 @@
   font-size: 18px;
   font-weight: normal;
   text-align: justify;
+  padding-top: none !important;
+  padding-bottom: none !important;
+  padding-left: 30px;
+  padding-right: 10px;
   /*border: 1px green solid;*/
 }/*# sourceMappingURL=Softskills.css.map */
