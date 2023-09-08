@@ -27,34 +27,25 @@
   bottom: none !important;
   left: none !important;
   right: 5% !important;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  width: 60%;
+  width: 44%;
   height: 400px !important;
   background-color: rgba(255, 255, 255, 0.6);
   padding-top: none !important;
   padding-bottom: none !important;
-  padding-left: 3%;
-  padding-right: 3%;
+  padding-left: 11%;
+  padding-right: 11%;
 }
 
-.subnavigation3 {
+.hobbies-element {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  width: 60%;
-  height: none !important;
 }
 
-.submenu-link-logo-photo {
-  text-decoration: none;
-}
-
-.submenu-link-logo-paint {
-  text-decoration: none;
-}
-
-.border-logo-paint {
+.border-logo-photo {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -62,6 +53,12 @@
   height: 200px !important;
   overflow: hidden;
   border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  transition: all 400ms;
+}
+.border-logo-photo:hover {
+  transform: scale(1.05);
 }
 
 .logo-page-paint {
@@ -73,29 +70,12 @@
   height: none !important;
 }
 
-.border-logo-photo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 200px;
-  height: 200px !important;
-  overflow: hidden;
-  border-radius: 50%;
-}
-
 .logo-page-photo {
   width: 300px;
   height: none !important;
 }
 
-.logo-paint-title {
-  color: #141929;
-  font-family: "Bellefair", serif;
-  font-size: 18px;
-  font-weight: normal;
-}
-
-.logo-photo-title {
+.logo-title {
   color: #141929;
   font-family: "Bellefair", serif;
   font-size: 18px;

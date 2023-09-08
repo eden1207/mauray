@@ -12,7 +12,6 @@ import logo_latex from '../../assets/latex.png';
 import logo_photoshop from '../../assets/photoshop.png';
 import logo_figma from '../../assets/figma.png';
 import logo_git from '../../assets/git.png';
-import logo_francais from '../../assets/francais.png';
 import logo_anglais from '../../assets/anglais.png';
 import logo_espagnol from '../../assets/espagnol.png';
 
@@ -109,10 +108,6 @@ export default function Skills() {
                     </div>
                     <div className='skills-list'>
                         <h2 className='skills-list-title'>Langues vivantes</h2>
-                        <div className='skills-list-element'>
-                            <div className='skills-list-element-logo'><img src={logo_francais} alt='Français' className='logo-francais' /></div>
-                            <div className='skills-list-element-text'>Français (langue maternelle)</div>
-                        </div>
                         <div className='skills-list-element'>
                             <div className='skills-list-element-logo'><img src={logo_anglais} alt='Anglais' className='logo-anglais' /></div>
                             <div className='skills-list-element-text'>Anglais (courant)</div>

@@ -8,6 +8,25 @@
     align-items: center;
     @include dimensions(100%, none);
     background-color: black;
+    transition: all 200ms;
+}
+
+.footer-appearence {
+    animation-name: footerAppearence;
+    animation-duration: 200ms;
+    animation-fill-mode: backwards;
+}
+
+@keyframes footerAppearence {
+    from {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0px);
+        opacity: 1;
+    }
 }
 
 .footer-link{

@@ -9,7 +9,6 @@ export default function Footer() {
     const [footerHeight, setFooterHeight] = useState(75);
     window.addEventListener('scroll', () => {
         const { scrollTop } = document.documentElement;
-        console.log(scrollTop)
 
         /** Transition cards appearence */
         if(scrollTop > 7100) {
@@ -31,7 +30,7 @@ export default function Footer() {
     });
     return(
         <footer 
-            className='footer'
+            className='footer footer-appearence'
             style = {{
                 display: displayFooter,
                 height: footerHeight,

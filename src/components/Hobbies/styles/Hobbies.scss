@@ -18,40 +18,18 @@
 
 .hobbies {
     @include position-package(absolute, 214px+10*$FrameHeight, none, none, 5%);
-    justify-content: center;
-    align-items: center;
-    @include dimensions(60%, 400px);
-    background-color: rgb(255, 255, 255, 0.6);
-    @include padding-package(none, none, 3%, 3%);
-}
-
-.subnavigation3{
-    display: flex;
     justify-content: space-between;
     align-items: center;
-    @include dimensions(60%, none);
+    @include dimensions(44%, 400px);
+    background-color: rgb(255, 255, 255, 0.6);
+    @include padding-package(none, none, 11%, 11%);
 }
 
-.submenu-link-logo-photo{
-    text-decoration: none;
-}
-
-.submenu-link-logo-paint{
-    text-decoration: none;
-}
-
-.border-logo-paint{
+.hobbies-element {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    @include dimensions(200px, 200px);
-    overflow: hidden;
-    border-radius: 50%;
-}
-
-.logo-page-paint{
-    @include margin-package(180px, none, 105px, none);
-    @include dimensions(450px, none);
 }
 
 .border-logo-photo{
@@ -61,18 +39,24 @@
     @include dimensions(200px, 200px);
     overflow: hidden;
     border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    transition: all 400ms;
+    &:hover {
+        transform: scale(1.05);
+    }
+}
+
+.logo-page-paint {
+    @include margin-package(180px, none, 105px, none);
+    @include dimensions(450px, none);
 }
 
 .logo-page-photo{
     @include dimensions(300px, none);
 }
 
-.logo-paint-title{
-    color: #141929;
-    @include syntaxe-bellefair(18px, normal);
-}
-
-.logo-photo-title{
+.logo-title{
     color: #141929;
     @include syntaxe-bellefair(18px, normal);
 }
