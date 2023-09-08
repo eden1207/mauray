@@ -1,43 +1,142 @@
 @import url("https://fonts.googleapis.com/css2?family=Bellefair&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bellefair&display=swap");
 .skills-title-box {
-  position: absolute;
-  top: 2950px !important;
-  bottom: none !important;
-  left: 5% !important;
-  right: none !important;
   z-index: 1;
   justify-content: center;
   align-items: center;
   background-color: rgba(0, 0, 0, 0.7);
-  width: 30%;
-  height: 100px !important;
+}
+@media all and (min-width: 992px) {
+  .skills-title-box {
+    position: absolute;
+    top: 2950px !important;
+    bottom: none !important;
+    left: 5% !important;
+    right: none !important;
+    width: 30%;
+    height: 100px !important;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 991px) {
+  .skills-title-box {
+    position: absolute;
+    top: 2966px !important;
+    bottom: none !important;
+    left: 4% !important;
+    right: none !important;
+    width: 35%;
+    height: 80px !important;
+  }
+}
+@media all and (min-width: 441px) and (max-width: 767px) {
+  .skills-title-box {
+    position: absolute;
+    top: 2980px !important;
+    bottom: none !important;
+    left: 3% !important;
+    right: none !important;
+    width: 40%;
+    height: 60px !important;
+  }
+}
+@media all and (max-width: 440px) {
+  .skills-title-box {
+    position: absolute;
+    top: 2990px !important;
+    bottom: none !important;
+    left: 2% !important;
+    right: none !important;
+    width: 55%;
+    height: 50px !important;
+  }
 }
 
 .skills-title {
   z-index: 1;
   color: white;
-  font-family: "Bellefair", serif;
-  font-size: 38px;
-  font-weight: normal;
+}
+@media all and (min-width: 992px) {
+  .skills-title {
+    font-family: "Bellefair", serif;
+    font-size: 38px;
+    font-weight: normal;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 991px) {
+  .skills-title {
+    font-family: "Bellefair", serif;
+    font-size: 32px;
+    font-weight: normal;
+  }
+}
+@media all and (min-width: 441px) and (max-width: 767px) {
+  .skills-title {
+    font-family: "Bellefair", serif;
+    font-size: 26px;
+    font-weight: normal;
+  }
+}
+@media all and (max-width: 440px) {
+  .skills-title {
+    font-family: "Bellefair", serif;
+    font-size: 20px;
+    font-weight: normal;
+  }
 }
 
 .skills {
-  position: absolute;
-  top: 3030px !important;
-  bottom: none !important;
-  left: none !important;
-  right: 5% !important;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
   background-color: rgba(255, 255, 255, 0.6);
-  width: 60%;
-  height: 520px !important;
   padding-top: none !important;
   padding-bottom: none !important;
   padding-left: 3%;
   padding-right: 3%;
+}
+@media all and (min-width: 992px) {
+  .skills {
+    position: absolute;
+    top: 3030px !important;
+    bottom: none !important;
+    left: none !important;
+    right: 5% !important;
+    width: 60%;
+    height: 520px !important;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 991px) {
+  .skills {
+    position: absolute;
+    top: 3030px !important;
+    bottom: none !important;
+    left: none !important;
+    right: 4% !important;
+    width: 70%;
+    height: 520px !important;
+  }
+}
+@media all and (min-width: 441px) and (max-width: 767px) {
+  .skills {
+    position: absolute;
+    top: 3030px !important;
+    bottom: none !important;
+    left: none !important;
+    right: 3% !important;
+    width: 75%;
+    height: 520px !important;
+  }
+}
+@media all and (max-width: 440px) {
+  .skills {
+    position: absolute;
+    top: 3030px !important;
+    bottom: none !important;
+    left: none !important;
+    right: 2% !important;
+    width: 82%;
+    height: 520px !important;
+  }
 }
 
 .skills-lists-group {
@@ -50,12 +149,36 @@
 }
 
 .skills-list-title {
-  font-family: "Bellefair", serif;
-  font-size: 24px;
-  font-weight: normal;
   color: black;
   text-align: left;
-  /*border: 1px red solid;*/
+}
+@media all and (min-width: 992px) {
+  .skills-list-title {
+    font-family: "Bellefair", serif;
+    font-size: 24px;
+    font-weight: normal;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 991px) {
+  .skills-list-title {
+    font-family: "Bellefair", serif;
+    font-size: 22px;
+    font-weight: normal;
+  }
+}
+@media all and (min-width: 441px) and (max-width: 767px) {
+  .skills-list-title {
+    font-family: "Bellefair", serif;
+    font-size: 18px;
+    font-weight: normal;
+  }
+}
+@media all and (max-width: 440px) {
+  .skills-list-title {
+    font-family: "Bellefair", serif;
+    font-size: 14px;
+    font-weight: normal;
+  }
 }
 
 .skills-list {
@@ -72,12 +195,40 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  font-family: "Bellefair", serif;
-  font-size: 18px;
-  font-weight: normal;
   color: black;
   /*border: 1px green solid;*/
-  gap: 20px;
+}
+@media all and (min-width: 992px) {
+  .skills-list-element {
+    font-family: "Bellefair", serif;
+    font-size: 18px;
+    font-weight: normal;
+    gap: 20px;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 991px) {
+  .skills-list-element {
+    font-family: "Bellefair", serif;
+    font-size: 16px;
+    font-weight: normal;
+    gap: 15px;
+  }
+}
+@media all and (min-width: 441px) and (max-width: 767px) {
+  .skills-list-element {
+    font-family: "Bellefair", serif;
+    font-size: 14px;
+    font-weight: normal;
+    gap: 10px;
+  }
+}
+@media all and (max-width: 440px) {
+  .skills-list-element {
+    font-family: "Bellefair", serif;
+    font-size: 12px;
+    font-weight: normal;
+    gap: 5px;
+  }
 }
 
 .skills-list-element-logo {
@@ -90,79 +241,354 @@
   border: 5px;
 }
 
-.logo-html {
-  width: 33px;
-  height: auto !important;
+@media all and (min-width: 992px) {
+  .logo-html {
+    width: 33px;
+    height: auto !important;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 991px) {
+  .logo-html {
+    width: 30px;
+    height: auto !important;
+  }
+}
+@media all and (min-width: 441px) and (max-width: 767px) {
+  .logo-html {
+    width: 28px;
+    height: auto !important;
+  }
+}
+@media all and (max-width: 440px) {
+  .logo-html {
+    width: 25px;
+    height: auto !important;
+  }
 }
 
-.logo-css {
-  width: 23px;
-  height: auto !important;
+@media all and (min-width: 992px) {
+  .logo-css {
+    width: 23px;
+    height: auto !important;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 991px) {
+  .logo-css {
+    width: 22px;
+    height: auto !important;
+  }
+}
+@media all and (min-width: 441px) and (max-width: 767px) {
+  .logo-css {
+    width: 20px;
+    height: auto !important;
+  }
+}
+@media all and (max-width: 440px) {
+  .logo-css {
+    width: 19px;
+    height: auto !important;
+  }
 }
 
-.logo-sass {
-  width: 28px;
-  height: auto !important;
+@media all and (min-width: 992px) {
+  .logo-sass {
+    width: 28px;
+    height: auto !important;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 991px) {
+  .logo-sass {
+    width: 26px;
+    height: auto !important;
+  }
+}
+@media all and (min-width: 441px) and (max-width: 767px) {
+  .logo-sass {
+    width: 24px;
+    height: auto !important;
+  }
+}
+@media all and (max-width: 440px) {
+  .logo-sass {
+    width: 22px;
+    height: auto !important;
+  }
 }
 
-.logo-javascript {
-  width: 25px;
-  height: auto !important;
+@media all and (min-width: 992px) {
+  .logo-javascript {
+    width: 25px;
+    height: auto !important;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 991px) {
+  .logo-javascript {
+    width: 23px;
+    height: auto !important;
+  }
+}
+@media all and (min-width: 441px) and (max-width: 767px) {
+  .logo-javascript {
+    width: 21px;
+    height: auto !important;
+  }
+}
+@media all and (max-width: 440px) {
+  .logo-javascript {
+    width: 19px;
+    height: auto !important;
+  }
 }
 
-.logo-matlab {
-  width: 25px;
-  height: auto !important;
+@media all and (min-width: 992px) {
+  .logo-matlab {
+    width: 25px;
+    height: auto !important;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 991px) {
+  .logo-matlab {
+    width: 23px;
+    height: auto !important;
+  }
+}
+@media all and (min-width: 441px) and (max-width: 767px) {
+  .logo-matlab {
+    width: 21px;
+    height: auto !important;
+  }
+}
+@media all and (max-width: 440px) {
+  .logo-matlab {
+    width: 19px;
+    height: auto !important;
+  }
 }
 
-.logo-react {
-  width: 25px;
-  height: auto !important;
+@media all and (min-width: 992px) {
+  .logo-react {
+    width: 25px;
+    height: auto !important;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 991px) {
+  .logo-react {
+    width: 23px;
+    height: auto !important;
+  }
+}
+@media all and (min-width: 441px) and (max-width: 767px) {
+  .logo-react {
+    width: 21px;
+    height: auto !important;
+  }
+}
+@media all and (max-width: 440px) {
+  .logo-react {
+    width: 19px;
+    height: auto !important;
+  }
 }
 
-.logo-jest {
-  width: 25px;
-  height: auto !important;
+@media all and (min-width: 992px) {
+  .logo-jest {
+    width: 25px;
+    height: auto !important;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 991px) {
+  .logo-jest {
+    width: 23px;
+    height: auto !important;
+  }
+}
+@media all and (min-width: 441px) and (max-width: 767px) {
+  .logo-jest {
+    width: 21px;
+    height: auto !important;
+  }
+}
+@media all and (max-width: 440px) {
+  .logo-jest {
+    width: 19px;
+    height: auto !important;
+  }
 }
 
-.logo-redux {
-  width: 25px;
-  height: auto !important;
+@media all and (min-width: 992px) {
+  .logo-redux {
+    width: 25px;
+    height: auto !important;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 991px) {
+  .logo-redux {
+    width: 23px;
+    height: auto !important;
+  }
+}
+@media all and (min-width: 441px) and (max-width: 767px) {
+  .logo-redux {
+    width: 21px;
+    height: auto !important;
+  }
+}
+@media all and (max-width: 440px) {
+  .logo-redux {
+    width: 19px;
+    height: auto !important;
+  }
 }
 
-.logo-latex {
-  width: 35px;
-  height: auto !important;
+@media all and (min-width: 992px) {
+  .logo-latex {
+    width: 35px;
+    height: auto !important;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 991px) {
+  .logo-latex {
+    width: 30px;
+    height: auto !important;
+  }
+}
+@media all and (min-width: 441px) and (max-width: 767px) {
+  .logo-latex {
+    width: 27px;
+    height: auto !important;
+  }
+}
+@media all and (max-width: 440px) {
+  .logo-latex {
+    width: 25px;
+    height: auto !important;
+  }
 }
 
-.logo-photoshop {
-  width: 25px;
-  height: auto !important;
+@media all and (min-width: 992px) {
+  .logo-photoshop {
+    width: 25px;
+    height: auto !important;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 991px) {
+  .logo-photoshop {
+    width: 23px;
+    height: auto !important;
+  }
+}
+@media all and (min-width: 441px) and (max-width: 767px) {
+  .logo-photoshop {
+    width: 21px;
+    height: auto !important;
+  }
+}
+@media all and (max-width: 440px) {
+  .logo-photoshop {
+    width: 19px;
+    height: auto !important;
+  }
 }
 
-.logo-figma {
-  width: 25px;
-  height: auto !important;
+@media all and (min-width: 992px) {
+  .logo-figma {
+    width: 25px;
+    height: auto !important;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 991px) {
+  .logo-figma {
+    width: 23px;
+    height: auto !important;
+  }
+}
+@media all and (min-width: 441px) and (max-width: 767px) {
+  .logo-figma {
+    width: 21px;
+    height: auto !important;
+  }
+}
+@media all and (max-width: 440px) {
+  .logo-figma {
+    width: 19px;
+    height: auto !important;
+  }
 }
 
-.logo-git {
-  width: 25px;
-  height: auto !important;
+@media all and (min-width: 992px) {
+  .logo-git {
+    width: 25px;
+    height: auto !important;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 991px) {
+  .logo-git {
+    width: 23px;
+    height: auto !important;
+  }
+}
+@media all and (min-width: 441px) and (max-width: 767px) {
+  .logo-git {
+    width: 21px;
+    height: auto !important;
+  }
+}
+@media all and (max-width: 440px) {
+  .logo-git {
+    width: 19px;
+    height: auto !important;
+  }
 }
 
-.logo-francais {
-  width: 30px;
-  height: auto !important;
+@media all and (min-width: 992px) {
+  .logo-anglais {
+    width: 30px;
+    height: auto !important;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 991px) {
+  .logo-anglais {
+    width: 28px;
+    height: auto !important;
+  }
+}
+@media all and (min-width: 441px) and (max-width: 767px) {
+  .logo-anglais {
+    width: 24px;
+    height: auto !important;
+  }
+}
+@media all and (max-width: 440px) {
+  .logo-anglais {
+    width: 22px;
+    height: auto !important;
+  }
 }
 
-.logo-anglais {
-  width: 30px;
-  height: auto !important;
+@media all and (min-width: 992px) {
+  .logo-espagnol {
+    width: 30px;
+    height: auto !important;
+  }
 }
-
-.logo-espagnol {
-  width: 30px;
-  height: auto !important;
+@media all and (min-width: 768px) and (max-width: 991px) {
+  .logo-espagnol {
+    width: 28px;
+    height: auto !important;
+  }
+}
+@media all and (min-width: 441px) and (max-width: 767px) {
+  .logo-espagnol {
+    width: 24px;
+    height: auto !important;
+  }
+}
+@media all and (max-width: 440px) {
+  .logo-espagnol {
+    width: 22px;
+    height: auto !important;
+  }
 }
 
 /*animation*/

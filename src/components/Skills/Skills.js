@@ -71,7 +71,7 @@ export default function Skills() {
                         </div>
                     </div>
                     <div className='skills-list'>
-                    <h2 className='skills-list-title'>Frameworks et librairies</h2>
+                        <h2 className='skills-list-title'>Frameworks et librairies</h2>
                         <div className='skills-list-element'>
                             <div className='skills-list-element-logo'><img src={logo_react} alt='React' className='logo-react' /></div>
                             <div className='skills-list-element-text'>React</div>

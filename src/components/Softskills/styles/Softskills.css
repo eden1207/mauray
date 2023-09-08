@@ -3,7 +3,6 @@
 .softSkills {
   width: 100%;
   height: 714px !important;
-  /*border: 1px green solid;*/
 }
 
 .introduction {
@@ -340,61 +339,242 @@
   left: 0px !important;
   right: none !important;
   transition: all 400ms;
-  width: 50%;
-  height: 714px !important;
+}
+@media all and (min-width: 992px) {
+  .photo-border-introduction {
+    width: 50%;
+    height: 714px !important;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 991px) {
+  .photo-border-introduction {
+    width: 55%;
+    height: 714px !important;
+  }
+}
+@media all and (min-width: 441px) and (max-width: 767px) {
+  .photo-border-introduction {
+    width: 85%;
+    height: 714px !important;
+  }
+}
+@media all and (max-width: 440px) {
+  .photo-border-introduction {
+    width: 90%;
+    height: 714px !important;
+  }
 }
 
 .photo-border-softskills {
-  position: absolute;
-  top: 120px !important;
-  bottom: none !important;
-  left: 150px !important;
-  right: none !important;
   transition: all 400ms;
   border-radius: 5px;
-  width: 30%;
-  height: 550px !important;
+}
+@media all and (min-width: 992px) {
+  .photo-border-softskills {
+    position: absolute;
+    top: 120px !important;
+    bottom: none !important;
+    left: 5% !important;
+    right: none !important;
+    width: 35%;
+    height: 550px !important;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 991px) {
+  .photo-border-softskills {
+    position: absolute;
+    top: 120px !important;
+    bottom: none !important;
+    left: 2% !important;
+    right: none !important;
+    width: 47%;
+    height: 550px !important;
+  }
+}
+@media all and (min-width: 441px) and (max-width: 767px) {
+  .photo-border-softskills {
+    position: absolute;
+    top: 120px !important;
+    bottom: none !important;
+    left: 5% !important;
+    right: none !important;
+    width: 90%;
+    height: 300px !important;
+  }
+}
+@media all and (max-width: 440px) {
+  .photo-border-softskills {
+    position: absolute;
+    top: 120px !important;
+    bottom: none !important;
+    left: 5% !important;
+    right: none !important;
+    width: 90%;
+    height: 300px !important;
+  }
 }
 
-.photo-introduction {
-  width: 770px;
-  height: none !important;
+@media all and (min-width: 992px) {
+  .photo-introduction {
+    width: 770px;
+    height: none !important;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 991px) {
+  .photo-introduction {
+    width: 680px;
+    height: none !important;
+  }
+}
+@media all and (min-width: 441px) and (max-width: 767px) {
+  .photo-introduction {
+    width: 650px;
+    height: none !important;
+  }
+}
+@media all and (max-width: 440px) {
+  .photo-introduction {
+    width: 550px;
+    height: none !important;
+  }
 }
 
-.photo-softskills {
-  width: 570px;
-  height: none !important;
+@media all and (min-width: 992px) {
+  .photo-softskills {
+    width: 570px;
+    height: none !important;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 991px) {
+  .photo-softskills {
+    width: 520px;
+    height: none !important;
+  }
+}
+@media all and (min-width: 441px) and (max-width: 767px) {
+  .photo-softskills {
+    width: 680px;
+    height: none !important;
+    margin-top: 200px !important;
+    margin-bottom: none !important;
+    margin-left: none;
+    margin-right: none;
+  }
+}
+@media all and (max-width: 440px) {
+  .photo-softskills {
+    width: 400px;
+    height: none !important;
+    margin-top: none !important;
+    margin-bottom: none !important;
+    margin-left: none;
+    margin-right: 2%;
+  }
 }
 
 /* Text soft skills */
 .softSkills-text-introduction {
-  position: fixed;
-  top: 350px !important;
-  bottom: none !important;
-  left: none !important;
-  right: 5% !important;
   display: flex;
   justify-content: center;
   align-items: center;
   transition: all 400ms;
   background-color: rgba(0, 0, 0, 0.6);
-  width: 50%;
-  height: 250px !important;
+}
+@media all and (min-width: 992px) {
+  .softSkills-text-introduction {
+    position: fixed;
+    top: 350px !important;
+    bottom: none !important;
+    left: none !important;
+    right: 5% !important;
+    width: 50%;
+    height: 250px !important;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 991px) {
+  .softSkills-text-introduction {
+    position: fixed;
+    top: 400px !important;
+    bottom: none !important;
+    left: none !important;
+    right: 3% !important;
+    width: 65%;
+    height: 180px !important;
+  }
+}
+@media all and (min-width: 441px) and (max-width: 767px) {
+  .softSkills-text-introduction {
+    position: fixed;
+    top: 410px !important;
+    bottom: none !important;
+    left: none !important;
+    right: 3% !important;
+    width: 85%;
+    height: 180px !important;
+  }
+}
+@media all and (max-width: 440px) {
+  .softSkills-text-introduction {
+    position: fixed;
+    top: 420px !important;
+    bottom: none !important;
+    left: none !important;
+    right: 2% !important;
+    width: 90%;
+    height: 160px !important;
+  }
 }
 
 .softSkills-text-displayed {
-  position: absolute;
-  top: 150px !important;
-  bottom: none !important;
-  left: none !important;
-  right: 8% !important;
   display: flex;
   justify-content: center;
   align-items: center;
   transition: all 400ms;
   background-color: rgba(0, 0, 0, 0.6);
-  width: 45%;
-  height: 500px !important;
+}
+@media all and (min-width: 992px) {
+  .softSkills-text-displayed {
+    position: absolute;
+    top: 150px !important;
+    bottom: none !important;
+    left: none !important;
+    right: 8% !important;
+    width: 45%;
+    height: 500px !important;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 991px) {
+  .softSkills-text-displayed {
+    position: absolute;
+    top: 150px !important;
+    bottom: none !important;
+    left: none !important;
+    right: 2% !important;
+    width: 45%;
+    height: 500px !important;
+  }
+}
+@media all and (min-width: 441px) and (max-width: 767px) {
+  .softSkills-text-displayed {
+    position: absolute;
+    top: 450px !important;
+    bottom: none !important;
+    left: 5% !important;
+    right: none !important;
+    width: 90%;
+    height: 250px !important;
+  }
+}
+@media all and (max-width: 440px) {
+  .softSkills-text-displayed {
+    position: absolute;
+    top: 450px !important;
+    bottom: none !important;
+    left: 5% !important;
+    right: none !important;
+    width: 90%;
+    height: 250px !important;
+  }
 }
 
 .page-title {
@@ -402,16 +582,50 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  width: 70%;
-  height: 200px !important;
   color: white;
-  font-family: "Bellefair", serif;
-  font-size: 44px;
-  font-weight: normal;
-  line-height: 70px;
   animation: titleAppearence 400ms linear;
   animation-delay: 0ms;
   animation-fill-mode: backwards;
+}
+@media all and (min-width: 992px) {
+  .page-title {
+    width: 70%;
+    height: 200px !important;
+    font-family: "Bellefair", serif;
+    font-size: 44px;
+    font-weight: normal;
+    line-height: 70px;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 991px) {
+  .page-title {
+    width: 85%;
+    height: 140px !important;
+    font-family: "Bellefair", serif;
+    font-size: 40px;
+    font-weight: normal;
+    line-height: 20px;
+  }
+}
+@media all and (min-width: 441px) and (max-width: 767px) {
+  .page-title {
+    width: 90%;
+    height: 140px !important;
+    font-family: "Bellefair", serif;
+    font-size: 32px;
+    font-weight: normal;
+    line-height: 20px;
+  }
+}
+@media all and (max-width: 440px) {
+  .page-title {
+    width: 90%;
+    height: 120px !important;
+    font-family: "Bellefair", serif;
+    font-size: 28px;
+    font-weight: normal;
+    line-height: 20px;
+  }
 }
 
 @keyframes titleAppearence {
@@ -427,15 +641,51 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  position: absolute;
-  top: 50px !important;
-  bottom: none !important;
-  left: none !important;
-  right: none !important;
-  width: 90%;
-  height: 400px !important;
-  /*border: 1px red solid;*/
   overflow: hidden;
+}
+@media all and (min-width: 992px) {
+  .softSkills-text-container {
+    position: absolute;
+    top: 50px !important;
+    bottom: none !important;
+    left: none !important;
+    right: none !important;
+    width: 90%;
+    height: 400px !important;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 991px) {
+  .softSkills-text-container {
+    position: absolute;
+    top: 50px !important;
+    bottom: none !important;
+    left: none !important;
+    right: none !important;
+    width: 90%;
+    height: 400px !important;
+  }
+}
+@media all and (min-width: 441px) and (max-width: 767px) {
+  .softSkills-text-container {
+    position: absolute;
+    top: 15px !important;
+    bottom: none !important;
+    left: none !important;
+    right: none !important;
+    width: 90%;
+    height: 220px !important;
+  }
+}
+@media all and (max-width: 440px) {
+  .softSkills-text-container {
+    position: absolute;
+    top: 15px !important;
+    bottom: none !important;
+    left: none !important;
+    right: none !important;
+    width: 90%;
+    height: 220px !important;
+  }
 }
 
 .softSkills-text {
@@ -446,13 +696,49 @@
   width: 100%;
   height: 800px !important;
   color: white;
-  font-family: "Bellefair", serif;
-  font-size: 18px;
-  font-weight: normal;
   text-align: justify;
-  padding-top: none !important;
-  padding-bottom: none !important;
-  padding-left: 30px;
-  padding-right: 10px;
-  /*border: 1px green solid;*/
+}
+@media all and (min-width: 992px) {
+  .softSkills-text {
+    padding-top: none !important;
+    padding-bottom: none !important;
+    padding-left: 10%;
+    padding-right: 10%;
+    font-family: "Bellefair", serif;
+    font-size: 18px;
+    font-weight: normal;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 991px) {
+  .softSkills-text {
+    padding-top: none !important;
+    padding-bottom: none !important;
+    padding-left: 10%;
+    padding-right: 10%;
+    font-family: "Bellefair", serif;
+    font-size: 17px;
+    font-weight: normal;
+  }
+}
+@media all and (min-width: 441px) and (max-width: 767px) {
+  .softSkills-text {
+    padding-top: none !important;
+    padding-bottom: none !important;
+    padding-left: 10%;
+    padding-right: 10%;
+    font-family: "Bellefair", serif;
+    font-size: 16px;
+    font-weight: normal;
+  }
+}
+@media all and (max-width: 440px) {
+  .softSkills-text {
+    padding-top: none !important;
+    padding-bottom: none !important;
+    padding-left: 10%;
+    padding-right: 10%;
+    font-family: "Bellefair", serif;
+    font-size: 15px;
+    font-weight: normal;
+  }
 }/*# sourceMappingURL=Softskills.css.map */

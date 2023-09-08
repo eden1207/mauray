@@ -1,42 +1,141 @@
 @import url("https://fonts.googleapis.com/css2?family=Bellefair&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bellefair&display=swap");
 .projects-title-box {
-  position: absolute;
-  top: 6530px !important;
-  bottom: none !important;
-  left: 5% !important;
-  right: none !important;
   z-index: 1;
   justify-content: center;
   align-items: center;
   background-color: rgba(0, 0, 0, 0.7);
-  width: 30%;
-  height: 100px !important;
+}
+@media all and (min-width: 992px) {
+  .projects-title-box {
+    position: absolute;
+    top: 6530px !important;
+    bottom: none !important;
+    left: 5% !important;
+    right: none !important;
+    width: 30%;
+    height: 100px !important;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 991px) {
+  .projects-title-box {
+    position: absolute;
+    top: 6546px !important;
+    bottom: none !important;
+    left: 4% !important;
+    right: none !important;
+    width: 35%;
+    height: 80px !important;
+  }
+}
+@media all and (min-width: 441px) and (max-width: 767px) {
+  .projects-title-box {
+    position: absolute;
+    top: 6560px !important;
+    bottom: none !important;
+    left: 3% !important;
+    right: none !important;
+    width: 40%;
+    height: 60px !important;
+  }
+}
+@media all and (max-width: 440px) {
+  .projects-title-box {
+    position: absolute;
+    top: 6570px !important;
+    bottom: none !important;
+    left: 2% !important;
+    right: none !important;
+    width: 55%;
+    height: 50px !important;
+  }
 }
 
 .projects-title {
   color: white;
-  font-family: "Bellefair", serif;
-  font-size: 38px;
-  font-weight: normal;
+}
+@media all and (min-width: 992px) {
+  .projects-title {
+    font-family: "Bellefair", serif;
+    font-size: 38px;
+    font-weight: normal;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 991px) {
+  .projects-title {
+    font-family: "Bellefair", serif;
+    font-size: 32px;
+    font-weight: normal;
+  }
+}
+@media all and (min-width: 441px) and (max-width: 767px) {
+  .projects-title {
+    font-family: "Bellefair", serif;
+    font-size: 26px;
+    font-weight: normal;
+  }
+}
+@media all and (max-width: 440px) {
+  .projects-title {
+    font-family: "Bellefair", serif;
+    font-size: 20px;
+    font-weight: normal;
+  }
 }
 
 .projects {
-  position: absolute;
-  top: 6610px !important;
-  bottom: none !important;
-  left: none !important;
-  right: 5% !important;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: rgba(255, 255, 255, 0.6);
-  width: 60%;
-  height: 490px !important;
   padding-top: none !important;
   padding-bottom: none !important;
-  padding-left: 3%;
-  padding-right: 3%;
+  padding-left: 1%;
+  padding-right: 1%;
+}
+@media all and (min-width: 992px) {
+  .projects {
+    position: absolute;
+    top: 6610px !important;
+    bottom: none !important;
+    left: none !important;
+    right: 5% !important;
+    width: 85%;
+    height: 490px !important;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 991px) {
+  .projects {
+    position: absolute;
+    top: 6610px !important;
+    bottom: none !important;
+    left: none !important;
+    right: 4% !important;
+    width: 80%;
+    height: 490px !important;
+  }
+}
+@media all and (min-width: 441px) and (max-width: 767px) {
+  .projects {
+    position: absolute;
+    top: 6610px !important;
+    bottom: none !important;
+    left: none !important;
+    right: 3% !important;
+    width: 90%;
+    height: 490px !important;
+  }
+}
+@media all and (max-width: 440px) {
+  .projects {
+    position: absolute;
+    top: 6610px !important;
+    bottom: none !important;
+    left: none !important;
+    right: 1% !important;
+    width: 90%;
+    height: 490px !important;
+  }
 }
 
 .projects-list1 {
@@ -44,14 +143,38 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  margin-top: none !important;
-  margin-bottom: none !important;
-  margin-left: 5%;
-  margin-right: none;
-  color: black;
-  font-family: "Bellefair", serif;
-  font-size: 24px;
-  font-weight: normal;
+}
+@media all and (min-width: 992px) {
+  .projects-list1 {
+    margin-top: none !important;
+    margin-bottom: none !important;
+    margin-left: 5%;
+    margin-right: none;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 991px) {
+  .projects-list1 {
+    margin-top: none !important;
+    margin-bottom: none !important;
+    margin-left: 3%;
+    margin-right: none;
+  }
+}
+@media all and (min-width: 441px) and (max-width: 767px) {
+  .projects-list1 {
+    margin-top: none !important;
+    margin-bottom: none !important;
+    margin-left: 1%;
+    margin-right: none;
+  }
+}
+@media all and (max-width: 440px) {
+  .projects-list1 {
+    margin-top: none !important;
+    margin-bottom: none !important;
+    margin-left: 0%;
+    margin-right: none;
+  }
 }
 
 .projects-list2 {
@@ -65,25 +188,100 @@
 
 .projects-list1-title {
   color: black;
-  font-family: "Bellefair", serif;
-  font-size: 24px;
-  font-weight: normal;
+}
+@media all and (min-width: 992px) {
+  .projects-list1-title {
+    font-family: "Bellefair", serif;
+    font-size: 24px;
+    font-weight: normal;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 991px) {
+  .projects-list1-title {
+    font-family: "Bellefair", serif;
+    font-size: 22px;
+    font-weight: normal;
+  }
+}
+@media all and (min-width: 441px) and (max-width: 767px) {
+  .projects-list1-title {
+    font-family: "Bellefair", serif;
+    font-size: 20px;
+    font-weight: normal;
+  }
+}
+@media all and (max-width: 440px) {
+  .projects-list1-title {
+    font-family: "Bellefair", serif;
+    font-size: 17px;
+    font-weight: normal;
+  }
 }
 
 .projects-list2-title {
   color: black;
-  font-family: "Bellefair", serif;
-  font-size: 24px;
-  font-weight: normal;
+}
+@media all and (min-width: 992px) {
+  .projects-list2-title {
+    font-family: "Bellefair", serif;
+    font-size: 24px;
+    font-weight: normal;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 991px) {
+  .projects-list2-title {
+    font-family: "Bellefair", serif;
+    font-size: 22px;
+    font-weight: normal;
+  }
+}
+@media all and (min-width: 441px) and (max-width: 767px) {
+  .projects-list2-title {
+    font-family: "Bellefair", serif;
+    font-size: 20px;
+    font-weight: normal;
+  }
+}
+@media all and (max-width: 440px) {
+  .projects-list2-title {
+    font-family: "Bellefair", serif;
+    font-size: 17px;
+    font-weight: normal;
+  }
 }
 
 .subnavigation1 {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  -moz-column-gap: 1%;
-       column-gap: 1%;
-  row-gap: 10px;
+}
+@media all and (min-width: 992px) {
+  .subnavigation1 {
+    -moz-column-gap: 1%;
+         column-gap: 1%;
+    row-gap: 10px;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 991px) {
+  .subnavigation1 {
+    -moz-column-gap: 0%;
+         column-gap: 0%;
+    row-gap: 2px;
+  }
+}
+@media all and (min-width: 441px) and (max-width: 767px) {
+  .subnavigation1 {
+    -moz-column-gap: 0%;
+         column-gap: 0%;
+    row-gap: 0px;
+  }
+}
+@media all and (max-width: 440px) {
+  .subnavigation1 {
+    -moz-column-gap: 1%;
+         column-gap: 1%;
+    row-gap: 2px;
+  }
 }
 
 .subnavigation2 {
@@ -94,28 +292,94 @@
   margin-bottom: none !important;
   margin-left: 10%;
   margin-right: none;
-  -moz-column-gap: 5%;
-       column-gap: 5%;
   width: 100%;
   height: none !important;
+}
+@media all and (min-width: 992px) {
+  .subnavigation2 {
+    -moz-column-gap: 5%;
+         column-gap: 5%;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 991px) {
+  .subnavigation2 {
+    -moz-column-gap: 2%;
+         column-gap: 2%;
+  }
+}
+@media all and (min-width: 441px) and (max-width: 767px) {
+  .subnavigation2 {
+    -moz-column-gap: 1%;
+         column-gap: 1%;
+  }
+}
+@media all and (max-width: 440px) {
+  .subnavigation2 {
+    -moz-column-gap: 0%;
+         column-gap: 0%;
+  }
 }
 
 .submenu-link1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 150px;
-  height: 80px !important;
   text-decoration: none;
+}
+@media all and (min-width: 992px) {
+  .submenu-link1 {
+    width: 150px;
+    height: 80px !important;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 991px) {
+  .submenu-link1 {
+    width: 110px;
+    height: 70px !important;
+  }
+}
+@media all and (min-width: 441px) and (max-width: 767px) {
+  .submenu-link1 {
+    width: 80px;
+    height: 65px !important;
+  }
+}
+@media all and (max-width: 440px) {
+  .submenu-link1 {
+    width: 60px;
+    height: 60px !important;
+  }
 }
 
 .submenu-link2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 150px;
-  height: 150px !important;
   text-decoration: none;
+}
+@media all and (min-width: 992px) {
+  .submenu-link2 {
+    width: 150px;
+    height: 150px !important;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 991px) {
+  .submenu-link2 {
+    width: 110px;
+    height: 110px !important;
+  }
+}
+@media all and (min-width: 441px) and (max-width: 767px) {
+  .submenu-link2 {
+    width: 80px;
+    height: 80px !important;
+  }
+}
+@media all and (max-width: 440px) {
+  .submenu-link2 {
+    width: 60px;
+    height: 60px !important;
+  }
 }
 
 .submenu-link2-logo-website {
@@ -123,55 +387,257 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 150px;
-  height: 150pxpx !important;
   text-decoration: none;
   line-height: 2px;
 }
-
-.logo-booki {
-  width: 80px;
-  height: none !important;
+@media all and (min-width: 992px) {
+  .submenu-link2-logo-website {
+    width: 150px;
+    height: auto !important;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 991px) {
+  .submenu-link2-logo-website {
+    width: 110px;
+    height: auto !important;
+  }
+}
+@media all and (min-width: 441px) and (max-width: 767px) {
+  .submenu-link2-logo-website {
+    width: 90px;
+    height: auto !important;
+  }
+}
+@media all and (max-width: 440px) {
+  .submenu-link2-logo-website {
+    width: 80px;
+    height: auto !important;
+  }
 }
 
-.logo-ohmyfood {
-  width: 130px;
-  height: none !important;
+@media all and (min-width: 992px) {
+  .logo-booki {
+    width: 70px;
+    height: none !important;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 991px) {
+  .logo-booki {
+    width: 55px;
+    height: none !important;
+  }
+}
+@media all and (min-width: 441px) and (max-width: 767px) {
+  .logo-booki {
+    width: 40px;
+    height: none !important;
+  }
+}
+@media all and (max-width: 440px) {
+  .logo-booki {
+    width: 35px;
+    height: none !important;
+  }
 }
 
-.logo-gameon {
-  width: 120px;
-  height: none !important;
+@media all and (min-width: 992px) {
+  .logo-ohmyfood {
+    width: 110px;
+    height: none !important;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 991px) {
+  .logo-ohmyfood {
+    width: 95px;
+    height: none !important;
+  }
+}
+@media all and (min-width: 441px) and (max-width: 767px) {
+  .logo-ohmyfood {
+    width: 65px;
+    height: none !important;
+  }
+}
+@media all and (max-width: 440px) {
+  .logo-ohmyfood {
+    width: 60px;
+    height: none !important;
+  }
 }
 
-.logo-fisheye {
-  width: 110px;
-  height: none !important;
+@media all and (min-width: 992px) {
+  .logo-gameon {
+    width: 100px;
+    height: none !important;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 991px) {
+  .logo-gameon {
+    width: 85px;
+    height: none !important;
+  }
+}
+@media all and (min-width: 441px) and (max-width: 767px) {
+  .logo-gameon {
+    width: 60px;
+    height: none !important;
+  }
+}
+@media all and (max-width: 440px) {
+  .logo-gameon {
+    width: 55px;
+    height: none !important;
+  }
 }
 
-.logo-les-petits-plats {
-  width: 130px;
-  height: none !important;
+@media all and (min-width: 992px) {
+  .logo-fisheye {
+    width: 90px;
+    height: none !important;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 991px) {
+  .logo-fisheye {
+    width: 80px;
+    height: none !important;
+  }
+}
+@media all and (min-width: 441px) and (max-width: 767px) {
+  .logo-fisheye {
+    width: 60px;
+    height: none !important;
+  }
+}
+@media all and (max-width: 440px) {
+  .logo-fisheye {
+    width: 50px;
+    height: none !important;
+  }
 }
 
-.logo-kasa {
-  width: 90px;
-  height: none !important;
+@media all and (min-width: 992px) {
+  .logo-les-petits-plats {
+    width: 120px;
+    height: none !important;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 991px) {
+  .logo-les-petits-plats {
+    width: 110px;
+    height: none !important;
+  }
+}
+@media all and (min-width: 441px) and (max-width: 767px) {
+  .logo-les-petits-plats {
+    width: 75px;
+    height: none !important;
+  }
+}
+@media all and (max-width: 440px) {
+  .logo-les-petits-plats {
+    width: 65px;
+    height: none !important;
+  }
 }
 
-.logo-sportsee {
-  width: 130px;
-  height: none !important;
+@media all and (min-width: 992px) {
+  .logo-kasa {
+    width: 80px;
+    height: none !important;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 991px) {
+  .logo-kasa {
+    width: 70px;
+    height: none !important;
+  }
+}
+@media all and (min-width: 441px) and (max-width: 767px) {
+  .logo-kasa {
+    width: 50px;
+    height: none !important;
+  }
+}
+@media all and (max-width: 440px) {
+  .logo-kasa {
+    width: 40px;
+    height: none !important;
+  }
 }
 
-.logo-argentbank {
-  width: 130px;
-  height: none !important;
+@media all and (min-width: 992px) {
+  .logo-sportsee {
+    width: 120px;
+    height: none !important;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 991px) {
+  .logo-sportsee {
+    width: 105px;
+    height: none !important;
+  }
+}
+@media all and (min-width: 441px) and (max-width: 767px) {
+  .logo-sportsee {
+    width: 80px;
+    height: none !important;
+  }
+}
+@media all and (max-width: 440px) {
+  .logo-sportsee {
+    width: 60px;
+    height: none !important;
+  }
 }
 
-.logo-hrnet {
-  width: 70px;
-  height: none !important;
+@media all and (min-width: 992px) {
+  .logo-argentbank {
+    width: 130px;
+    height: none !important;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 991px) {
+  .logo-argentbank {
+    width: 120px;
+    height: none !important;
+  }
+}
+@media all and (min-width: 441px) and (max-width: 767px) {
+  .logo-argentbank {
+    width: 80px;
+    height: none !important;
+  }
+}
+@media all and (max-width: 440px) {
+  .logo-argentbank {
+    width: 60px;
+    height: none !important;
+  }
+}
+
+@media all and (min-width: 992px) {
+  .logo-hrnet {
+    width: 70px;
+    height: none !important;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 991px) {
+  .logo-hrnet {
+    width: 60px;
+    height: none !important;
+  }
+}
+@media all and (min-width: 441px) and (max-width: 767px) {
+  .logo-hrnet {
+    width: 50px;
+    height: none !important;
+  }
+}
+@media all and (max-width: 440px) {
+  .logo-hrnet {
+    width: 40px;
+    height: none !important;
+  }
 }
 
 .border-logo-website {
@@ -180,30 +646,137 @@
   align-items: center;
   border-radius: 50%;
   overflow: hidden;
-  width: 90px;
-  height: 90px !important;
+}
+@media all and (min-width: 992px) {
+  .border-logo-website {
+    width: 80px;
+    height: 80px !important;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 991px) {
+  .border-logo-website {
+    width: 70px;
+    height: 70px !important;
+  }
+}
+@media all and (min-width: 441px) and (max-width: 767px) {
+  .border-logo-website {
+    width: 60px;
+    height: 60px !important;
+  }
+}
+@media all and (max-width: 440px) {
+  .border-logo-website {
+    width: 50px;
+    height: 50px !important;
+  }
 }
 
 .logo-page-web-title {
   color: #141929;
-  font-family: "Bellefair", serif;
-  font-size: 18px;
-  font-weight: normal;
+}
+@media all and (min-width: 992px) {
+  .logo-page-web-title {
+    font-family: "Bellefair", serif;
+    font-size: 18px;
+    font-weight: normal;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 991px) {
+  .logo-page-web-title {
+    font-family: "Bellefair", serif;
+    font-size: 17px;
+    font-weight: normal;
+  }
+}
+@media all and (min-width: 441px) and (max-width: 767px) {
+  .logo-page-web-title {
+    font-family: "Bellefair", serif;
+    font-size: 16px;
+    font-weight: normal;
+  }
+}
+@media all and (max-width: 440px) {
+  .logo-page-web-title {
+    font-family: "Bellefair", serif;
+    font-size: 15px;
+    font-weight: normal;
+  }
 }
 
-.logo-page-web {
-  width: 150px;
-  height: none !important;
+@media all and (min-width: 992px) {
+  .logo-page-web {
+    width: 140px;
+    height: none !important;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 991px) {
+  .logo-page-web {
+    width: 120px;
+    height: none !important;
+  }
+}
+@media all and (min-width: 441px) and (max-width: 767px) {
+  .logo-page-web {
+    width: 80px;
+    height: none !important;
+  }
+}
+@media all and (max-width: 440px) {
+  .logo-page-web {
+    width: 70px;
+    height: none !important;
+  }
 }
 
-.logo-ghibli {
-  width: 150px;
-  height: none !important;
+@media all and (min-width: 992px) {
+  .logo-ghibli {
+    width: 130px;
+    height: none !important;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 991px) {
+  .logo-ghibli {
+    width: 115px;
+    height: none !important;
+  }
+}
+@media all and (min-width: 441px) and (max-width: 767px) {
+  .logo-ghibli {
+    width: 90px;
+    height: none !important;
+  }
+}
+@media all and (max-width: 440px) {
+  .logo-ghibli {
+    width: 80px;
+    height: none !important;
+  }
 }
 
-.logo-leo-paul-berthaut {
-  width: 80px;
-  height: none !important;
+@media all and (min-width: 992px) {
+  .logo-leo-paul-berthaut {
+    width: 60px;
+    height: none !important;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 991px) {
+  .logo-leo-paul-berthaut {
+    width: 50px;
+    height: none !important;
+  }
+}
+@media all and (min-width: 441px) and (max-width: 767px) {
+  .logo-leo-paul-berthaut {
+    width: 40px;
+    height: none !important;
+  }
+}
+@media all and (max-width: 440px) {
+  .logo-leo-paul-berthaut {
+    width: 30px;
+    height: none !important;
+  }
 }
 
 /*animation*/

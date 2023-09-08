@@ -9,7 +9,6 @@
   align-items: center;
 }
 .header_dimensions {
-  /*@include dimensions(100%, 147px);*/
   width: 100%;
 }
 .header_aspect {
@@ -21,7 +20,8 @@
 }
 
 .menu-link {
-  text-decoration: none;
+  background-color: transparent;
+  border: none;
   cursor: pointer;
   color: white;
   transition: all 200ms;
@@ -31,13 +31,17 @@
     font-family: "Bellefair", serif;
     font-size: 24px;
     font-weight: normal;
+    width: 90%;
+    height: none !important;
   }
 }
 @media all and (min-width: 768px) and (max-width: 991px) {
   .menu-link {
     font-family: "Bellefair", serif;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: normal;
+    width: 98%;
+    height: none !important;
   }
 }
 @media all and (min-width: 441px) and (max-width: 767px) {
@@ -45,6 +49,8 @@
     font-family: "Bellefair", serif;
     font-size: 16px;
     font-weight: normal;
+    width: 93%;
+    height: none !important;
   }
 }
 @media all and (max-width: 440px) {
@@ -52,6 +58,8 @@
     font-family: "Bellefair", serif;
     font-size: 14px;
     font-weight: normal;
+    width: 90%;
+    height: none !important;
   }
 }
 .menu-link:hover {
@@ -59,7 +67,7 @@
 }
 .menu-link:hover > .link-underline {
   border-bottom: 2px solid white;
-  transform: scaleX(1);
+  transform: scaleX(0.8);
 }
 
 .link-underline {
@@ -70,13 +78,44 @@
 }
 
 .navigation {
-  display: flex;
-  justify-content: space-between;
+  /*display: flex;
+  justify-content: space-between;*/
+  display: grid;
   align-items: center;
 }
+@media all and (min-width: 768px) {
+  .navigation {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+}
+@media all and (min-width: 441px) and (max-width: 767px) {
+  .navigation {
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 30%;
+    gap: 10%;
+  }
+}
+@media all and (max-width: 440px) {
+  .navigation {
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 0%;
+    gap: 3%;
+  }
+}
 .navigation_dimensions {
-  width: 90%;
-  height: 147px !important;
+  /*@include dimensions(90%, 147px);*/
+}
+@media all and (min-width: 768px) {
+  .navigation_dimensions {
+    width: 90%;
+    height: none !important;
+  }
+}
+@media all and (max-width: 767px) {
+  .navigation_dimensions {
+    width: 100%;
+    height: none !important;
+  }
 }
 
 /*animation header*/

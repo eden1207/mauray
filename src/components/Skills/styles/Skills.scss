@@ -3,28 +3,67 @@
 @import "../../../Parameters/Parameters";
 
 .skills-title-box {
-    @include position-package(absolute, 94px+4*$FrameHeight, none, 5%, none);
     z-index: 1;
     justify-content: center;
     align-items: center;
     background-color: rgb(0, 0, 0, 0.7);
-    @include dimensions(30%, 100px);
+    @media all and (min-width: 992px) {
+        @include position-package(absolute, 94px+4*$FrameHeight, none, 5%, none);
+        @include dimensions(30%, 100px);
+    }
+    @media all and (min-width: 768px) and (max-width: 991px) {
+        @include position-package(absolute, 110px+4*$FrameHeight, none, 4%, none);
+        @include dimensions(35%, 80px);
+    }
+    @media all and (min-width: 441px) and (max-width: 767px) {
+        @include position-package(absolute, 124px+4*$FrameHeight, none, 3%, none);
+        @include dimensions(40%, 60px);
+    }
+    @media all and (max-width: 440px) {
+        @include position-package(absolute, 134px+4*$FrameHeight, none, 2%, none);
+        @include dimensions(55%, 50px);
+    }
 }
 
 .skills-title {
     z-index: 1;
     color: white;
-    @include syntaxe-bellefair(38px, normal);
+    @media all and (min-width: 992px) {
+        @include syntaxe-bellefair(38px, normal);
+    }
+    @media all and (min-width: 768px) and (max-width: 991px) {
+        @include syntaxe-bellefair(32px, normal);
+    }
+    @media all and (min-width: 441px) and (max-width: 767px) {
+        @include syntaxe-bellefair(26px, normal);
+    }
+    @media all and (max-width: 440px) {
+        @include syntaxe-bellefair(20px, normal);
+    }
 }
 
 .skills {
-    @include position-package(absolute, 174px+4*$FrameHeight, none, none, 5%);
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
     background-color: rgb(255, 255, 255, 0.6);
-    @include dimensions(60%, 520px);
     @include padding-package(none, none, 3%, 3%);
+    @media all and (min-width: 992px) {
+        @include position-package(absolute, 174px+4*$FrameHeight, none, none, 5%);
+        @include dimensions(60%, 520px);
+    }
+    @media all and (min-width: 768px) and (max-width: 991px) {
+        @include position-package(absolute, 174px+4*$FrameHeight, none, none, 4%);
+        @include dimensions(70%, 520px);
+    }
+    @media all and (min-width: 441px) and (max-width: 767px) {
+        @include position-package(absolute, 174px+4*$FrameHeight, none, none, 3%);
+        @include dimensions(75%, 520px);
+    }
+    @media all and (max-width: 440px) {
+        @include position-package(absolute, 174px+4*$FrameHeight, none, none, 2%);
+        @include dimensions(82%, 520px);
+    }
 }
 
 .skills-lists-group {
@@ -36,10 +75,20 @@
 }
 
 .skills-list-title {
-    @include syntaxe-bellefair(24px, normal);
     color: black;
     text-align: left;
-    /*border: 1px red solid;*/
+    @media all and (min-width: 992px) {
+        @include syntaxe-bellefair(24px, normal);
+    }
+    @media all and (min-width: 768px) and (max-width: 991px) {
+        @include syntaxe-bellefair(22px, normal);
+    }
+    @media all and (min-width: 441px) and (max-width: 767px) {
+        @include syntaxe-bellefair(18px, normal);
+    }
+    @media all and (max-width: 440px) {
+        @include syntaxe-bellefair(14px, normal);
+    }
 }
 
 .skills-list {
@@ -55,10 +104,24 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    @include syntaxe-bellefair(18px, normal);
     color: black;
     /*border: 1px green solid;*/
-    gap: 20px;
+    @media all and (min-width: 992px) {
+        @include syntaxe-bellefair(18px, normal);
+        gap: 20px;
+    }
+    @media all and (min-width: 768px) and (max-width: 991px) {
+        @include syntaxe-bellefair(16px, normal);
+        gap: 15px;
+    }
+    @media all and (min-width: 441px) and (max-width: 767px) {
+        @include syntaxe-bellefair(14px, normal);
+        gap: 10px;
+    }
+    @media all and (max-width: 440px) {
+        @include syntaxe-bellefair(12px, normal);
+        gap: 5px;
+    }
 }
 
 .skills-list-element-logo {
@@ -71,63 +134,213 @@
 }
 
 .logo-html {
-    @include dimensions(33px, auto);
+    @media all and (min-width: 992px) {
+        @include dimensions(33px, auto);
+    }
+    @media all and (min-width: 768px) and (max-width: 991px) {
+        @include dimensions(30px, auto);
+    }
+    @media all and (min-width: 441px) and (max-width: 767px) {
+        @include dimensions(28px, auto);
+    }
+    @media all and (max-width: 440px) {
+        @include dimensions(25px, auto);
+    }
 }
 
 .logo-css {
-    @include dimensions(23px, auto);
+    @media all and (min-width: 992px) {
+        @include dimensions(23px, auto);
+    }
+    @media all and (min-width: 768px) and (max-width: 991px) {
+        @include dimensions(22px, auto);
+    }
+    @media all and (min-width: 441px) and (max-width: 767px) {
+        @include dimensions(20px, auto);
+    }
+    @media all and (max-width: 440px) {
+        @include dimensions(19px, auto);
+    }
 }
 
 .logo-sass {
-    @include dimensions(28px, auto);
+    @media all and (min-width: 992px) {
+        @include dimensions(28px, auto);
+    }
+    @media all and (min-width: 768px) and (max-width: 991px) {
+        @include dimensions(26px, auto);
+    }
+    @media all and (min-width: 441px) and (max-width: 767px) {
+        @include dimensions(24px, auto);
+    }
+    @media all and (max-width: 440px) {
+        @include dimensions(22px, auto);
+    }
 }
 
 .logo-javascript {
-    @include dimensions(25px, auto);
+    @media all and (min-width: 992px) {
+        @include dimensions(25px, auto);
+    }
+    @media all and (min-width: 768px) and (max-width: 991px) {
+        @include dimensions(23px, auto);
+    }
+    @media all and (min-width: 441px) and (max-width: 767px) {
+        @include dimensions(21px, auto);
+    }
+    @media all and (max-width: 440px) {
+        @include dimensions(19px, auto);
+    }
 }
 
 .logo-matlab {
-    @include dimensions(25px, auto);
+    @media all and (min-width: 992px) {
+        @include dimensions(25px, auto);
+    }
+    @media all and (min-width: 768px) and (max-width: 991px) {
+        @include dimensions(23px, auto);
+    }
+    @media all and (min-width: 441px) and (max-width: 767px) {
+        @include dimensions(21px, auto);
+    }
+    @media all and (max-width: 440px) {
+        @include dimensions(19px, auto);
+    }
 }
 
 .logo-react {
-    @include dimensions(25px, auto);
+    @media all and (min-width: 992px) {
+        @include dimensions(25px, auto);
+    }
+    @media all and (min-width: 768px) and (max-width: 991px) {
+        @include dimensions(23px, auto);
+    }
+    @media all and (min-width: 441px) and (max-width: 767px) {
+        @include dimensions(21px, auto);
+    }
+    @media all and (max-width: 440px) {
+        @include dimensions(19px, auto);
+    }
 }
 
 .logo-jest {
-    @include dimensions(25px, auto);
+    @media all and (min-width: 992px) {
+        @include dimensions(25px, auto);
+    }
+    @media all and (min-width: 768px) and (max-width: 991px) {
+        @include dimensions(23px, auto);
+    }
+    @media all and (min-width: 441px) and (max-width: 767px) {
+        @include dimensions(21px, auto);
+    }
+    @media all and (max-width: 440px) {
+        @include dimensions(19px, auto);
+    }
 }
 
 .logo-redux {
-    @include dimensions(25px, auto);
+    @media all and (min-width: 992px) {
+        @include dimensions(25px, auto);
+    }
+    @media all and (min-width: 768px) and (max-width: 991px) {
+        @include dimensions(23px, auto);
+    }
+    @media all and (min-width: 441px) and (max-width: 767px) {
+        @include dimensions(21px, auto);
+    }
+    @media all and (max-width: 440px) {
+        @include dimensions(19px, auto);
+    }
 }
 
 .logo-latex {
-    @include dimensions(35px, auto);
+    @media all and (min-width: 992px) {
+        @include dimensions(35px, auto);
+    }
+    @media all and (min-width: 768px) and (max-width: 991px) {
+        @include dimensions(30px, auto);
+    }
+    @media all and (min-width: 441px) and (max-width: 767px) {
+        @include dimensions(27px, auto);
+    }
+    @media all and (max-width: 440px) {
+        @include dimensions(25px, auto);
+    }
 }
 
 .logo-photoshop {
-    @include dimensions(25px, auto);
+    @media all and (min-width: 992px) {
+        @include dimensions(25px, auto);
+    }
+    @media all and (min-width: 768px) and (max-width: 991px) {
+        @include dimensions(23px, auto);
+    }
+    @media all and (min-width: 441px) and (max-width: 767px) {
+        @include dimensions(21px, auto);
+    }
+    @media all and (max-width: 440px) {
+        @include dimensions(19px, auto);
+    }
 }
 
 .logo-figma {
-    @include dimensions(25px, auto);
+    @media all and (min-width: 992px) {
+        @include dimensions(25px, auto);
+    }
+    @media all and (min-width: 768px) and (max-width: 991px) {
+        @include dimensions(23px, auto);
+    }
+    @media all and (min-width: 441px) and (max-width: 767px) {
+        @include dimensions(21px, auto);
+    }
+    @media all and (max-width: 440px) {
+        @include dimensions(19px, auto);
+    }
 }
 
 .logo-git {
-    @include dimensions(25px, auto);
-}
-
-.logo-francais {
-    @include dimensions(30px, auto);
+    @media all and (min-width: 992px) {
+        @include dimensions(25px, auto);
+    }
+    @media all and (min-width: 768px) and (max-width: 991px) {
+        @include dimensions(23px, auto);
+    }
+    @media all and (min-width: 441px) and (max-width: 767px) {
+        @include dimensions(21px, auto);
+    }
+    @media all and (max-width: 440px) {
+        @include dimensions(19px, auto);
+    }
 }
 
 .logo-anglais {
-    @include dimensions(30px, auto);
+    @media all and (min-width: 992px) {
+        @include dimensions(30px, auto);
+    }
+    @media all and (min-width: 768px) and (max-width: 991px) {
+        @include dimensions(28px, auto);
+    }
+    @media all and (min-width: 441px) and (max-width: 767px) {
+        @include dimensions(24px, auto);
+    }
+    @media all and (max-width: 440px) {
+        @include dimensions(22px, auto);
+    }
 }
 
 .logo-espagnol {
-    @include dimensions(30px, auto);
+    @media all and (min-width: 992px) {
+        @include dimensions(30px, auto);
+    }
+    @media all and (min-width: 768px) and (max-width: 991px) {
+        @include dimensions(28px, auto);
+    }
+    @media all and (min-width: 441px) and (max-width: 767px) {
+        @include dimensions(24px, auto);
+    }
+    @media all and (max-width: 440px) {
+        @include dimensions(22px, auto);
+    }
 }
 
 /*animation*/

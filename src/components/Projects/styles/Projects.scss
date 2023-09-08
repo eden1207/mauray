@@ -3,27 +3,66 @@
 @import "../../../Parameters/Parameters";
 
 .projects-title-box {
-    @include position-package(absolute, 104px+9*$FrameHeight, none, 5%, none);
     z-index: 1;
     justify-content: center;
     align-items: center;
     background-color: rgb(0, 0, 0, 0.7);
-    @include dimensions(30%, 100px);
+    @media all and (min-width: 992px) {
+        @include position-package(absolute, 104px+9*$FrameHeight, none, 5%, none);
+        @include dimensions(30%, 100px);
+    }
+    @media all and (min-width: 768px) and (max-width: 991px) {
+        @include position-package(absolute, 120px+9*$FrameHeight, none, 4%, none);
+        @include dimensions(35%, 80px);
+    }
+    @media all and (min-width: 441px) and (max-width: 767px) {
+        @include position-package(absolute, 134px+9*$FrameHeight, none, 3%, none);
+        @include dimensions(40%, 60px);
+    }
+    @media all and (max-width: 440px) {
+        @include position-package(absolute, 144px+9*$FrameHeight, none, 2%, none);
+        @include dimensions(55%, 50px);
+    }
 }
 
 .projects-title {
     color: white;
-    @include syntaxe-bellefair(38px, normal);
+    @media all and (min-width: 992px) {
+        @include syntaxe-bellefair(38px, normal);
+    }
+    @media all and (min-width: 768px) and (max-width: 991px) {
+        @include syntaxe-bellefair(32px, normal);
+    }
+    @media all and (min-width: 441px) and (max-width: 767px) {
+        @include syntaxe-bellefair(26px, normal);
+    }
+    @media all and (max-width: 440px) {
+        @include syntaxe-bellefair(20px, normal);
+    }
 }
 
 .projects {
-    @include position-package(absolute, 184px+9*$FrameHeight, none, none, 5%);
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: rgb(255, 255, 255, 0.6);
-    @include dimensions(60%, 490px);
-    @include padding-package(none, none, 3%, 3%);
+    @include padding-package(none, none, 1%, 1%);
+    @media all and (min-width: 992px) {
+        @include position-package(absolute, 184px+9*$FrameHeight, none, none, 5%);
+        @include dimensions(85%, 490px);
+    }
+    @media all and (min-width: 768px) and (max-width: 991px) {
+        @include position-package(absolute, 184px+9*$FrameHeight, none, none, 4%);
+        @include dimensions(80%, 490px);
+    }
+    @media all and (min-width: 441px) and (max-width: 767px) {
+        @include position-package(absolute, 184px+9*$FrameHeight, none, none, 3%);
+        @include dimensions(90%, 490px);
+    }
+    @media all and (max-width: 440px) {
+        @include position-package(absolute, 184px+9*$FrameHeight, none, none, 1%);
+        @include dimensions(90%, 490px);
+    }
 }
 
 .projects-list1{
@@ -31,9 +70,18 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    @include margin-package(none, none, 5%, none);
-    color: black;
-    @include syntaxe-bellefair(24px, normal);
+    @media all and (min-width: 992px) {
+        @include margin-package(none, none, 5%, none);
+    }
+    @media all and (min-width: 768px) and (max-width: 991px) {
+        @include margin-package(none, none, 3%, none);
+    }
+    @media all and (min-width: 441px) and (max-width: 767px) {
+        @include margin-package(none, none, 1%, none);
+    }
+    @media all and (max-width: 440px) {
+        @include margin-package(none, none, 0%, none);
+    }
 }
 
 .projects-list2{
@@ -46,20 +94,56 @@
 
 .projects-list1-title{
     color: black;
-    @include syntaxe-bellefair(24px, normal);
+    @media all and (min-width: 992px) {
+        @include syntaxe-bellefair(24px, normal);
+    }
+    @media all and (min-width: 768px) and (max-width: 991px) {
+        @include syntaxe-bellefair(22px, normal);
+    }
+    @media all and (min-width: 441px) and (max-width: 767px) {
+        @include syntaxe-bellefair(20px, normal);
+    }
+    @media all and (max-width: 440px) {
+        @include syntaxe-bellefair(17px, normal);
+    }
 }
 
 .projects-list2-title{
     color: black;
-    @include syntaxe-bellefair(24px, normal);
+    @media all and (min-width: 992px) {
+        @include syntaxe-bellefair(24px, normal);
+    }
+    @media all and (min-width: 768px) and (max-width: 991px) {
+        @include syntaxe-bellefair(22px, normal);
+    }
+    @media all and (min-width: 441px) and (max-width: 767px) {
+        @include syntaxe-bellefair(20px, normal);
+    }
+    @media all and (max-width: 440px) {
+        @include syntaxe-bellefair(17px, normal);
+    }
 }
 
 .subnavigation1{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    column-gap: 1%;
-    row-gap: 10px;
+    @media all and (min-width: 992px) {
+        column-gap: 1%;
+        row-gap: 10px;
+    }
+    @media all and (min-width: 768px) and (max-width: 991px) {
+        column-gap: 0%;
+        row-gap: 2px;
+    }
+    @media all and (min-width: 441px) and (max-width: 767px) {
+        column-gap: 0%;
+        row-gap: 0px;
+    }
+    @media all and (max-width: 440px) {
+        column-gap: 1%;
+        row-gap: 2px;
+    }
 }
 
 .subnavigation2{
@@ -67,24 +151,57 @@
     flex-wrap: wrap;
     align-items: center;
     @include margin-package(none, none, 10%, none);
-    column-gap: 5%;
     @include dimensions(100%, none);
+    @media all and (min-width: 992px) {
+        column-gap: 5%;
+    }
+    @media all and (min-width: 768px) and (max-width: 991px) {
+        column-gap: 2%;
+    }
+    @media all and (min-width: 441px) and (max-width: 767px) {
+        column-gap: 1%;
+    }
+    @media all and (max-width: 440px) {
+        column-gap: 0%;
+    }
 }
 
 .submenu-link1{
     display: flex;
     justify-content: center;
     align-items: center;
-    @include dimensions(150px, 80px);
     text-decoration: none;
+    @media all and (min-width: 992px) {
+        @include dimensions(150px, 80px);
+    }
+    @media all and (min-width: 768px) and (max-width: 991px) {
+        @include dimensions(110px, 70px);
+    }
+    @media all and (min-width: 441px) and (max-width: 767px) {
+        @include dimensions(80px, 65px);
+    }
+    @media all and (max-width: 440px) {
+        @include dimensions(60px, 60px);
+    }
 }
 
 .submenu-link2{
     display: flex;
     justify-content: center;
     align-items: center;
-    @include dimensions(150px, 150px);
     text-decoration: none;
+    @media all and (min-width: 992px) {
+        @include dimensions(150px, 150px);
+    }
+    @media all and (min-width: 768px) and (max-width: 991px) {
+        @include dimensions(110px, 110px);
+    }
+    @media all and (min-width: 441px) and (max-width: 767px) {
+        @include dimensions(80px, 80px);
+    }
+    @media all and (max-width: 440px) {
+        @include dimensions(60px, 60px);
+    }
 }
 
 .submenu-link2-logo-website{
@@ -92,45 +209,155 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    @include dimensions(150px, 150pxpx);
     text-decoration: none;
     line-height: 2px;
+    @media all and (min-width: 992px) {
+        @include dimensions(150px, auto);
+    }
+    @media all and (min-width: 768px) and (max-width: 991px) {
+        @include dimensions(110px, auto);
+    }
+    @media all and (min-width: 441px) and (max-width: 767px) {
+        @include dimensions(90px, auto);
+    }
+    @media all and (max-width: 440px) {
+        @include dimensions(80px, auto);
+    }
 }
 
 .logo-booki{
-    @include dimensions(80px, none);
+    @media all and (min-width: 992px) {
+        @include dimensions(70px, none);
+    }
+    @media all and (min-width: 768px) and (max-width: 991px) {
+        @include dimensions(55px, none);
+    }
+    @media all and (min-width: 441px) and (max-width: 767px) {
+        @include dimensions(40px, none);
+    }
+    @media all and (max-width: 440px) {
+        @include dimensions(35px, none);
+    }
 }
 
 .logo-ohmyfood{
-    @include dimensions(130px, none);
+    @media all and (min-width: 992px) {
+        @include dimensions(110px, none);
+    }
+    @media all and (min-width: 768px) and (max-width: 991px) {
+        @include dimensions(95px, none);
+    }
+    @media all and (min-width: 441px) and (max-width: 767px) {
+        @include dimensions(65px, none);
+    }
+    @media all and (max-width: 440px) {
+        @include dimensions(60px, none);
+    }
 }
 
 .logo-gameon{
-    @include dimensions(120px, none);
+    @media all and (min-width: 992px) {
+        @include dimensions(100px, none);
+    }
+    @media all and (min-width: 768px) and (max-width: 991px) {
+        @include dimensions(85px, none);
+    }
+    @media all and (min-width: 441px) and (max-width: 767px) {
+        @include dimensions(60px, none);
+    }
+    @media all and (max-width: 440px) {
+        @include dimensions(55px, none);
+    }
 }
 
 .logo-fisheye{
-    @include dimensions(110px, none);
+    @media all and (min-width: 992px) {
+        @include dimensions(90px, none);
+    }
+    @media all and (min-width: 768px) and (max-width: 991px) {
+        @include dimensions(80px, none);
+    }
+    @media all and (min-width: 441px) and (max-width: 767px) {
+        @include dimensions(60px, none);
+    }
+    @media all and (max-width: 440px) {
+        @include dimensions(50px, none);
+    }
 }
 
 .logo-les-petits-plats{
-    @include dimensions(130px, none);
+    @media all and (min-width: 992px) {
+        @include dimensions(120px, none);
+    }
+    @media all and (min-width: 768px) and (max-width: 991px) {
+        @include dimensions(110px, none);
+    }
+    @media all and (min-width: 441px) and (max-width: 767px) {
+        @include dimensions(75px, none);
+    }
+    @media all and (max-width: 440px) {
+        @include dimensions(65px, none);
+    }
 }
 
 .logo-kasa{
-    @include dimensions(90px, none);
+    @media all and (min-width: 992px) {
+        @include dimensions(80px, none);
+    }
+    @media all and (min-width: 768px) and (max-width: 991px) {
+        @include dimensions(70px, none);
+    }
+    @media all and (min-width: 441px) and (max-width: 767px) {
+        @include dimensions(50px, none);
+    }
+    @media all and (max-width: 440px) {
+        @include dimensions(40px, none);
+    }
 }
 
 .logo-sportsee{
-    @include dimensions(130px, none);
+    @media all and (min-width: 992px) {
+        @include dimensions(120px, none);
+    }
+    @media all and (min-width: 768px) and (max-width: 991px) {
+        @include dimensions(105px, none);
+    }
+    @media all and (min-width: 441px) and (max-width: 767px) {
+        @include dimensions(80px, none);
+    }
+    @media all and (max-width: 440px) {
+        @include dimensions(60px, none);
+    }
 }
 
 .logo-argentbank{
-    @include dimensions(130px, none);
+    @media all and (min-width: 992px) {
+        @include dimensions(130px, none);
+    }
+    @media all and (min-width: 768px) and (max-width: 991px) {
+        @include dimensions(120px, none);
+    }
+    @media all and (min-width: 441px) and (max-width: 767px) {
+        @include dimensions(80px, none);
+    }
+    @media all and (max-width: 440px) {
+        @include dimensions(60px, none);
+    }
 }
 
 .logo-hrnet{
-    @include dimensions(70px, none);
+    @media all and (min-width: 992px) {
+        @include dimensions(70px, none);
+    }
+    @media all and (min-width: 768px) and (max-width: 991px) {
+        @include dimensions(60px, none);
+    }
+    @media all and (min-width: 441px) and (max-width: 767px) {
+        @include dimensions(50px, none);
+    }
+    @media all and (max-width: 440px) {
+        @include dimensions(40px, none);
+    }
 }
 
 .border-logo-website{
@@ -139,24 +366,79 @@
     align-items: center;
     border-radius: 50%;
     overflow: hidden;
-    @include dimensions(90px, 90px);
+    @media all and (min-width: 992px) {
+        @include dimensions(80px, 80px);
+    }
+    @media all and (min-width: 768px) and (max-width: 991px) {
+        @include dimensions(70px, 70px);
+    }
+    @media all and (min-width: 441px) and (max-width: 767px) {
+        @include dimensions(60px, 60px);
+    }
+    @media all and (max-width: 440px) {
+        @include dimensions(50px, 50px);
+    }
 }
 
 .logo-page-web-title{
     color: #141929;
-    @include syntaxe-bellefair(18px, normal);
+    @media all and (min-width: 992px) {
+        @include syntaxe-bellefair(18px, normal);
+    }
+    @media all and (min-width: 768px) and (max-width: 991px) {
+        @include syntaxe-bellefair(17px, normal);
+    }
+    @media all and (min-width: 441px) and (max-width: 767px) {
+        @include syntaxe-bellefair(16px, normal);
+    }
+    @media all and (max-width: 440px) {
+        @include syntaxe-bellefair(15px, normal);
+    }
 }
 
 .logo-page-web{
-    @include dimensions(150px, none);
+    @media all and (min-width: 992px) {
+        @include dimensions(140px, none);
+    }
+    @media all and (min-width: 768px) and (max-width: 991px) {
+        @include dimensions(120px, none);
+    }
+    @media all and (min-width: 441px) and (max-width: 767px) {
+        @include dimensions(80px, none);
+    }
+    @media all and (max-width: 440px) {
+        @include dimensions(70px, none);
+    }
 }
 
 .logo-ghibli{
-    @include dimensions(150px, none);
+    @media all and (min-width: 992px) {
+        @include dimensions(130px, none);
+    }
+    @media all and (min-width: 768px) and (max-width: 991px) {
+        @include dimensions(115px, none);
+    }
+    @media all and (min-width: 441px) and (max-width: 767px) {
+        @include dimensions(90px, none);
+    }
+    @media all and (max-width: 440px) {
+        @include dimensions(80px, none);
+    }
 }
 
 .logo-leo-paul-berthaut{
-    @include dimensions(80px, none);
+    @media all and (min-width: 992px) {
+        @include dimensions(60px, none);
+    }
+    @media all and (min-width: 768px) and (max-width: 991px) {
+        @include dimensions(50px, none);
+    }
+    @media all and (min-width: 441px) and (max-width: 767px) {
+        @include dimensions(40px, none);
+    }
+    @media all and (max-width: 440px) {
+        @include dimensions(30px, none);
+    }
 }
 
 /*animation*/

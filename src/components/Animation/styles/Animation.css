@@ -1,51 +1,171 @@
 @import url("https://fonts.googleapis.com/css2?family=Bellefair&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bellefair&display=swap");
 .animation-title-box {
-  position: absolute;
-  top: 5896px !important;
-  bottom: none !important;
-  left: 5% !important;
-  right: none !important;
   z-index: 1;
   justify-content: center;
   align-items: center;
   background-color: rgba(0, 0, 0, 0.7);
-  width: 30%;
-  height: 100px !important;
+}
+@media all and (min-width: 992px) {
+  .animation-title-box {
+    position: absolute;
+    top: 5896px !important;
+    bottom: none !important;
+    left: 5% !important;
+    right: none !important;
+    width: 35%;
+    height: 100px !important;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 991px) {
+  .animation-title-box {
+    position: absolute;
+    top: 5912px !important;
+    bottom: none !important;
+    left: 4% !important;
+    right: none !important;
+    width: 40%;
+    height: 80px !important;
+  }
+}
+@media all and (min-width: 441px) and (max-width: 767px) {
+  .animation-title-box {
+    position: absolute;
+    top: 5926px !important;
+    bottom: none !important;
+    left: 3% !important;
+    right: none !important;
+    width: 50%;
+    height: 60px !important;
+  }
+}
+@media all and (max-width: 440px) {
+  .animation-title-box {
+    position: absolute;
+    top: 5936px !important;
+    bottom: none !important;
+    left: 2% !important;
+    right: none !important;
+    width: 65%;
+    height: 50px !important;
+  }
 }
 
 .animation-title {
   color: white;
-  font-family: "Bellefair", serif;
-  font-size: 38px;
-  font-weight: normal;
+}
+@media all and (min-width: 992px) {
+  .animation-title {
+    font-family: "Bellefair", serif;
+    font-size: 38px;
+    font-weight: normal;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 991px) {
+  .animation-title {
+    font-family: "Bellefair", serif;
+    font-size: 32px;
+    font-weight: normal;
+  }
+}
+@media all and (min-width: 441px) and (max-width: 767px) {
+  .animation-title {
+    font-family: "Bellefair", serif;
+    font-size: 26px;
+    font-weight: normal;
+  }
+}
+@media all and (max-width: 440px) {
+  .animation-title {
+    font-family: "Bellefair", serif;
+    font-size: 20px;
+    font-weight: normal;
+  }
 }
 
 .animation {
-  position: absolute;
-  top: 5976px !important;
-  bottom: none !important;
-  left: none !important;
-  right: 5% !important;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
   background-color: rgba(255, 255, 255, 0.6);
-  width: 60%;
-  height: 280px !important;
   padding-top: none !important;
   padding-bottom: none !important;
   padding-left: 3%;
   padding-right: 3%;
 }
+@media all and (min-width: 992px) {
+  .animation {
+    position: absolute;
+    top: 5976px !important;
+    bottom: none !important;
+    left: none !important;
+    right: 5% !important;
+    width: 60%;
+    height: 260px !important;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 991px) {
+  .animation {
+    position: absolute;
+    top: 5976px !important;
+    bottom: none !important;
+    left: none !important;
+    right: 4% !important;
+    width: 70%;
+    height: 260px !important;
+  }
+}
+@media all and (min-width: 441px) and (max-width: 767px) {
+  .animation {
+    position: absolute;
+    top: 5976px !important;
+    bottom: none !important;
+    left: none !important;
+    right: 3% !important;
+    width: 75%;
+    height: 260px !important;
+  }
+}
+@media all and (max-width: 440px) {
+  .animation {
+    position: absolute;
+    top: 5976px !important;
+    bottom: none !important;
+    left: none !important;
+    right: 2% !important;
+    width: 82%;
+    height: 260px !important;
+  }
+}
 
 .animation-line {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
-  width: 95%;
-  height: 60px !important;
-  /*border: 1px red solid;*/
+}
+@media all and (min-width: 992px) {
+  .animation-line {
+    width: 95%;
+    height: 60px !important;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 991px) {
+  .animation-line {
+    width: 99%;
+    height: 60px !important;
+  }
+}
+@media all and (min-width: 441px) and (max-width: 767px) {
+  .animation-line {
+    width: 99%;
+    height: 60px !important;
+  }
+}
+@media all and (max-width: 440px) {
+  .animation-line {
+    width: 99%;
+    height: 60px !important;
+  }
 }
 
 .animation-date {
@@ -53,13 +173,37 @@
   justify-content: flex-start;
   align-items: center;
   text-align: left;
-  font-family: "Bellefair", serif;
-  font-size: 18px;
-  font-weight: bold;
   color: black;
   width: 25%;
   height: 60px !important;
-  /*border: 1px green solid;*/
+}
+@media all and (min-width: 992px) {
+  .animation-date {
+    font-family: "Bellefair", serif;
+    font-size: 18px;
+    font-weight: bold;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 991px) {
+  .animation-date {
+    font-family: "Bellefair", serif;
+    font-size: 16px;
+    font-weight: bold;
+  }
+}
+@media all and (min-width: 441px) and (max-width: 767px) {
+  .animation-date {
+    font-family: "Bellefair", serif;
+    font-size: 14px;
+    font-weight: bold;
+  }
+}
+@media all and (max-width: 440px) {
+  .animation-date {
+    font-family: "Bellefair", serif;
+    font-size: 12px;
+    font-weight: bold;
+  }
 }
 
 .animation-content {
@@ -67,13 +211,43 @@
   justify-content: flex-start;
   align-items: center;
   text-align: left;
-  font-family: "Bellefair", serif;
-  font-size: 18px;
-  font-weight: normal;
   color: black;
-  width: 75%;
-  height: 60px !important;
-  /*border: 1px blue solid;*/
+}
+@media all and (min-width: 992px) {
+  .animation-content {
+    font-family: "Bellefair", serif;
+    font-size: 18px;
+    font-weight: normal;
+    width: 75%;
+    height: 60px !important;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 991px) {
+  .animation-content {
+    font-family: "Bellefair", serif;
+    font-size: 16px;
+    font-weight: normal;
+    width: 70%;
+    height: 60px !important;
+  }
+}
+@media all and (min-width: 441px) and (max-width: 767px) {
+  .animation-content {
+    font-family: "Bellefair", serif;
+    font-size: 14px;
+    font-weight: normal;
+    width: 60%;
+    height: 60px !important;
+  }
+}
+@media all and (max-width: 440px) {
+  .animation-content {
+    font-family: "Bellefair", serif;
+    font-size: 12px;
+    font-weight: normal;
+    width: 50%;
+    height: 60px !important;
+  }
 }
 
 /*animation*/

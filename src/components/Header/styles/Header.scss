@@ -10,7 +10,6 @@
     justify-content: center;
     align-items: center;
     &_dimensions{
-        /*@include dimensions(100%, 147px);*/
         width: 100%;
     }
     &_aspect{
@@ -23,20 +22,25 @@
 }
 
 .menu-link{
-    text-decoration: none;
+    background-color: transparent;
+    border: none;
     cursor: pointer;
     color: white;
     @media all and (min-width: 992px) {
         @include syntaxe-bellefair(24px, normal);
+        @include dimensions(90%, none);
     }
     @media all and (min-width: 768px) and (max-width: 991px) {
-        @include syntaxe-bellefair(20px, normal);
+        @include syntaxe-bellefair(18px, normal);
+        @include dimensions(98%, none);
     }
     @media all and (min-width: 441px) and (max-width: 767px) {
         @include syntaxe-bellefair(16px, normal);
+        @include dimensions(93%, none);
     }
     @media all and (max-width: 440px) {
         @include syntaxe-bellefair(14px, normal);
+        @include dimensions(90%, none);
     }
     transition: all 200ms;
     &:hover {
@@ -44,7 +48,7 @@
     }
     &:hover >.link-underline {
         border-bottom: 2px solid white;
-        transform: scaleX(1);
+        transform: scaleX(0.8);
     }
 }
 
@@ -56,11 +60,31 @@
 }
 
 .navigation{
-    display: flex;
-    justify-content: space-between;
+    /*display: flex;
+    justify-content: space-between;*/
+    display: grid;
     align-items: center;
+    @media all and (min-width: 768px) {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+    @media all and (min-width: 441px) and (max-width: 767px) {
+        grid-template-columns: 1fr 1fr 1fr;
+        row-gap: 30%;
+        gap:10%;
+    }
+    @media all and (max-width: 440px) {
+        grid-template-columns: 1fr 1fr 1fr;
+        row-gap: 0%;
+        gap:3%;
+    }
     &_dimensions{
-        @include dimensions(90%, 147px);
+        /*@include dimensions(90%, 147px);*/
+        @media all and (min-width: 768px) {
+            @include dimensions(90%, none);
+        }
+        @media all and (max-width: 767px) {
+            @include dimensions(100%, none);
+        }
     }
 }
 

@@ -4,7 +4,6 @@
 
 .softSkills {
     @include dimensions(100%, $FrameHeight);
-    /*border: 1px green solid;*/
 }
 
 .introduction {
@@ -93,44 +92,121 @@ $letterDelay: 40ms;
 .photo-border-introduction {
     @include position-package(absolute, 0px, none, 0px, none);
     transition: all 400ms;
-    @include dimensions(50%, $FrameHeight);
+    @media all and (min-width: 992px) {
+        @include dimensions(50%, $FrameHeight);
+    }
+    @media all and (min-width: 768px) and (max-width: 991px) {
+        @include dimensions(55%, $FrameHeight);
+    }
+    @media all and (min-width: 441px) and (max-width: 767px) {
+        @include dimensions(85%, $FrameHeight);
+    }
+    @media all and (max-width: 440px) {
+        @include dimensions(90%, $FrameHeight);
+    }
 }
 
 .photo-border-softskills {
-    @include position-package(absolute, 120px, none, 150px, none);
     transition: all 400ms;
     border-radius: 5px;
-    @include dimensions(30%, 550px);
+    @media all and (min-width: 992px) {
+        @include position-package(absolute, 120px, none, 5%, none);
+        @include dimensions(35%, 550px);
+    }
+    @media all and (min-width: 768px) and (max-width: 991px) {
+        @include position-package(absolute, 120px, none, 2%, none);
+        @include dimensions(47%, 550px);
+    }
+    @media all and (min-width: 441px) and (max-width: 767px) {
+        @include position-package(absolute, 120px, none, 5%, none);
+        @include dimensions(90%, 300px);
+    }
+    @media all and (max-width: 440px) {
+        @include position-package(absolute, 120px, none, 5%, none);
+        @include dimensions(90%, 300px);
+    }
 }
 
 .photo-introduction {
-    @include dimensions(770px, none);
+    @media all and (min-width: 992px) {
+        @include dimensions(770px, none);
+    }
+    @media all and (min-width: 768px) and (max-width: 991px) {
+        @include dimensions(680px, none);
+    }
+    @media all and (min-width: 441px) and (max-width: 767px) {
+        @include dimensions(650px, none);
+    }
+    @media all and (max-width: 440px) {
+        @include dimensions(550px, none);
+    }
 }
 
 .photo-softskills {
-    @include dimensions(570px, none);
+    @media all and (min-width: 992px) {
+        @include dimensions(570px, none);
+    }
+    @media all and (min-width: 768px) and (max-width: 991px) {
+        @include dimensions(520px, none);
+    }
+    @media all and (min-width: 441px) and (max-width: 767px) {
+        @include dimensions(680px, none);
+        @include margin-package(200px, none, none, none);
+    }
+    @media all and (max-width: 440px) {
+        @include dimensions(400px, none);
+        @include margin-package(none, none, none, 2%);
+    }
 }
 
 /* Text soft skills */
 
 .softSkills-text-introduction {
-    @include position-package(fixed, 350px, none, none, 5%);
     display: flex;
     justify-content: center;
     align-items: center;
     transition: all 400ms;
     background-color: rgb(0, 0, 0, 0.6);
-    @include dimensions(50%, 250px);
+    @media all and (min-width: 992px) {
+        @include position-package(fixed, 350px, none, none, 5%);
+        @include dimensions(50%, 250px);
+    }
+    @media all and (min-width: 768px) and (max-width: 991px) {
+        @include position-package(fixed, 400px, none, none, 3%);
+        @include dimensions(65%, 180px);
+    }
+    @media all and (min-width: 441px) and (max-width: 767px) {
+        @include position-package(fixed, 410px, none, none, 3%);
+        @include dimensions(85%, 180px);
+    }
+    @media all and (max-width: 440px) {
+        @include position-package(fixed, 420px, none, none, 2%);
+        @include dimensions(90%, 160px);
+    }
 }
 
 .softSkills-text-displayed {
-    @include position-package(absolute, 150px, none, none, 8%);
     display: flex;
     justify-content: center;
     align-items: center;
     transition: all 400ms;
     background-color: rgb(0, 0, 0, 0.6);
-    @include dimensions(45%, 500px);
+    @media all and (min-width: 992px) {
+        @include position-package(absolute, 150px, none, none, 8%);
+        @include dimensions(45%, 500px);
+    }
+    @media all and (min-width: 768px) and (max-width: 991px) {
+        @include position-package(absolute, 150px, none, none, 2%);
+        @include dimensions(45%, 500px);
+    }
+    @media all and (min-width: 441px) and (max-width: 767px) {
+        @include position-package(absolute, 450px, none, 5%, none);
+        @include dimensions(90%, 250px);
+    }
+    @media all and (max-width: 440px) {
+        @include position-package(absolute, 450px, none, 5%, none);
+        @include dimensions(90%, 250px);
+    }
 }
 
 .page-title{
@@ -138,13 +214,30 @@ $letterDelay: 40ms;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    @include dimensions(70%, 200px);
     color: white;
-    @include syntaxe-bellefair(44px, normal);
-    line-height: 70px;
     animation: titleAppearence 400ms linear;
     animation-delay: 0ms;
     animation-fill-mode: backwards;
+    @media all and (min-width: 992px) {
+        @include dimensions(70%, 200px);
+        @include syntaxe-bellefair(44px, normal);
+        line-height: 70px;
+    }
+    @media all and (min-width: 768px) and (max-width: 991px) {
+        @include dimensions(85%, 140px);
+        @include syntaxe-bellefair(40px, normal);
+        line-height: 20px;
+    }
+    @media all and (min-width: 441px) and (max-width: 767px) {
+        @include dimensions(90%, 140px);
+        @include syntaxe-bellefair(32px, normal);
+        line-height: 20px;
+    }
+    @media all and (max-width: 440px) {
+        @include dimensions(90%, 120px);
+        @include syntaxe-bellefair(28px, normal);
+        line-height: 20px;
+    }
 }
 
 @keyframes titleAppearence{
@@ -162,10 +255,23 @@ $letterDelay: 40ms;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    @include position-package(absolute, 50px, none, none, none);
-    @include dimensions(90%, 400px);
-    /*border: 1px red solid;*/
     overflow: hidden;
+    @media all and (min-width: 992px) {
+        @include position-package(absolute, 50px, none, none, none);
+        @include dimensions(90%, 400px);
+    }
+    @media all and (min-width: 768px) and (max-width: 991px) {
+        @include position-package(absolute, 50px, none, none, none);
+        @include dimensions(90%, 400px);
+    }
+    @media all and (min-width: 441px) and (max-width: 767px) {
+        @include position-package(absolute, 15px, none, none, none);
+        @include dimensions(90%, 220px);
+    }
+    @media all and (max-width: 440px) {
+        @include position-package(absolute, 15px, none, none, none);
+        @include dimensions(90%, 220px);
+    }
 }
 
 .softSkills-text {
@@ -175,8 +281,21 @@ $letterDelay: 40ms;
     align-items: center;
     @include dimensions(100%, 800px);
     color: white;
-    @include syntaxe-bellefair(18px, normal);
     text-align: justify;
-    @include padding-package(none, none, 30px, 10px);
-    /*border: 1px green solid;*/
+    @media all and (min-width: 992px) {
+        @include padding-package(none, none, 10%, 10%);
+        @include syntaxe-bellefair(18px, normal);
+    }
+    @media all and (min-width: 768px) and (max-width: 991px) {
+        @include padding-package(none, none, 10%, 10%);
+        @include syntaxe-bellefair(17px, normal);
+    }
+    @media all and (min-width: 441px) and (max-width: 767px) {
+        @include padding-package(none, none, 10%, 10%);
+        @include syntaxe-bellefair(16px, normal);
+    }
+    @media all and (max-width: 440px) {
+        @include padding-package(none, none, 10%, 10%);
+        @include syntaxe-bellefair(15px, normal);
+    }
 }

@@ -3,35 +3,84 @@
 @import "../../../Parameters/Parameters";
 
 .animation-title-box {
-    @include position-package(absolute, 184px+8*$FrameHeight, none, 5%, none);
     z-index: 1;
     justify-content: center;
     align-items: center;
     background-color: rgb(0, 0, 0, 0.7);
-    @include dimensions(30%, 100px);
+    @media all and (min-width: 992px) {
+        @include position-package(absolute, 184px+8*$FrameHeight, none, 5%, none);
+        @include dimensions(35%, 100px);
+    }
+    @media all and (min-width: 768px) and (max-width: 991px) {
+        @include position-package(absolute, 200px+8*$FrameHeight, none, 4%, none);
+        @include dimensions(40%, 80px);
+    }
+    @media all and (min-width: 441px) and (max-width: 767px) {
+        @include position-package(absolute, 214px+8*$FrameHeight, none, 3%, none);
+        @include dimensions(50%, 60px);
+    }
+    @media all and (max-width: 440px) {
+        @include position-package(absolute, 224px+8*$FrameHeight, none, 2%, none);
+        @include dimensions(65%, 50px);
+    }
 }
 
 .animation-title {
     color: white;
-    @include syntaxe-bellefair(38px, normal);
+    @media all and (min-width: 992px) {
+        @include syntaxe-bellefair(38px, normal);
+    }
+    @media all and (min-width: 768px) and (max-width: 991px) {
+        @include syntaxe-bellefair(32px, normal);
+    }
+    @media all and (min-width: 441px) and (max-width: 767px) {
+        @include syntaxe-bellefair(26px, normal);
+    }
+    @media all and (max-width: 440px) {
+        @include syntaxe-bellefair(20px, normal);
+    }
 }
 
 .animation {
-    @include position-package(absolute, 264px+8*$FrameHeight, none, none, 5%);
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
     background-color: rgb(255, 255, 255, 0.6);
-    @include dimensions(60%, 280px);
     @include padding-package(none, none, 3%, 3%);
+    @media all and (min-width: 992px) {
+        @include position-package(absolute, 264px+8*$FrameHeight, none, none, 5%);
+        @include dimensions(60%, 260px);
+    }
+    @media all and (min-width: 768px) and (max-width: 991px) {
+        @include position-package(absolute, 264px+8*$FrameHeight, none, none, 4%);
+        @include dimensions(70%, 260px);
+    }
+    @media all and (min-width: 441px) and (max-width: 767px) {
+        @include position-package(absolute, 264px+8*$FrameHeight, none, none, 3%);
+        @include dimensions(75%, 260px);
+    }
+    @media all and (max-width: 440px) {
+        @include position-package(absolute, 264px+8*$FrameHeight, none, none, 2%);
+        @include dimensions(82%, 260px);
+    }
 }
 
 .animation-line {
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
-    @include dimensions(95%, 60px);
-    /*border: 1px red solid;*/
+    @media all and (min-width: 992px) {
+        @include dimensions(95%, 60px);
+    }
+    @media all and (min-width: 768px) and (max-width: 991px) {
+        @include dimensions(99%, 60px);
+    }
+    @media all and (min-width: 441px) and (max-width: 767px) {
+        @include dimensions(99%, 60px);
+    }
+    @media all and (max-width: 440px) {
+        @include dimensions(99%, 60px);
+    }
 }
 
 .animation-date {
@@ -39,10 +88,20 @@
     justify-content: flex-start;
     align-items: center;
     text-align: left;
-    @include syntaxe-bellefair(18px, bold);
     color: black;
     @include dimensions(25%, 60px);
-    /*border: 1px green solid;*/
+    @media all and (min-width: 992px) {
+        @include syntaxe-bellefair(18px, bold);
+    }
+    @media all and (min-width: 768px) and (max-width: 991px) {
+        @include syntaxe-bellefair(16px, bold);
+    }
+    @media all and (min-width: 441px) and (max-width: 767px) {
+        @include syntaxe-bellefair(14px, bold);
+    }
+    @media all and (max-width: 440px) {
+        @include syntaxe-bellefair(12px, bold);
+    }
 }
 
 .animation-content {
@@ -50,10 +109,23 @@
     justify-content: flex-start;
     align-items: center;
     text-align: left;
-    @include syntaxe-bellefair(18px, normal);
     color: black;
-    @include dimensions(75%, 60px);
-    /*border: 1px blue solid;*/
+    @media all and (min-width: 992px) {
+        @include syntaxe-bellefair(18px, normal);
+        @include dimensions(75%, 60px);
+    }
+    @media all and (min-width: 768px) and (max-width: 991px) {
+        @include syntaxe-bellefair(16px, normal);
+        @include dimensions(70%, 60px);
+    }
+    @media all and (min-width: 441px) and (max-width: 767px) {
+        @include syntaxe-bellefair(14px, normal);
+        @include dimensions(60%, 60px);
+    }
+    @media all and (max-width: 440px) {
+        @include syntaxe-bellefair(12px, normal);
+        @include dimensions(50%, 60px);
+    }
 }
 
 /*animation*/
