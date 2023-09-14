@@ -2,23 +2,15 @@ import { createStore } from "redux";
 
 /**
  * States to manage different elements of the website
- * userToken is a state to save the user token after authentation
- * userData is a state to save the user data after authentation
- * isChecked is the state of the Remember Me button
- * isLogged is the state of the sign in button of the header
- * isEditName is the state of the profile banner for user name update
- * isUpDating is a state to save the updated names
- * The last states save the user lastname and fistname updated
+ * Each states is created to focus the website page sessions
  */
 const initialState = {
-  userToken: '',
-  userData: {},
-  isChecked: false,
-  isLogged: false,
-  isEditName: false,
-  isUpDating: false,
-  userFistNameEdited: '',
-  userLastNameEdited: '',
+  isSoftSkillsFocused: false,
+  isSkillsFocused: false,
+  isFormationFocused: false,
+  isProjectsFocused: false,
+  isHobbiesFocused: false,
+  isContactFocused: false,
 };
 
 /**
@@ -26,128 +18,93 @@ const initialState = {
  */
 
 /**
- * Action to switch sign in to sign out on the header
+ * Actions to focus a page section
 */
-export const userLogIn = () => ({ type: "userLogIn" });
-
-/**
- * Action to switch sign out to sign in on the header
-*/
-export const userLogOut = () => ({ type: "userLogOut" });
-
-
-/**
- * Action to save the updated names in the database
- */
-export const switchUpDate = (isUpDating) => ({ 
-  type: "switchUpDate",
-  isUpDating: isUpDating, 
-});
-
-/**
- * Action to check/uncheck the Remember me box
- */
-export const checkBox = (isChecked) => ({ 
-  type: "checkBox",
-  isChecked: isChecked, 
-});
-
-/**
- * Action to save the updated names
- */
-export const changeUserNames = (userFirstNameEdited, userLastNameEdited) => ({ 
-  type: "changeUserNames",
-  userFirstNameEdited: userFirstNameEdited, 
-  userLastNameEdited: userLastNameEdited,
-});
-
-/**
- * Action to switch the welcome message of the profile page to the edit mode
-*/
-export const userEditMode = () => ({ type: "userEditMode" });
-
-/**
- * Action to switch the edit mode of the profile page to the welcome message
-*/
-export const userNoEditMode = () => ({ type: "userNoEditMode" });
-
-/**
- * Action to save the user token after authentation
-*/
-export const setUserToken = (userToken) => ({ 
-  type: "setUserToken",
-  userToken: userToken, 
-});
-
-/**
- * Action to save the user data after authentation
-*/
-export const setUserData = (userData) => ({ 
-  type: "setUserData",
-  userData: userData, 
-});
+export const homeFocused = () => ({ type: "homeFocused" });
+export const softSkillsFocused = () => ({ type: "softSkillsFocused" });
+export const skillsFocused = () => ({ type: "skillsFocused" });
+export const formationFocused = () => ({ type: "formationFocused" });
+export const projectsFocused = () => ({ type: "projectsFocused" });
+export const hobbiesFocused = () => ({ type: "hobbiesFocused" });
+export const contactFocused = () => ({ type: "contactFocused" });
 
 function reducer(state = initialState, action) {
-  if (action.type === "userLogIn") {
+  if (action.type === "homeFocused") {
     return {
       ...state,
-      isLogged: true,
+      isSoftSkillsFocused: false,
+      isSkillsFocused: false,
+      isFormationFocused: false,
+      isProjectsFocused: false,
+      isHobbiesFocused: false,
+      isContactFocused: false,
     };
   }
-  if (action.type === "userLogOut") {
+  if (action.type === "softSkillsFocused") {
     return {
       ...state,
-      isLogged: false,
+      isSoftSkillsFocused: true,
+      isSkillsFocused: false,
+      isFormationFocused: false,
+      isProjectsFocused: false,
+      isHobbiesFocused: false,
+      isContactFocused: false,
     };
   }
-  if (action.type === "changeUserNames") {
-    const userFirstNameEdited = action.userFirstNameEdited;
-    const userLastNameEdited = action.userLastNameEdited;
+  if (action.type === "skillsFocused") {
     return {
       ...state,
-      userFirstNameEdited: userFirstNameEdited,
-      userLastNameEdited: userLastNameEdited,
+      isSoftSkillsFocused: false,
+      isSkillsFocused: true,
+      isFormationFocused: false,
+      isProjectsFocused: false,
+      isHobbiesFocused: false,
+      isContactFocused: false,
     };
   }
-  if (action.type === "setUserToken") {
-    const userToken = action.userToken;
+  if (action.type === "formationFocused") {
     return {
       ...state,
-      userToken: userToken,
+      isSoftSkillsFocused: false,
+      isSkillsFocused: false,
+      isFormationFocused: true,
+      isProjectsFocused: false,
+      isHobbiesFocused: false,
+      isContactFocused: false,
     };
   }
-  if (action.type === "setUserData") {
-    const userData = action.userData;
+  if (action.type === "projectsFocused") {
     return {
       ...state,
-      userData: userData,
+      isSoftSkillsFocused: false,
+      isSkillsFocused: false,
+      isFormationFocused: false,
+      isProjectsFocused: true,
+      isHobbiesFocused: false,
+      isContactFocused: false,
     };
   }
-  if (action.type === "switchUpDate") {
-    const isUpDating = action.isUpDating;
+  if (action.type === "hobbiesFocused") {
     return {
       ...state,
-      isUpDating: isUpDating,
+      isSoftSkillsFocused: false,
+      isSkillsFocused: false,
+      isFormationFocused: false,
+      isProjectsFocused: false,
+      isHobbiesFocused: true,
+      isContactFocused: false,
     };
   }
-  if (action.type === "checkBox") {
-    const isChecked = action.isChecked;
+  if (action.type === "contactFocused") {
     return {
       ...state,
-      isChecked: isChecked,
+      isSoftSkillsFocused: false,
+      isSkillsFocused: false,
+      isFormationFocused: false,
+      isProjectsFocused: false,
+      isHobbiesFocused: false,
+      isContactFocused: true,
     };
-  }
-  if (action.type === "userEditMode") {
-    return {
-      ...state,
-      isEditName: true,
-    }
-  }
-  if (action.type === "userNoEditMode") {
-    return {
-      ...state,
-      isEditName: false,
-    }
   }
   return state;
 }

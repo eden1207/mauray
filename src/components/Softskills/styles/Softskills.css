@@ -741,4 +741,17 @@
     font-size: 15px;
     font-weight: normal;
   }
+}
+
+.intro-link {
+  background-color: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 400ms;
+}
+.intro-link:hover {
+  scale: 1.01;
+  color: red;
 }/*# sourceMappingURL=Softskills.css.map */

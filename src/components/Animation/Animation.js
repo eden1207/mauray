@@ -43,7 +43,7 @@ export default function Animation() {
                 <div className='animation-line'>
                     <p className='animation-date'>2019 <br/>Rennes</p>
                     <p className='animation-content'>
-                        Membre des organisateurs de la journée des doctorants de l'Intitut de 
+                        Membre des organisateurs de la journée des doctorants de l'Institut de 
                         Physique de Rennes 
                     </p>
                 </div>

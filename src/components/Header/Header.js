@@ -1,7 +1,10 @@
-import React, {useState} from 'react'
+import React, { useState } from 'react'
 import './styles/Header.css';
+import { useSelector } from "react-redux";
+//import { homeFocused, softSkillsFocused } from "../Store/Store.js";
 
 export default function Header() {
+    //const dispatch = useDispatch();
     const [headerHeight, setHeaderHeight] = useState(147);
     const softSkillsTopLevel = 1480;
     const skillsTopLevel = 2850;
@@ -12,11 +15,20 @@ export default function Header() {
         const { scrollTop } = document.documentElement;
         if(scrollTop > 10) {
             setHeaderHeight(74);
+            //dispatch(softSkillsFocused());
         }
         if(scrollTop < 10) {
             setHeaderHeight(147);
+            //dispatch(homeFocused());
         }
     });
+
+    const isSoftSkillsFocused = useSelector((state) => state.isSoftSkillsFocused);
+    const isSkillsFocused = useSelector((state) => state.isSkillsFocused);
+    const isFormationFocused = useSelector((state) => state.isFormationFocused);
+    const isProjectsFocused = useSelector((state) => state.isProjectsFocused);
+    const isHobbiesFocused = useSelector((state) => state.isHobbiesFocused);
+    const isContactFocused = useSelector((state) => state.isContactFocused);
     return(
         <header 
             className='header header_dimensions header_aspect header-appearence'
@@ -27,61 +39,68 @@ export default function Header() {
             <nav className='navigation navigation_dimensions' aria-label="main" role="navigation">
                 <button 
                     type='button'
-                    className='menu-link header-element-appearence1'
+                    className={isSoftSkillsFocused ? 'menu-link-focused' : 'menu-link header-element-appearence1'}
                     onClick={() => {
                         window.scrollTo({ top: softSkillsTopLevel, behavior: 'smooth'});
+                        //dispatch(softSkillsFocused());
                     }}
                 >
                     Qui suis-je ?
-                    <div className='link-underline'></div>
+                    <div className={isSoftSkillsFocused ? 'link-underline-focused' : 'link-underline'}></div>
                 </button>
                 <button 
                     type='button'
-                    className='menu-link header-element-appearence2' 
+                    className={isSkillsFocused ? 'menu-link-focused' : 'menu-link header-element-appearence2'} 
                     onClick={() => {
                         window.scrollTo({ top: skillsTopLevel, behavior: 'smooth'});
+                        //dispatch(skillsFocused());
                     }}
                 >
                     Mes compétences
-                    <div className='link-underline'></div>
+                    <div className={isSkillsFocused ? 'link-underline-focused' : 'link-underline'}></div>
                 </button>
                 <button 
                     type='button'
-                    className='menu-link header-element-appearence3' 
+                    className={isFormationFocused ? 'menu-link-focused' : 'menu-link header-element-appearence3'}
                     onClick={() => {
                         window.scrollTo({ top: backgroundTopLevel, behavior: 'smooth'});
+                        //dispatch(formationFocused());
                     }}
                 >
                     Mon parcours
-                    <div className='link-underline'></div>
+                    <div className={isFormationFocused ? 'link-underline-focused' : 'link-underline'}></div>
                 </button>
                 <button
                     type='button' 
-                    className='menu-link header-element-appearence4'
+                    className={isProjectsFocused ? 'menu-link-focused' : 'menu-link header-element-appearence4'}
                     onClick={() => {
                         window.scrollTo({ top: projectsTopLevel, behavior: 'smooth'});
+                        //dispatch(projectsFocused());
                     }}
                 >
                     Mes projets web
-                    <div className='link-underline'></div>
+                    <div className={isProjectsFocused ? 'link-underline-focused' : 'link-underline'}></div>
                 </button>
                 <button 
                     type='button'
-                    className='menu-link header-element-appearence5'
+                    className={isHobbiesFocused ? 'menu-link-focused' : 'menu-link header-element-appearence5'}
                     onClick={() => {
                         window.scrollTo({ top: hobbiesTopLevel, behavior: 'smooth'});
+                        //dispatch(hobbiesFocused());
                     }}
                 >
                     Mes passions
-                    <div className='link-underline'></div>
+                    <div className={isHobbiesFocused ? 'link-underline-focused' : 'link-underline'}></div>
                 </button>
                 <button 
                     type='button'
-                    className='menu-link header-element-appearence6'
-                    onClick={ (event) => event.preventDefault() }
+                    className={isContactFocused ? 'menu-link-focused' : 'menu-link header-element-appearence6'}
+                    onClick={ () => {
+                        //dispatch(contactFocused());
+                    }}
                 >
                     Me contacter
-                    <div className='link-underline'></div>
+                    <div className={isContactFocused ? 'link-underline-focused' : 'link-underline'}></div>
                 </button>
             </nav>
         </header>

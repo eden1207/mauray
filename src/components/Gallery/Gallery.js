@@ -4,7 +4,7 @@ import { IoIosArrowBack, IoIosArrowForward, IoIosClose } from "react-icons/io";
 
 
 export default function Gallery({ listPhotos, setIsGalleryOpen, setgalleryTab }) {
-    const [prevIndex, setPrevIndex] = useState(3);
+    const [prevIndex, setPrevIndex] = useState(listPhotos.length-1);
     const [mainIndex, setMainIndex] = useState(0);
     const [nextIndex, setNextIndex] = useState(1);
 
@@ -25,10 +25,9 @@ export default function Gallery({ listPhotos, setIsGalleryOpen, setgalleryTab })
 
                 <button 
                     type='button' 
-                    className='prev-btn arrow-left-openning'
+                    className='desktop-prev-btn arrow-left-openning'
                     onMouseMove={(event) => {
                         const { clientX, clientY } = event;
-                        /*setMouseLeftPosition({ x: clientX, y: clientY });*/
                         setMouseLeftPosition({ x: `${clientX}px`, y: `${clientY}px` });
                     }}
                     onMouseLeave={() => {
@@ -39,30 +38,27 @@ export default function Gallery({ listPhotos, setIsGalleryOpen, setgalleryTab })
                         setArrowLeftPosition('fixed');
                     }}
                     onClick={() => {
-                        if(prevIndex !== listPhotos.length-1) {
-                            setPrevIndex(prevIndex+1);
+                        if(prevIndex !== 0) {
+                            setPrevIndex(prevIndex-1);
                         } else{
-                            setPrevIndex(0);
+                            setPrevIndex(listPhotos.length-1);
                         }
-                        if(mainIndex !== listPhotos.length-1) {
-                            setMainIndex(mainIndex+1);
+                        if(mainIndex !== 0) {
+                            setMainIndex(mainIndex-1);
                         } else{
-                            setMainIndex(0);
+                            setMainIndex(listPhotos.length-1);
                         }
-                        if(nextIndex !== listPhotos.length-1) {
-                            setNextIndex(nextIndex+1);
+                        if(nextIndex !== 0) {
+                            setNextIndex(nextIndex-1);
                         } else{
-                            setNextIndex(0);
+                            setNextIndex(listPhotos.length-1);
                         }
-                        //setAnimationNextMainPhoto('animation-next-main-photo');
                     }}
                 >
                     <IoIosArrowBack
                         className='arrows'
                         style={{ 
                             position: arrowLeftPosition,
-                            /*left: `${mouseLeftPosition.x}px`, 
-                            top: `${mouseLeftPosition.y}px`*/
                             left: mouseLeftPosition.x, 
                             top: mouseLeftPosition.y
                         }}
@@ -80,6 +76,7 @@ export default function Gallery({ listPhotos, setIsGalleryOpen, setgalleryTab })
 
 
                 <div className='gallery-main-photo-openning '>
+
                     <img 
                         src={listPhotos[mainIndex].photo} 
                         alt={listPhotos[mainIndex].name} 
@@ -98,6 +95,59 @@ export default function Gallery({ listPhotos, setIsGalleryOpen, setgalleryTab })
                             className='close-symbole'
                         />
                     </button>
+
+                    <div className='buttons-container'>
+                        <button 
+                            type='button' 
+                            className='prev-btn arrow-left-openning'
+                            onClick={() => {
+                                if(prevIndex !== 0) {
+                                    setPrevIndex(prevIndex-1);
+                                } else{
+                                    setPrevIndex(listPhotos.length-1);
+                                }
+                                if(mainIndex !== 0) {
+                                    setMainIndex(mainIndex-1);
+                                } else{
+                                    setMainIndex(listPhotos.length-1);
+                                }
+                                if(nextIndex !== 0) {
+                                    setNextIndex(nextIndex-1);
+                                } else{
+                                    setNextIndex(listPhotos.length-1);
+                                }
+                            }}
+                        >
+                            <IoIosArrowBack
+                                className='arrows'
+                            />
+                        </button>
+                        <button 
+                            type='button' 
+                            className='next-btn arrow-right-openning'
+                            onClick={() => {
+                                if(prevIndex !== listPhotos.length-1) {
+                                    setPrevIndex(prevIndex+1);
+                                } else{
+                                    setPrevIndex(0);
+                                }
+                                if(mainIndex !== listPhotos.length-1) {
+                                    setMainIndex(mainIndex+1);
+                                } else{
+                                    setMainIndex(0);
+                                }
+                                if(nextIndex !== listPhotos.length-1) {
+                                    setNextIndex(nextIndex+1);
+                                } else{
+                                    setNextIndex(0);
+                                }
+                            }}
+                        >
+                            <IoIosArrowForward 
+                                className='arrows'
+                            />
+                        </button>
+                    </div>
                 </div>
 
 
@@ -108,10 +158,9 @@ export default function Gallery({ listPhotos, setIsGalleryOpen, setgalleryTab })
 
                 <button 
                     type='button' 
-                    className='next-btn arrow-right-openning'
+                    className='desktop-next-btn arrow-right-openning'
                     onMouseMove={(event) => {
                         const { clientX, clientY } = event;
-                        /*setMouseRightPosition({ x: clientX, y: clientY });*/
                         setMouseRightPosition({ x: `${clientX}px`, y: `${clientY}px` });
                     }}
                     onMouseLeave={() => {
@@ -122,20 +171,20 @@ export default function Gallery({ listPhotos, setIsGalleryOpen, setgalleryTab })
                         setArrowRightPosition('fixed');
                     }}
                     onClick={() => {
-                        if(prevIndex !== 0) {
-                            setPrevIndex(prevIndex-1);
+                        if(prevIndex !== listPhotos.length-1) {
+                            setPrevIndex(prevIndex+1);
                         } else{
-                            setPrevIndex(listPhotos.length-1);
+                            setPrevIndex(0);
                         }
-                        if(mainIndex !== 0) {
-                            setMainIndex(mainIndex-1);
+                        if(mainIndex !== listPhotos.length-1) {
+                            setMainIndex(mainIndex+1);
                         } else{
-                            setMainIndex(listPhotos.length-1);
+                            setMainIndex(0);
                         }
-                        if(nextIndex !== 0) {
-                            setNextIndex(nextIndex-1);
+                        if(nextIndex !== listPhotos.length-1) {
+                            setNextIndex(nextIndex+1);
                         } else{
-                            setNextIndex(listPhotos.length-1);
+                            setNextIndex(0);
                         }
                     }}
                 >

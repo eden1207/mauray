@@ -299,3 +299,16 @@ $letterDelay: 40ms;
         @include syntaxe-bellefair(15px, normal);
     }
 }
+
+.intro-link {
+    background-color: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 400ms;
+    &:hover {
+        scale: 1.01;
+        color: red;
+    }
+}

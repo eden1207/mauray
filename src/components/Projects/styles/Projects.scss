@@ -183,6 +183,10 @@
     @media all and (max-width: 440px) {
         @include dimensions(60px, 60px);
     }
+    transition: all 200ms;
+    &:hover {
+        transform: scale(1.15);
+    }
 }
 
 .submenu-link2{
@@ -202,6 +206,10 @@
     @media all and (max-width: 440px) {
         @include dimensions(60px, 60px);
     }
+    transition: all 200ms;
+    &:hover {
+        transform: scale(1.15);
+    }
 }
 
 .submenu-link2-logo-website{
@@ -209,7 +217,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-decoration: none;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
     line-height: 2px;
     @media all and (min-width: 992px) {
         @include dimensions(150px, auto);
@@ -222,6 +232,10 @@
     }
     @media all and (max-width: 440px) {
         @include dimensions(80px, auto);
+    }
+    transition: all 200ms;
+    &:hover {
+        transform: scale(1.15);
     }
 }
 

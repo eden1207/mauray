@@ -48,7 +48,31 @@
     }
     &:hover >.link-underline {
         border-bottom: 2px solid white;
-        transform: scaleX(0.8);
+        transform: scaleX(0.75);
+    }
+}
+
+.menu-link-focused {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: white;
+    transform: scale(1.15);
+    @media all and (min-width: 992px) {
+        @include syntaxe-bellefair(24px, normal);
+        @include dimensions(90%, none);
+    }
+    @media all and (min-width: 768px) and (max-width: 991px) {
+        @include syntaxe-bellefair(18px, normal);
+        @include dimensions(98%, none);
+    }
+    @media all and (min-width: 441px) and (max-width: 767px) {
+        @include syntaxe-bellefair(16px, normal);
+        @include dimensions(93%, none);
+    }
+    @media all and (max-width: 440px) {
+        @include syntaxe-bellefair(14px, normal);
+        @include dimensions(90%, none);
     }
 }
 
@@ -59,9 +83,12 @@
     transition: transform 500ms; 
 }
 
+.link-underline-focused {
+    border-bottom: 2px solid white;
+    transform: scaleX(0.75);
+}
+
 .navigation{
-    /*display: flex;
-    justify-content: space-between;*/
     display: grid;
     align-items: center;
     @media all and (min-width: 768px) {
@@ -78,7 +105,6 @@
         gap:3%;
     }
     &_dimensions{
-        /*@include dimensions(90%, 147px);*/
         @media all and (min-width: 768px) {
             @include dimensions(90%, none);
         }

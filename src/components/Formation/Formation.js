@@ -35,8 +35,9 @@ export default function Formation() {
                 <div className='formation-line'>
                     <p className='formation-date'>2022-2023 <br/>Rennes</p>
                     <p className='formation-content'>
-                        Formation à distance de développeur d'applications Front-End chez 
-                        OpenClassrooms
+                        Formation développeur d'applications JavaScript React chez OpenClassrooms
+                        (RNCP niveau 6) avec réalisation de 13 projets web professionnalisants et
+                        mentorés
                     </p>
                 </div>
                 <div className='formation-line'>

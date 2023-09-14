@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import './styles/Projects.css';
-import { Link } from 'react-router-dom';
 import logo_booki from '../../assets/Booki.png';
 import logo_ohmyfood from '../../assets/ohmyfood.png';
 import logo_gameon from '../../assets/gameon.png';
@@ -46,7 +45,7 @@ export default function Projects() {
                 }}
             >
                 <div className='projects-list1'>
-                    <h3 className='projects-list1-title'>Projets réalisés lors de ma formation chez OpenClassrooms</h3>
+                    <h3 className='projects-list1-title'>Liens vers mes projets réalisés lors de ma formation chez OpenClassrooms</h3>
                     <nav className='subnavigation1' aria-label="secondary" role="navigation">
                         <a 
                             target='_blank' 
@@ -123,14 +122,20 @@ export default function Projects() {
                     </nav>
                 </div>
                 <div className='projects-list2'>
-                    <h3 className='projects-list2-title'>Projets réalisés sur mon temps libre</h3>
+                    <h3 className='projects-list2-title'>Liens vers mes projets réalisés sur mon temps libre</h3>
                     <nav className='subnavigation2' aria-label="secondary" role="navigation">
-                        <Link className='submenu-link2-logo-website' to="/" onClick={ (event) => event.preventDefault() }>
+                        <button 
+                        type='button'
+                            className='submenu-link2-logo-website' 
+                            onClick={() => {
+                                window.scrollTo({ top: 0, behavior: 'smooth'});
+                            }}
+                        >
                             <div className='border-logo-website'>
                                 <img src={profil} alt='Alexis Mauray' className='logo-page-web' />
                             </div>
                             <p className='logo-page-web-title'>Mon site</p>
-                        </Link>
+                        </button>
                         <a 
                             target='_blank' 
                             rel="noreferrer" 

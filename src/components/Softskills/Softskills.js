@@ -4,6 +4,8 @@ import profil from '../../assets/profil.jpg';
 
 
 export default function Softskills() {
+    const projectsTopLevel = 6435;
+    const hobbiesTopLevel = 7175;
     const [softSkills, setSoftSkills] = useState('introduction');
     const [softSkillsPhotoBorder, setSoftSkillsPhotoBorder] = useState('photo-border-introduction');
     const [softSkillsPhoto, setSoftSkillsPhoto] = useState('photo-introduction');
@@ -91,7 +93,7 @@ export default function Softskills() {
                                 >
                                     <p>
                                         Je suis actuellement développeur d'application front-end et je suis passionné 
-                                        par la conception et la mise en pratique d'outils technologiques.
+                                        par la conception ainsi que la mise en pratique d'outils technologiques.
                                     </p>
                                     <p>
                                         De nature curieuse, je suis issu d'un parcours de docteur en physique et j'ai exercé 
@@ -99,12 +101,12 @@ export default function Softskills() {
                                         expériences m'ont permis de développer de nombreuses compétences et de me structurer 
                                         professionnellement. J'ai effectivement pu acquérir une maîtrise en terme de gestion de 
                                         projet à travers deux collaborations entre le milieu universitaire et le milieu industrielle 
-                                        (Solvay puis Total Energies). Lors de ces interactions, j'ai dû échanger avec des équipes 
+                                        (Solvay puis Total Energies). Lors de ces interactions, j'ai eu le plaisir d'échanger avec des équipes 
                                         d'ingénieurs de ces entreprises afin de discuter de leurs problématiques et de planifier une 
                                         stratégie de R&D sur une durée de 2 à 3 ans pour chaque contrat. Cela m'a amené à m'approprier 
                                         un sujet nouveau, à chercher de nouvelles connaissances dans la littérature scientifique et à 
-                                        prendre du recul sur une problématique afin de définir une stratégie de travail sur les courts, 
-                                        moyens et longs termes. Travaillant dans la recherche expérimentale, j'ai mis en place de manière 
+                                        prendre du recul sur une problématique afin de définir une stratégie de travail à court, 
+                                        moyen et long terme. Travaillant dans la recherche expérimentale, j'ai mis en place de manière 
                                         autonome des postes expérimentaux (installation de paillasses, microscopie, gestion d'écoulement 
                                         de fluides, achat de matériel, etc). La difficulté dans l'acquisition de données et dans leur traitement 
                                         informatique (Matlab) m'ont enseigné la patience, la rigueur et la persévérance. Enfin, à travers les conférences, 
@@ -113,9 +115,10 @@ export default function Softskills() {
                                     </p>
                                     <p>
                                         En dehors de mes activités professionnelles, j'ai aussi une passion pour les activités créatives à travers
-                                        des projets de sites web (lien), la photo (lien) et la peinture/modélisme sur figurines (lien). J'aime 
-                                        aussi les activités de groupe dont celles centrées sur les wargames tels que Warhammer 40k ou Age of Sigmar 
-                                        pour citer ceux parmi les plus connus.  
+                                        des <span><button type='button' className='intro-link' onClick={() => {window.scrollTo({ top: projectsTopLevel, behavior: 'smooth'})}}>projets de sites web</button></span>, 
+                                        la <span><button type='button' className='intro-link' onClick={() => {window.scrollTo({ top: hobbiesTopLevel, behavior: 'smooth'})}}>photo</button></span> 
+                                        et la <span><button type='button' className='intro-link' onClick={() => {window.scrollTo({ top: hobbiesTopLevel, behavior: 'smooth'})}}>peinture/modélisme sur figurines</button></span>. 
+                                        J'aime aussi les activités de groupe dont celles centrées sur les wargames tels que Warhammer 40k ou Age of Sigmar pour citer ceux parmi les plus connus.  
                                     </p>
                                 </article>
                             </div>

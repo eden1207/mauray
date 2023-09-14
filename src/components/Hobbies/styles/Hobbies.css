@@ -1,41 +1,140 @@
 @import url("https://fonts.googleapis.com/css2?family=Bellefair&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bellefair&display=swap");
 .hobbies-title-box {
-  position: absolute;
-  top: 7274px !important;
-  bottom: none !important;
-  left: 5% !important;
-  right: none !important;
   z-index: 1;
   justify-content: center;
   align-items: center;
   background-color: rgba(0, 0, 0, 0.7);
-  width: 30%;
-  height: 100px !important;
+}
+@media all and (min-width: 992px) {
+  .hobbies-title-box {
+    position: absolute;
+    top: 7274px !important;
+    bottom: none !important;
+    left: 5% !important;
+    right: none !important;
+    width: 30%;
+    height: 100px !important;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 991px) {
+  .hobbies-title-box {
+    position: absolute;
+    top: 7279px !important;
+    bottom: none !important;
+    left: 4% !important;
+    right: none !important;
+    width: 35%;
+    height: 80px !important;
+  }
+}
+@media all and (min-width: 441px) and (max-width: 767px) {
+  .hobbies-title-box {
+    position: absolute;
+    top: 7289px !important;
+    bottom: none !important;
+    left: 3% !important;
+    right: none !important;
+    width: 40%;
+    height: 60px !important;
+  }
+}
+@media all and (max-width: 440px) {
+  .hobbies-title-box {
+    position: absolute;
+    top: 7294px !important;
+    bottom: none !important;
+    left: 2% !important;
+    right: none !important;
+    width: 55%;
+    height: 50px !important;
+  }
 }
 
 .hobbies-title {
   color: white;
-  font-family: "Bellefair", serif;
-  font-size: 38px;
-  font-weight: normal;
+}
+@media all and (min-width: 992px) {
+  .hobbies-title {
+    font-family: "Bellefair", serif;
+    font-size: 38px;
+    font-weight: normal;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 991px) {
+  .hobbies-title {
+    font-family: "Bellefair", serif;
+    font-size: 32px;
+    font-weight: normal;
+  }
+}
+@media all and (min-width: 441px) and (max-width: 767px) {
+  .hobbies-title {
+    font-family: "Bellefair", serif;
+    font-size: 26px;
+    font-weight: normal;
+  }
+}
+@media all and (max-width: 440px) {
+  .hobbies-title {
+    font-family: "Bellefair", serif;
+    font-size: 20px;
+    font-weight: normal;
+  }
 }
 
 .hobbies {
-  position: absolute;
-  top: 7354px !important;
-  bottom: none !important;
-  left: none !important;
-  right: 5% !important;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  width: 44%;
-  height: 400px !important;
   background-color: rgba(255, 255, 255, 0.6);
-  padding-top: none !important;
-  padding-bottom: none !important;
-  padding-left: 11%;
-  padding-right: 11%;
+}
+@media all and (min-width: 992px) {
+  .hobbies {
+    position: absolute;
+    top: 7354px !important;
+    bottom: none !important;
+    left: none !important;
+    right: 5% !important;
+    width: 68%;
+    height: 400px !important;
+    gap: 20%;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 991px) {
+  .hobbies {
+    position: absolute;
+    top: 7349px !important;
+    bottom: none !important;
+    left: none !important;
+    right: 4% !important;
+    width: 78%;
+    height: 400px !important;
+    gap: 18%;
+  }
+}
+@media all and (min-width: 441px) and (max-width: 767px) {
+  .hobbies {
+    position: absolute;
+    top: 7339px !important;
+    bottom: none !important;
+    left: none !important;
+    right: 3% !important;
+    width: 88%;
+    height: 400px !important;
+    gap: 15%;
+  }
+}
+@media all and (max-width: 440px) {
+  .hobbies {
+    position: absolute;
+    top: 7334px !important;
+    bottom: none !important;
+    left: none !important;
+    right: 1% !important;
+    width: 92%;
+    height: 400px !important;
+    gap: 10%;
+  }
 }
 
 .hobbies-element {
@@ -49,37 +148,139 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 200px;
-  height: 200px !important;
   overflow: hidden;
   border-radius: 50%;
   border: none;
+  background-color: rgba(0, 0, 0, 0.45);
   cursor: pointer;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6);
   transition: all 400ms;
+}
+@media all and (min-width: 992px) {
+  .border-logo-photo {
+    width: 200px;
+    height: 200px !important;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 991px) {
+  .border-logo-photo {
+    width: 160px;
+    height: 160px !important;
+  }
+}
+@media all and (min-width: 441px) and (max-width: 767px) {
+  .border-logo-photo {
+    width: 120px;
+    height: 120px !important;
+  }
+}
+@media all and (max-width: 440px) {
+  .border-logo-photo {
+    width: 100px;
+    height: 100px !important;
+  }
 }
 .border-logo-photo:hover {
   transform: scale(1.05);
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.9);
 }
 
-.logo-page-paint {
-  margin-top: 180px !important;
-  margin-bottom: none !important;
-  margin-left: 105px;
-  margin-right: none;
-  width: 450px;
-  height: none !important;
+@media all and (min-width: 992px) {
+  .logo-page-paint {
+    margin-top: 190px !important;
+    margin-bottom: none !important;
+    margin-left: 105px;
+    margin-right: none;
+    width: 450px;
+    height: none !important;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 991px) {
+  .logo-page-paint {
+    margin-top: 165px !important;
+    margin-bottom: none !important;
+    margin-left: 80px;
+    margin-right: none;
+    width: 370px;
+    height: none !important;
+  }
+}
+@media all and (min-width: 441px) and (max-width: 767px) {
+  .logo-page-paint {
+    margin-top: 130px !important;
+    margin-bottom: none !important;
+    margin-left: 60px;
+    margin-right: none;
+    width: 280px;
+    height: none !important;
+  }
+}
+@media all and (max-width: 440px) {
+  .logo-page-paint {
+    margin-top: 115px !important;
+    margin-bottom: none !important;
+    margin-left: 50px;
+    margin-right: none;
+    width: 230px;
+    height: none !important;
+  }
 }
 
-.logo-page-photo {
-  width: 300px;
-  height: none !important;
+@media all and (min-width: 992px) {
+  .logo-page-photo {
+    width: 300px;
+    height: none !important;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 991px) {
+  .logo-page-photo {
+    width: 240px;
+    height: none !important;
+  }
+}
+@media all and (min-width: 441px) and (max-width: 767px) {
+  .logo-page-photo {
+    width: 180px;
+    height: none !important;
+  }
+}
+@media all and (max-width: 440px) {
+  .logo-page-photo {
+    width: 150px;
+    height: none !important;
+  }
 }
 
 .logo-title {
   color: #141929;
-  font-family: "Bellefair", serif;
-  font-size: 18px;
-  font-weight: normal;
+}
+@media all and (min-width: 992px) {
+  .logo-title {
+    font-family: "Bellefair", serif;
+    font-size: 18px;
+    font-weight: normal;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 991px) {
+  .logo-title {
+    font-family: "Bellefair", serif;
+    font-size: 17px;
+    font-weight: normal;
+  }
+}
+@media all and (min-width: 441px) and (max-width: 767px) {
+  .logo-title {
+    font-family: "Bellefair", serif;
+    font-size: 16px;
+    font-weight: normal;
+  }
+}
+@media all and (max-width: 440px) {
+  .logo-title {
+    font-family: "Bellefair", serif;
+    font-size: 15px;
+    font-weight: normal;
+  }
 }
 
 /*animation*/

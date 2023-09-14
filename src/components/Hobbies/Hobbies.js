@@ -11,10 +11,14 @@ import caroussel from '../../assets/caroussel.jpg';
 import duchesse from '../../assets/duchesse.jpg';
 import pommeray from '../../assets/pommeray.jpg';
 
-import krondys from '../../assets/krondys.jpg';
-import radukar from '../../assets/radukar.jpg';
-import kruelboyz from '../../assets/kruelboyz.jpg';
-import yndrasta from '../../assets/yndrasta.jpg';
+//import krondys from '../../assets/krondys.jpg';
+import krondys from '../../assets/krondys.png';
+//import radukar from '../../assets/radukar.jpg';
+import radukar from '../../assets/radukar.png';
+//import kruelboyz from '../../assets/kruelboyz.jpg';
+import kruelboyz from '../../assets/kruelboyz.png';
+//import yndrasta from '../../assets/yndrasta.jpg';
+import yndrasta from '../../assets/yndrasta.png';
 import Gallery from '../Gallery/Gallery.js';
 
 const paint = [

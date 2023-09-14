@@ -38,22 +38,118 @@
   height: none !important;
   gap: 10px;
   text-decoration: none;
+  transition: all 200ms;
+}
+.footer-link:hover {
+  transform: scale(1.1);
 }
 
-.logo-linkedIn {
-  width: 50px;
-  height: none !important;
+@media all and (min-width: 992px) {
+  .logo-linkedIn {
+    width: 45px;
+    height: none !important;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 991px) {
+  .logo-linkedIn {
+    width: 40px;
+    height: none !important;
+  }
+}
+@media all and (min-width: 441px) and (max-width: 767px) {
+  .logo-linkedIn {
+    width: 35px;
+    height: none !important;
+  }
+}
+@media all and (max-width: 440px) {
+  .logo-linkedIn {
+    width: 30px;
+    height: none !important;
+  }
 }
 
 .logo-github {
-  width: 50px;
-  height: none !important;
   filter: invert(100%);
+}
+@media all and (min-width: 992px) {
+  .logo-github {
+    width: 45px;
+    height: none !important;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 991px) {
+  .logo-github {
+    width: 40px;
+    height: none !important;
+  }
+}
+@media all and (min-width: 441px) and (max-width: 767px) {
+  .logo-github {
+    width: 35px;
+    height: none !important;
+  }
+}
+@media all and (max-width: 440px) {
+  .logo-github {
+    width: 30px;
+    height: none !important;
+  }
+}
+
+@media all and (min-width: 992px) {
+  .logo-npm {
+    width: 75px;
+    height: none !important;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 991px) {
+  .logo-npm {
+    width: 70px;
+    height: none !important;
+  }
+}
+@media all and (min-width: 441px) and (max-width: 767px) {
+  .logo-npm {
+    width: 55px;
+    height: none !important;
+  }
+}
+@media all and (max-width: 440px) {
+  .logo-npm {
+    width: 45px;
+    height: none !important;
+  }
 }
 
 .footer-text {
   color: white;
-  font-family: "Bellefair", serif;
-  font-size: 22px;
-  font-weight: normal;
+}
+@media all and (min-width: 992px) {
+  .footer-text {
+    font-family: "Bellefair", serif;
+    font-size: 22px;
+    font-weight: normal;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 991px) {
+  .footer-text {
+    font-family: "Bellefair", serif;
+    font-size: 20px;
+    font-weight: normal;
+  }
+}
+@media all and (min-width: 441px) and (max-width: 767px) {
+  .footer-text {
+    font-family: "Bellefair", serif;
+    font-size: 18px;
+    font-weight: normal;
+  }
+}
+@media all and (max-width: 440px) {
+  .footer-text {
+    font-family: "Bellefair", serif;
+    font-size: 16px;
+    font-weight: normal;
+  }
 }/*# sourceMappingURL=Footer.css.map */

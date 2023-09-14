@@ -36,18 +36,70 @@
     @include dimensions(220px, none);
     gap: 10px;
     text-decoration: none;
+    transition: all 200ms;
+    &:hover {
+        transform: scale(1.10);
+    }
 }
 
 .logo-linkedIn{
-    @include dimensions(50px, none);
+    @media all and (min-width: 992px) {
+        @include dimensions(45px, none);
+    }
+    @media all and (min-width: 768px) and (max-width: 991px) {
+        @include dimensions(40px, none);
+    }
+    @media all and (min-width: 441px) and (max-width: 767px) {
+        @include dimensions(35px, none);
+    }
+    @media all and (max-width: 440px) {
+        @include dimensions(30px, none);
+    }
 }
 
 .logo-github{
-    @include dimensions(50px, none);
     filter: invert(100%);
+    @media all and (min-width: 992px) {
+        @include dimensions(45px, none);
+    }
+    @media all and (min-width: 768px) and (max-width: 991px) {
+        @include dimensions(40px, none);
+    }
+    @media all and (min-width: 441px) and (max-width: 767px) {
+        @include dimensions(35px, none);
+    }
+    @media all and (max-width: 440px) {
+        @include dimensions(30px, none);
+    }
+}
+
+.logo-npm{
+    @media all and (min-width: 992px) {
+        @include dimensions(75px, none);
+    }
+    @media all and (min-width: 768px) and (max-width: 991px) {
+        @include dimensions(70px, none);
+    }
+    @media all and (min-width: 441px) and (max-width: 767px) {
+        @include dimensions(55px, none);
+    }
+    @media all and (max-width: 440px) {
+        @include dimensions(45px, none);
+    }
 }
 
 .footer-text{
     color: white;
-    @include syntaxe-bellefair(22px, normal);
+    @media all and (min-width: 992px) {
+        @include syntaxe-bellefair(22px, normal);
+    }
+    @media all and (min-width: 768px) and (max-width: 991px) {
+        @include syntaxe-bellefair(20px, normal);
+    }
+    @media all and (min-width: 441px) and (max-width: 767px) {
+        @include syntaxe-bellefair(18px, normal);
+    }
+    @media all and (max-width: 440px) {
+        @include syntaxe-bellefair(16px, normal);
+    }
 }

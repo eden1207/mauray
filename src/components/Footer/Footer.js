@@ -3,6 +3,7 @@ import './styles/Footer.css';
 
 import linkedin from '../../assets/linkedin.png'
 import github from '../../assets/github.png'
+import npm from '../../assets/npm.png'
 
 export default function Footer() {
     const [displayFooter, setDisplayFooter] = useState('none');
@@ -43,7 +44,7 @@ export default function Footer() {
                 className='footer-link'
             >
                 <img src={linkedin} alt='linkedIn' className='logo-linkedIn' />
-                <p className='footer-text'>Mon LinkedIn</p>
+                <p className='footer-text'>lien LinkedIn</p>
             </a>
             <a 
                 target='_blank' 
@@ -52,7 +53,16 @@ export default function Footer() {
                 className='footer-link'
             >
                 <img src={github} alt='Github' className='logo-github' />
-                <p className='footer-text'>Mon Github</p>
+                <p className='footer-text'>lien Github</p>
+            </a>
+            <a 
+                target='_blank' 
+                rel="noreferrer" 
+                href="https://www.npmjs.com/package/package-select-menu"
+                className='footer-link'
+            >
+                <img src={npm} alt='NPM' className='logo-npm' />
+                <p className='footer-text'>lien NPM</p>
             </a>
         </footer>
     )
