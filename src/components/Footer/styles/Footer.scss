@@ -9,6 +9,7 @@
     @include dimensions(100%, none);
     background-color: black;
     transition: all 200ms;
+    z-index: 2;
 }
 
 .footer-appearence {

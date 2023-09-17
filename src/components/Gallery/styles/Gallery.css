@@ -5,13 +5,14 @@
   display: flex;
   align-items: center;
   background-color: rgba(255, 255, 255, 0.6);
+  overflow: hidden;
 }
-@media all and (min-width: 992px) {
+@media all and (min-width: 1342px) {
   .gallery-bgd {
     justify-content: space-between;
   }
 }
-@media all and (max-width: 991px) {
+@media all and (max-width: 1341px) {
   .gallery-bgd {
     justify-content: center;
   }
@@ -58,27 +59,44 @@
 @media all and (min-width: 992px) {
   .gallery-main-photo {
     height: 520px;
-    animation-name: mainPhotoDesktopOpenning;
-    animation-duration: 2000ms;
   }
 }
 @media all and (min-width: 768px) and (max-width: 991px) {
   .gallery-main-photo {
     height: 500px;
-    animation-name: mainPhotoIpadOpenning;
-    animation-duration: 2000ms;
   }
 }
 @media all and (min-width: 441px) and (max-width: 767px) {
   .gallery-main-photo {
     height: 400px;
-    animation-name: mainPhotoFirstMobileOpenning;
-    animation-duration: 2000ms;
   }
 }
 @media all and (max-width: 440px) {
   .gallery-main-photo {
     height: 320px;
+  }
+}
+
+@media all and (min-width: 992px) {
+  .animation-main-photo-opening {
+    animation-name: mainPhotoDesktopOpenning;
+    animation-duration: 2000ms;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 991px) {
+  .animation-main-photo-opening {
+    animation-name: mainPhotoIpadOpenning;
+    animation-duration: 2000ms;
+  }
+}
+@media all and (min-width: 441px) and (max-width: 767px) {
+  .animation-main-photo-opening {
+    animation-name: mainPhotoFirstMobileOpenning;
+    animation-duration: 2000ms;
+  }
+}
+@media all and (max-width: 440px) {
+  .animation-main-photo-opening {
     animation-name: mainPhotoSecondMobileOpenning;
     animation-duration: 2000ms;
   }
@@ -193,37 +211,56 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: hidden;
   border-radius: 0%;
 }
 @media all and (min-width: 992px) {
   .gallery-main-photo-openning {
     width: 50%;
     height: 520px;
-    animation-name: galleryOpenningDesktop;
-    animation-duration: 2000ms;
   }
 }
 @media all and (min-width: 768px) and (max-width: 991px) {
   .gallery-main-photo-openning {
     width: 85%;
     height: 500px;
-    animation-name: galleryOpenningIPad;
-    animation-duration: 2000ms;
   }
 }
 @media all and (min-width: 441px) and (max-width: 767px) {
   .gallery-main-photo-openning {
     width: 90%;
     height: 400px;
-    animation-name: galleryOpenningFirstMobile;
-    animation-duration: 2000ms;
   }
 }
 @media all and (max-width: 440px) {
   .gallery-main-photo-openning {
     width: 95%;
     height: 320px;
+  }
+}
+
+.animation-gallery-opening {
+  overflow: hidden;
+}
+@media all and (min-width: 992px) {
+  .animation-gallery-opening {
+    animation-name: galleryOpenningDesktop;
+    animation-duration: 2000ms;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 991px) {
+  .animation-gallery-opening {
+    animation-name: galleryOpenningIPad;
+    animation-duration: 2000ms;
+  }
+}
+@media all and (min-width: 441px) and (max-width: 767px) {
+  .animation-gallery-opening {
+    animation-name: galleryOpenningFirstMobile;
+    animation-duration: 2000ms;
+  }
+}
+@media all and (max-width: 440px) {
+  .animation-gallery-opening {
     animation-name: galleryOpenningSecondMobile;
     animation-duration: 2000ms;
   }
@@ -401,7 +438,9 @@
   }
 }
 /*arrow buttons*/
+/*992 991*/
 .desktop-prev-btn {
+  z-index: 2;
   position: relative;
   justify-content: center;
   align-items: center;
@@ -411,12 +450,12 @@
   height: 560px !important;
   border: none;
 }
-@media all and (min-width: 992px) {
+@media all and (min-width: 1342px) {
   .desktop-prev-btn {
     display: flex;
   }
 }
-@media all and (max-width: 991px) {
+@media all and (max-width: 1341px) {
   .desktop-prev-btn {
     display: none;
   }
@@ -428,9 +467,16 @@
   justify-content: space-between;
   align-items: center;
 }
-@media all and (min-width: 992px) {
+@media all and (min-width: 1342px) {
   .buttons-container {
     display: none;
+  }
+}
+@media all and (min-width: 992px) and (max-width: 1341px) {
+  .buttons-container {
+    display: flex;
+    top: 380px;
+    right: 40%;
   }
 }
 @media all and (min-width: 768px) and (max-width: 991px) {
@@ -522,6 +568,7 @@
   }
 }
 .desktop-next-btn {
+  z-index: 2;
   position: relative;
   justify-content: center;
   align-items: center;
@@ -531,12 +578,12 @@
   height: 560px !important;
   border: none;
 }
-@media all and (min-width: 992px) {
+@media all and (min-width: 1342px) {
   .desktop-next-btn {
     display: flex;
   }
 }
-@media all and (max-width: 991px) {
+@media all and (max-width: 1341px) {
   .desktop-next-btn {
     display: none;
   }
@@ -615,5 +662,216 @@
   to {
     transform: translateX(0px);
     opacity: 1;
+  }
+}
+/*animation arrow left*/
+.prev-photo-animation-left {
+  animation-name: prevPhotoAnimationLeft;
+  animation-duration: 500ms;
+  animation-fill-mode: backwards;
+}
+
+@keyframes prevPhotoAnimationLeft {
+  from {
+    transform: translate(100%, -100px) scale(0.5);
+    opacity: 0;
+  }
+  to {
+    transform: translate(0px, 0px) scale(1);
+    opacity: 1;
+  }
+}
+.next-photo-animation-left {
+  animation-name: nextPhotoAnimationLeft;
+  animation-duration: 500ms;
+  animation-fill-mode: backwards;
+}
+
+@keyframes nextPhotoAnimationLeft {
+  from {
+    transform: translate(-210%, 40px) scale(2);
+  }
+  to {
+    transform: translate(0px, 0px) scale(1);
+  }
+}
+.main-photo-animation-left {
+  animation-duration: 500ms;
+  animation-fill-mode: backwards;
+}
+@media all and (min-width: 1342px) {
+  .main-photo-animation-left {
+    animation-name: DeskTopMainPhotoAnimationLeft;
+  }
+}
+@media all and (max-width: 1341px) {
+  .main-photo-animation-left {
+    animation-name: IpadMobileMainPhotoAnimationLeft;
+  }
+}
+
+@keyframes DeskTopMainPhotoAnimationLeft {
+  from {
+    transform: translate(-125%, -40px) scale(0.5);
+  }
+  to {
+    transform: translate(0px, 0px) scale(1);
+  }
+}
+@keyframes IpadMobileMainPhotoAnimationLeft {
+  from {
+    transform: translateX(-125%);
+  }
+  to {
+    transform: translateX(0px);
+  }
+}
+/*animation arrow right*/
+.prev-photo-animation-right {
+  animation-duration: 500ms;
+  animation-fill-mode: backwards;
+}
+@media all and (min-width: 1342px) {
+  .prev-photo-animation-right {
+    animation-name: DeskTopPrevPhotoAnimationRight;
+  }
+}
+@media all and (max-width: 1341px) {
+  .prev-photo-animation-right {
+    animation-name: IpadMobilePrevPhotoAnimationRight;
+  }
+}
+
+@keyframes DeskTopPrevPhotoAnimationRight {
+  from {
+    transform: translate(210%, -40px) scale(2);
+  }
+  to {
+    transform: translate(0px, 0px) scale(1);
+  }
+}
+@keyframes IpadMobilePrevPhotoAnimationRight {
+  from {
+    transform: translateX(210%);
+  }
+  to {
+    transform: translateX(0px);
+  }
+}
+.next-photo-animation-right {
+  animation-name: nextPhotoAnimationRight;
+  animation-duration: 500ms;
+  animation-fill-mode: backwards;
+}
+
+@keyframes nextPhotoAnimationRight {
+  from {
+    transform: translate(-100%, 100px) scale(0.5);
+    opacity: 0;
+  }
+  to {
+    transform: translate(0px, 0px) scale(1);
+    opacity: 1;
+  }
+}
+.main-photo-animation-right {
+  animation-duration: 500ms;
+  animation-fill-mode: backwards;
+}
+@media all and (min-width: 1342px) {
+  .main-photo-animation-right {
+    animation-name: DeskTopMainPhotoAnimationRight;
+  }
+}
+@media all and (max-width: 1341px) {
+  .main-photo-animation-right {
+    animation-name: IpadMobileMainPhotoAnimationRight;
+  }
+}
+
+@keyframes DeskTopMainPhotoAnimationRight {
+  from {
+    transform: translate(125%, 40px) scale(0.5);
+  }
+  to {
+    transform: translate(0px, 0px) scale(1);
+  }
+}
+@keyframes IpadMobileMainPhotoAnimationRight {
+  from {
+    transform: translateX(125%);
+  }
+  to {
+    transform: translateX(0px);
+  }
+}
+.main-photo-neighbor {
+  display: none;
+  opacity: 0;
+  width: none;
+}
+@media all and (min-width: 992px) {
+  .main-photo-neighbor {
+    height: 520px;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 991px) {
+  .main-photo-neighbor {
+    height: 500px;
+  }
+}
+@media all and (min-width: 441px) and (max-width: 767px) {
+  .main-photo-neighbor {
+    height: 400px;
+  }
+}
+@media all and (max-width: 440px) {
+  .main-photo-neighbor {
+    height: 320px;
+  }
+}
+
+.main-photo-neighbor-animation-left {
+  animation-duration: 500ms;
+  animation-fill-mode: backwards;
+  display: block;
+  position: absolute;
+}
+@media all and (max-width: 1341px) {
+  .main-photo-neighbor-animation-left {
+    animation-name: mainPhotoNeighborAnimationLeft;
+  }
+}
+
+@keyframes mainPhotoNeighborAnimationLeft {
+  from {
+    left: 25%;
+    opacity: 1;
+  }
+  to {
+    left: -100%;
+    opacity: 0;
+  }
+}
+.main-photo-neighbor-animation-right {
+  animation-duration: 500ms;
+  animation-fill-mode: backwards;
+  display: block;
+  position: absolute;
+}
+@media all and (max-width: 1341px) {
+  .main-photo-neighbor-animation-right {
+    animation-name: mainPhotoNeighborAnimationRight;
+  }
+}
+
+@keyframes mainPhotoNeighborAnimationRight {
+  from {
+    right: 25%;
+    opacity: 1;
+  }
+  to {
+    right: -100%;
+    opacity: 0;
   }
 }/*# sourceMappingURL=Gallery.css.map */

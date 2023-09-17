@@ -11,13 +11,13 @@ import caroussel from '../../assets/caroussel.jpg';
 import duchesse from '../../assets/duchesse.jpg';
 import pommeray from '../../assets/pommeray.jpg';
 
-//import krondys from '../../assets/krondys.jpg';
 import krondys from '../../assets/krondys.png';
-//import radukar from '../../assets/radukar.jpg';
 import radukar from '../../assets/radukar.png';
-//import kruelboyz from '../../assets/kruelboyz.jpg';
 import kruelboyz from '../../assets/kruelboyz.png';
-//import yndrasta from '../../assets/yndrasta.jpg';
+import untamed from '../../assets/untamed.png';
+import glaurio from '../../assets/glaurio.png';
+import khaine from '../../assets/khaine.png';
+import khainite from '../../assets/khainite.png';
 import yndrasta from '../../assets/yndrasta.png';
 import Gallery from '../Gallery/Gallery.js';
 
@@ -33,6 +33,22 @@ const paint = [
     {
         'photo': kruelboyz,
         'name': 'kruelboyz'
+    },
+    {
+        'photo': untamed,
+        'name': 'untamed'
+    },
+    {
+        'photo': glaurio,
+        'name': 'glaurio'
+    },
+    {
+        'photo': khaine,
+        'name': 'khaine'
+    },
+    {
+        'photo': khainite,
+        'name': 'khainite'
     },
     {
         'photo': yndrasta,
@@ -101,8 +117,9 @@ export default function Hobbies() {
     return isGalleryOpen ? (
         <Gallery 
             listPhotos={galleryTab} 
-            setIsGalleryOpen={setIsGalleryOpen} 
             setgalleryTab={setgalleryTab}
+            isGalleryOpen={isGalleryOpen}
+            setIsGalleryOpen={setIsGalleryOpen} 
         />
     ) : (
         <React.Fragment>

@@ -12,6 +12,7 @@
   height: none !important;
   background-color: black;
   transition: all 200ms;
+  z-index: 2;
 }
 
 .footer-appearence {

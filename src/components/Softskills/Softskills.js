@@ -92,26 +92,45 @@ export default function Softskills() {
                                     }}
                                 >
                                     <p>
-                                        Je suis actuellement développeur d'application front-end et je suis passionné 
-                                        par la conception ainsi que la mise en pratique d'outils technologiques.
+                                        Physicien de formation, je suis issu d'un parcours de docteur en physique et j'ai 
+                                        exercé mes compétences de chercheur au sein de 3 laboratoires pendant une durée de 
+                                        6 ans. Ces expériences m'ont permises de me structurer professionnellement et de 
+                                        développer de nombreuses compétences :
+                                        <ul>
+                                            <li>
+                                                Gestion de projet à travers deux collaborations entre le milieu universitaire 
+                                                et le milieu industriel (Solvay puis Total Energies)
+                                            </li>
+                                            <li>
+                                                Méthode Agile avec équipes d'ingénieurs de ces entreprises pour définir une 
+                                                stratégie R&D pour chaque contrat
+                                            </li>
+                                            <li>
+                                                Prise de recul sur une problématique et documentation dans la littérature scientifique
+                                            </li>
+                                            <li>
+                                                Mise en place de manière autonome de postes d'expérimentation avec aménagement de salle 
+                                                expérimentale, microscopie, gestion d'écoulement de fluides, achats de matériel, etc 
+                                            </li>
+                                            <li>
+                                                Patience, rigueur et persévérance dans la difficulté d'acquisition de données et dans leur 
+                                                traitement numérique (Matlab)
+                                            </li>
+                                            <li>
+                                                Capacité à présenter un projet de manière constructive à travers des conférences, réunions 
+                                                avec les acteurs académiques et industriels ainsi que de nombreux rapports écrits
+                                            </li>
+                                        </ul>
                                     </p>
                                     <p>
-                                        De nature curieuse, je suis issu d'un parcours de docteur en physique et j'ai exercé 
-                                        mes compétences de chercheur au sein de 3 laboratoires pendant une durée de 6 ans. Ces 
-                                        expériences m'ont permis de développer de nombreuses compétences et de me structurer 
-                                        professionnellement. J'ai effectivement pu acquérir une maîtrise en terme de gestion de 
-                                        projet à travers deux collaborations entre le milieu universitaire et le milieu industrielle 
-                                        (Solvay puis Total Energies). Lors de ces interactions, j'ai eu le plaisir d'échanger avec des équipes 
-                                        d'ingénieurs de ces entreprises afin de discuter de leurs problématiques et de planifier une 
-                                        stratégie de R&D sur une durée de 2 à 3 ans pour chaque contrat. Cela m'a amené à m'approprier 
-                                        un sujet nouveau, à chercher de nouvelles connaissances dans la littérature scientifique et à 
-                                        prendre du recul sur une problématique afin de définir une stratégie de travail à court, 
-                                        moyen et long terme. Travaillant dans la recherche expérimentale, j'ai mis en place de manière 
-                                        autonome des postes expérimentaux (installation de paillasses, microscopie, gestion d'écoulement 
-                                        de fluides, achat de matériel, etc). La difficulté dans l'acquisition de données et dans leur traitement 
-                                        informatique (Matlab) m'ont enseigné la patience, la rigueur et la persévérance. Enfin, à travers les conférences, 
-                                        réunions avec les acteurs académiques et industrielles ainsi que de nombreux rapports écrits à rendre, 
-                                        je suis capable de présenter un projet de manière constructive. 
+                                        Créatif et passionné par l'apprentissage de nouvelles technologies, j'ai fait le choix de devenir 
+                                        développeur d'applications front-end en suivant une formation intensive, professionnalisante et mentorée 
+                                        de 14 mois chez OpenClassrooms (RNCP niveau 6) afin d'avoir le plaisir de travailler sur des projets web 
+                                        dans une belle entreprise. Pourquoi le front-end ? Parce que c'est un domaine extrêmement riche allant de 
+                                        fonctionnalités à coder, des interactions avec une base de données à mettre en forme, en passant par la 
+                                        création du design d'une interface web pouvant être créative et dynamique. Cela m'incite à mettre en pratique 
+                                        ces différents aspects à travers différents projets centralisés sur ce site. De nature curieuse, je suis 
+                                        attiré par ce domaine où les technologies sont en constante évolution. 
                                     </p>
                                     <p>
                                         En dehors de mes activités professionnelles, j'ai aussi une passion pour les activités créatives à travers

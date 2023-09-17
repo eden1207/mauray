@@ -6,14 +6,15 @@
 .gallery-bgd {
     position: relative;
     display: flex;
-    @media all and (min-width: 992px) {
+    @media all and (min-width: 1342px) {
         justify-content: space-between;
     }
-    @media all and (max-width: 991px) {
+    @media all and (max-width: 1341px) {
         justify-content: center;
     }
     align-items: center;
     background-color: rgb(255, 255, 255, 0.6);
+    overflow: hidden;
 }
 
 .gallery-bdg-appearence {
@@ -59,21 +60,32 @@
 
     @media all and (min-width: 992px) {
         height: 520px;
+    }
+    @media all and (min-width: 768px) and (max-width: 991px) {
+        height: 500px;
+    }
+    @media all and (min-width: 441px) and (max-width: 767px) {
+        height: 400px;
+    }
+    @media all and (max-width: 440px) {
+        height: 320px;
+    }
+}
+
+.animation-main-photo-opening {
+    @media all and (min-width: 992px) {
         animation-name: mainPhotoDesktopOpenning;
         animation-duration: 2000ms;
     }
     @media all and (min-width: 768px) and (max-width: 991px) {
-        height: 500px;
         animation-name: mainPhotoIpadOpenning;
         animation-duration: 2000ms;
     }
     @media all and (min-width: 441px) and (max-width: 767px) {
-        height: 400px;
         animation-name: mainPhotoFirstMobileOpenning;
         animation-duration: 2000ms;
     }
     @media all and (max-width: 440px) {
-        height: 320px;
         animation-name: mainPhotoSecondMobileOpenning;
         animation-duration: 2000ms;
     }
@@ -205,29 +217,40 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
     border-radius: 0%;
     @media all and (min-width: 992px) {
         width: 50%;
         height: 520px;
-        animation-name: galleryOpenningDesktop;
-        animation-duration: 2000ms;
     }
     @media all and (min-width: 768px) and (max-width: 991px) {
         width: 85%;
         height: 500px;
-        animation-name: galleryOpenningIPad;
-        animation-duration: 2000ms;
     }
     @media all and (min-width: 441px) and (max-width: 767px) {
         width: 90%;
         height: 400px;
-        animation-name: galleryOpenningFirstMobile;
-        animation-duration: 2000ms;
     }
     @media all and (max-width: 440px) {
         width: 95%;
         height: 320px;
+    }
+}
+
+.animation-gallery-opening {
+    overflow: hidden;
+    @media all and (min-width: 992px) {
+        animation-name: galleryOpenningDesktop;
+        animation-duration: 2000ms;
+    }
+    @media all and (min-width: 768px) and (max-width: 991px) {
+        animation-name: galleryOpenningIPad;
+        animation-duration: 2000ms;
+    }
+    @media all and (min-width: 441px) and (max-width: 767px) {
+        animation-name: galleryOpenningFirstMobile;
+        animation-duration: 2000ms;
+    }
+    @media all and (max-width: 440px) {
         animation-name: galleryOpenningSecondMobile;
         animation-duration: 2000ms;
     }
@@ -376,13 +399,16 @@
 
 /*arrow buttons*/
 
+/*992 991*/
+
 .desktop-prev-btn {
-    @media all and (min-width: 992px) {
+    @media all and (min-width: 1342px) {
         display: flex;
     }
-    @media all and (max-width: 991px) {
+    @media all and (max-width: 1341px) {
         display: none;
     }
+    z-index: 2;
     position: relative;
     justify-content: center;
     align-items: center;
@@ -397,8 +423,13 @@
     background-color: rgb(255, 255, 255, 0.5);
     justify-content: space-between;
     align-items: center;
-    @media all and (min-width: 992px) {
+    @media all and (min-width: 1342px) {
         display: none;
+    }
+    @media all and (min-width: 992px) and (max-width: 1341px) {
+        display: flex;
+        top: 380px;
+        right: 40%;
     }
     @media all and (min-width: 768px) and (max-width: 991px) {
         display: flex;
@@ -470,12 +501,13 @@
 }
 
 .desktop-next-btn {
-    @media all and (min-width: 992px) {
+    @media all and (min-width: 1342px) {
         display: flex;
     }
-    @media all and (max-width: 991px) {
+    @media all and (max-width: 1341px) {
         display: none;
     }
+    z-index: 2;
     position: relative;
     justify-content: center;
     align-items: center;
@@ -564,5 +596,218 @@
     to {
         transform: translateX(0px);
         opacity: 1;
+    }
+}
+
+
+/*animation arrow left*/
+$duration: 500ms;
+.prev-photo-animation-left {
+    animation-name: prevPhotoAnimationLeft;
+    animation-duration: $duration;
+    animation-fill-mode: backwards;
+}
+
+@keyframes prevPhotoAnimationLeft {
+    from {
+        transform: translate(100%, -100px)scale(0.5);
+        opacity: 0;
+    }
+
+    to {
+        transform: translate(0px, 0px)scale(1);
+        opacity: 1;
+    }
+}
+
+.next-photo-animation-left {
+    animation-name: nextPhotoAnimationLeft;
+    animation-duration: $duration;
+    animation-fill-mode: backwards;
+}
+
+@keyframes nextPhotoAnimationLeft {
+    from {
+        transform: translate(-210%, 40px)scale(2);
+    }
+
+    to {
+        transform: translate(0px, 0px)scale(1);
+    }
+}
+
+.main-photo-animation-left {
+    @media all and (min-width: 1342px) {
+        animation-name: DeskTopMainPhotoAnimationLeft;
+    }
+    @media all and (max-width: 1341px) {
+        animation-name: IpadMobileMainPhotoAnimationLeft;
+    }
+    animation-duration: $duration;
+    animation-fill-mode: backwards;
+}
+
+@keyframes DeskTopMainPhotoAnimationLeft {
+    from {
+        transform: translate(-125%, -40px)scale(0.5);
+    }
+
+    to {
+        transform: translate(0px, 0px)scale(1);
+    }
+}
+
+@keyframes IpadMobileMainPhotoAnimationLeft {
+    from {
+        transform: translateX(-125%);
+    }
+
+    to {
+        transform: translateX(0px);
+    }
+}
+
+/*animation arrow right*/
+
+.prev-photo-animation-right {
+    @media all and (min-width: 1342px) {
+        animation-name: DeskTopPrevPhotoAnimationRight;
+    }
+    @media all and (max-width: 1341px) {
+        animation-name: IpadMobilePrevPhotoAnimationRight;
+    }
+    animation-duration: $duration;
+    animation-fill-mode: backwards;
+}
+
+@keyframes DeskTopPrevPhotoAnimationRight {
+    from {
+        transform: translate(210%, -40px)scale(2);
+    }
+
+    to {
+        transform: translate(0px, 0px)scale(1);
+    }
+}
+
+@keyframes IpadMobilePrevPhotoAnimationRight {
+    from {
+        transform: translateX(210%);
+    }
+
+    to {
+        transform: translateX(0px);
+    }
+}
+
+.next-photo-animation-right {
+    animation-name: nextPhotoAnimationRight;
+    animation-duration: $duration;
+    animation-fill-mode: backwards;
+}
+
+@keyframes nextPhotoAnimationRight {
+    from {
+        transform: translate(-100%, 100px)scale(0.5);
+        opacity: 0;
+    }
+
+    to {
+        transform: translate(0px, 0px)scale(1);
+        opacity: 1;
+    }
+}
+
+.main-photo-animation-right {
+    @media all and (min-width: 1342px) {
+        animation-name: DeskTopMainPhotoAnimationRight;
+    }
+    @media all and (max-width: 1341px) {
+        animation-name: IpadMobileMainPhotoAnimationRight;
+    }
+    animation-duration: $duration;
+    animation-fill-mode: backwards;
+}
+
+@keyframes DeskTopMainPhotoAnimationRight {
+    from {
+        transform: translate(125%, 40px)scale(0.5);
+    }
+
+    to {
+        transform: translate(0px, 0px)scale(1);
+    }
+}
+
+@keyframes IpadMobileMainPhotoAnimationRight {
+    from {
+        transform: translateX(125%);
+    }
+
+    to {
+        transform: translateX(0px);
+    }
+}
+
+.main-photo-neighbor {
+    display: none;
+    opacity: 0;
+    width: none;
+
+    @media all and (min-width: 992px) {
+        height: 520px;
+    }
+    @media all and (min-width: 768px) and (max-width: 991px) {
+        height: 500px;
+    }
+    @media all and (min-width: 441px) and (max-width: 767px) {
+        height: 400px;
+    }
+    @media all and (max-width: 440px) {
+        height: 320px;
+    }
+}
+
+.main-photo-neighbor-animation-left {
+    @media all and (max-width: 1341px) {
+        animation-name: mainPhotoNeighborAnimationLeft;
+    }
+    animation-duration: $duration;
+    animation-fill-mode: backwards;
+    display: block;
+    position: absolute;
+}
+
+@keyframes mainPhotoNeighborAnimationLeft {
+    from {
+        left: 25%;
+        opacity: 1;
+    }
+
+    to {
+        left: -100%;
+        opacity: 0;
+    }
+}
+
+.main-photo-neighbor-animation-right {
+    @media all and (max-width: 1341px) {
+        animation-name: mainPhotoNeighborAnimationRight;
+    }
+    animation-duration: $duration;
+    animation-fill-mode: backwards;
+    display: block;
+    position: absolute;
+}
+
+@keyframes mainPhotoNeighborAnimationRight {
+    from {
+        right: 25%;
+        opacity: 1;
+    }
+
+    to {
+        right: -100%;
+        opacity: 0;
     }
 }
